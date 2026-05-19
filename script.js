@@ -87,7 +87,7 @@ const translations = {
     "booking.copy": "Choose the marketplace you already trust. Prices, availability and cancellation policies are confirmed directly on each platform.",
     "booking.airbnb.copy": "View the Airbnb listing, reviews and reservation details.",
     "booking.booking.copy": "Compare Booking availability, policies and traveler information.",
-    "booking.vrbo.copy": "Add the official Vrbo listing URL when it is available.",
+    "booking.vrbo.copy": "View the Vrbo listing and booking details.",
     "booking.disclaimer": "All reservations, payments, availability and cancellation policies are managed directly by Airbnb, Booking or Vrbo. This website is an informational showcase for Villa San Vito.",
     "reviews.kicker": "Guest reviews",
     "reviews.title": "Trusted stays, verified platform reviews",
@@ -203,7 +203,7 @@ const translations = {
     "booking.copy": "Elige la plataforma que ya usas y en la que confías. Precios, disponibilidad y políticas se confirman directamente allí.",
     "booking.airbnb.copy": "Ver el anuncio de Airbnb, reseñas y detalles de reserva.",
     "booking.booking.copy": "Comparar disponibilidad, políticas e información para viajeros en Booking.",
-    "booking.vrbo.copy": "Agregar la URL oficial de Vrbo cuando esté disponible.",
+    "booking.vrbo.copy": "Ver el anuncio de Vrbo y los detalles de reserva.",
     "booking.disclaimer": "Todas las reservas, pagos, disponibilidad y políticas de cancelación son gestionadas directamente por Airbnb, Booking o Vrbo. Este sitio web es una vidriera informativa de Villa San Vito.",
     "reviews.kicker": "Reseñas",
     "reviews.title": "Estadías confiables, reseñas verificadas en plataformas",
@@ -319,7 +319,7 @@ const translations = {
     "booking.copy": "Scegli il marketplace che già conosci. Prezzi, disponibilità e politiche di cancellazione sono confermati direttamente su ogni piattaforma.",
     "booking.airbnb.copy": "Consulta l'annuncio Airbnb, le recensioni e i dettagli di prenotazione.",
     "booking.booking.copy": "Confronta disponibilità, politiche e informazioni per viaggiatori su Booking.",
-    "booking.vrbo.copy": "Aggiungi l'URL ufficiale di Vrbo quando sarà disponibile.",
+    "booking.vrbo.copy": "Consulta l'annuncio Vrbo e i dettagli di prenotazione.",
     "booking.disclaimer": "Tutte le prenotazioni, i pagamenti, la disponibilità e le politiche di cancellazione sono gestiti direttamente da Airbnb, Booking o Vrbo. Questo sito è una vetrina informativa per Villa San Vito.",
     "reviews.kicker": "Recensioni degli ospiti",
     "reviews.title": "Soggiorni affidabili, recensioni verificate sulle piattaforme",
@@ -350,16 +350,9 @@ const translations = {
   }
 };
 
-const pendingVrboMessages = {
-  en: "The Vrbo link is not available yet. Please use Airbnb or Booking for now.",
-  es: "El link de Vrbo todavía no está disponible. Por ahora, usa Airbnb o Booking.",
-  it: "Il link Vrbo non è ancora disponibile. Per ora, usa Airbnb o Booking."
-};
-
 const header = document.querySelector(".site-header");
 const languageButtons = document.querySelectorAll("[data-lang]");
 const translatableNodes = document.querySelectorAll("[data-i18n]");
-const pendingLinks = document.querySelectorAll(".pending-link");
 const galleryDialog = document.querySelector(".gallery-dialog");
 const galleryDialogImage = galleryDialog?.querySelector("img");
 const galleryDialogCaption = galleryDialog?.querySelector("p");
@@ -391,15 +384,6 @@ function updateHeaderState() {
 
 languageButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
-});
-
-pendingLinks.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    if (link.getAttribute("href") === "#") {
-      event.preventDefault();
-      alert(pendingVrboMessages[document.documentElement.lang] || pendingVrboMessages.en);
-    }
-  });
 });
 
 document.querySelectorAll(".gallery-item").forEach((item) => {

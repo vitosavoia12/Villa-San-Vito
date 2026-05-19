@@ -62,13 +62,7 @@ Links actuales:
 
 - Airbnb: `http://airbnb.com/h/costieraamalfitanavillasanvito`
 - Booking: `https://www.booking.com/hotel/it/villa-san-vito-raito18.es.html?aid=318615&label=New_Italian_IT_IT_21439071025-UNZN0NGydu%2Ab2jBBcXOAlgSM640938613103%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg-IRmxiX5%401778943127&sid=8b3a113a5c9da800ff83762e83291d77&dest_id=-132243&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1779191673&srpvid=97bf53bc6be919a9&type=total&ucfs=1&`
-- Vrbo: pending
-
-Para agregar Vrbo:
-
-1. Busca `EDIT VRBO URL` en `index.html`.
-2. Reemplaza `href="#"` por la URL oficial de Vrbo.
-3. Quita la clase `pending-link` de los links de Vrbo.
+- Vrbo: `https://www.vrbo.com/11912594ha`
 
 Todos los links externos deben conservar:
 
@@ -88,15 +82,9 @@ Reemplaza ambos por el email público que quieras mostrar, por ejemplo:
 
 ## Agregar Google Maps
 
-Busca `GOOGLE_MAPS_EMBED_URL` en `index.html`.
+Busca el iframe dentro de la sección `Location` en `index.html`.
 
-Reemplaza:
-
-```html
-src="about:blank"
-```
-
-por la URL embed de Google Maps. Si prefieres no mostrar la dirección exacta, usa un mapa general de Raito o Vietri sul Mare.
+Reemplaza el valor de `src` por otra URL embed de Google Maps si quieres cambiar la zona mostrada. El sitio ya incluye un mapa general de Raito, Vietri sul Mare.
 
 ## SEO
 
