@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Villa terrace overlooking the Gulf of Salerno placeholder</title>
+  <desc id="desc">Mediterranean terrace with sea, garden, railing and warm light.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#8ec7dc"/>
+      <stop offset=".55" stop-color="#dfe9dc"/>
+      <stop offset="1" stop-color="#f3d7ad"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" x2="1">
+      <stop offset="0" stop-color="#0e4d64"/>
+      <stop offset="1" stop-color="#2d8aa7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <path d="M0 415c210-35 326 20 510-14 208-38 350-104 560-66 220 40 352 8 530-40v705H0z" fill="url(#sea)"/>
+  <path d="M0 586c140-78 275-97 405-56 106 33 195 80 332 29 194-72 319-29 473 31 145 56 268 46 390-18v428H0z" fill="#224d3e" opacity=".55"/>
+  <path d="M0 720h1600v280H0z" fill="#d9b98d"/>
+  <path d="M0 720h1600" stroke="#f5e5c9" stroke-width="10"/>
+  <g fill="#a95e3f">
+    <rect x="130" y="585" width="86" height="260"/>
+    <rect x="706" y="575" width="86" height="270"/>
+    <rect x="1342" y="585" width="86" height="260"/>
+  </g>
+  <g stroke="#183136" stroke-width="10" fill="none">
+    <path d="M0 650h1600"/>
+    <path d="M0 702h1600"/>
+    <path d="M60 650v88M270 650v88M480 650v88M690 650v88M900 650v88M1110 650v88M1320 650v88M1530 650v88"/>
+  </g>
+  <g fill="#2f5d35">
+    <circle cx="140" cy="225" r="130"/>
+    <circle cx="285" cy="180" r="160"/>
+    <circle cx="470" cy="190" r="145"/>
+    <circle cx="630" cy="205" r="125"/>
+    <rect x="0" y="0" width="710" height="240"/>
+  </g>
+  <g fill="#f7d44a">
+    <circle cx="394" cy="248" r="20"/>
+    <circle cx="456" cy="140" r="18"/>
+    <circle cx="545" cy="250" r="16"/>
+  </g>
+  <text x="80" y="910" fill="#fffdf8" font-family="Georgia, serif" font-size="56">Replace with real Villa San Vito photo</text>
+</svg>

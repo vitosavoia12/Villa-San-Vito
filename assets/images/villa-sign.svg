@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">Villa San Vito sign placeholder</title>
+  <desc id="desc">Ceramic sign with Villa San Vito lettering.</desc>
+  <rect width="900" height="700" fill="#eee7dd"/>
+  <rect x="120" y="230" width="660" height="210" rx="12" fill="#fff8e7" stroke="#1b4063" stroke-width="16"/>
+  <text x="450" y="320" fill="#7d2932" font-family="Georgia, serif" font-size="68" text-anchor="middle">VILLA</text>
+  <text x="450" y="405" fill="#7d2932" font-family="Georgia, serif" font-size="92" text-anchor="middle">SAN VITO</text>
+  <rect x="670" y="270" width="56" height="72" fill="#1b4063"/>
+  <path d="M670 342h56l-28 38z" fill="#7d2932"/>
+  <circle cx="698" cy="305" r="12" fill="#c9a55d"/>
+</svg>

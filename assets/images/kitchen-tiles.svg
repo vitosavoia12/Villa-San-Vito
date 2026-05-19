@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-labelledby="title desc">
+  <title id="title">Kitchen placeholder</title>
+  <desc id="desc">Kitchen counter with patterned Vietri-style tiles.</desc>
+  <rect width="700" height="700" fill="#fff7eb"/>
+  <rect x="65" y="165" width="570" height="190" fill="#1f6a7b"/>
+  <g stroke="#f0cf8a" stroke-width="3" fill="none">
+    <path d="M65 205h570M65 245h570M65 285h570M65 325h570M105 165v190M145 165v190M185 165v190M225 165v190M265 165v190M305 165v190M345 165v190M385 165v190M425 165v190M465 165v190M505 165v190M545 165v190M585 165v190"/>
+    <path d="M105 205c25 25 55 25 80 0M225 245c25 25 55 25 80 0M385 205c25 25 55 25 80 0M505 285c25 25 55 25 80 0"/>
+  </g>
+  <rect x="45" y="355" width="610" height="78" fill="#c89561"/>
+  <rect x="85" y="432" width="530" height="178" fill="#1c2b3a"/>
+  <rect x="412" y="450" width="150" height="118" fill="#0f171f"/>
+  <circle cx="210" cy="390" r="42" fill="#cbd1d0"/>
+  <circle cx="330" cy="390" r="42" fill="#cbd1d0"/>
+  <path d="M490 135c48 35 74 90 78 165h-172c2-75 32-130 94-165z" fill="#f7f0e5"/>
+</svg>

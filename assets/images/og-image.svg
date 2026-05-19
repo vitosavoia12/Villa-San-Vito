@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Villa San Vito social sharing image placeholder</title>
+  <desc id="desc">Social sharing card with Villa San Vito title and Amalfi Coast view.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#093747"/>
+      <stop offset="1" stop-color="#0e4d64"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <path d="M0 315c155-40 280-35 405 10 144 52 248-17 390-30 158-15 270 60 405 14v321H0z" fill="#2d8aa7"/>
+  <path d="M0 420c130-54 260-65 390-35 138 31 270 12 390-38 145-61 280-62 420-20v303H0z" fill="#68784b"/>
+  <rect x="76" y="80" width="680" height="250" fill="rgba(255,253,248,.92)"/>
+  <text x="120" y="165" fill="#093747" font-family="Georgia, serif" font-size="64">Villa San Vito</text>
+  <text x="120" y="232" fill="#093747" font-family="Georgia, serif" font-size="42">A private Amalfi Coast retreat</text>
+  <text x="120" y="286" fill="#68716d" font-family="Arial, sans-serif" font-size="26">Raito, Vietri sul Mare, Campania</text>
+</svg>

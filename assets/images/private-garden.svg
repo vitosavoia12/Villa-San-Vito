@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-labelledby="title desc">
+  <title id="title">Private garden placeholder</title>
+  <desc id="desc">Green garden with Mediterranean trees and sea light.</desc>
+  <rect width="700" height="700" fill="#d9e6dd"/>
+  <path d="M0 430c120-80 220-120 350-90 130 29 200-35 350-88v448H0z" fill="#6c854f"/>
+  <path d="M0 520c170-45 320-45 480-5 80 20 150 12 220-20v205H0z" fill="#496a37"/>
+  <rect x="500" y="150" width="85" height="360" fill="#6b4c35"/>
+  <circle cx="540" cy="150" r="130" fill="#315830"/>
+  <circle cx="450" cy="190" r="105" fill="#3f6c39"/>
+  <circle cx="610" cy="220" r="105" fill="#2e4d2f"/>
+  <rect x="110" y="160" width="46" height="310" fill="#735038"/>
+  <circle cx="132" cy="150" r="95" fill="#3c6735"/>
+  <circle cx="220" cy="204" r="75" fill="#496f3f"/>
+  <path d="M0 255c80-22 145-21 220-5 80 17 158 20 250-8 90-27 162-30 230-16v112c-130-14-235 17-340 38-120 24-240-25-360 3z" fill="#0e4d64" opacity=".45"/>
+</svg>

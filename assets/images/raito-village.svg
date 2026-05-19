@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+  <title id="title">Raito village placeholder</title>
+  <desc id="desc">Hillside village over the sea near Vietri sul Mare.</desc>
+  <rect width="900" height="700" fill="#9ed2e4"/>
+  <rect y="405" width="900" height="295" fill="#0e4d64"/>
+  <path d="M0 420c100-160 210-240 350-252 165-14 292 80 430 5 54-30 92-48 120-56v583H0z" fill="#59764b"/>
+  <g fill="#fffdf8">
+    <rect x="180" y="255" width="70" height="70"/>
+    <rect x="260" y="235" width="95" height="90"/>
+    <rect x="365" y="280" width="80" height="65"/>
+    <rect x="455" y="245" width="110" height="100"/>
+    <rect x="585" y="285" width="86" height="70"/>
+    <rect x="690" y="250" width="80" height="85"/>
+  </g>
+  <g fill="#c89561">
+    <path d="M175 255h80l-40-35z"/>
+    <path d="M255 235h105l-52-38z"/>
+    <path d="M450 245h120l-60-45z"/>
+    <path d="M685 250h90l-45-34z"/>
+  </g>
+  <path d="M0 525c145-42 280-45 405-12 150 40 310 12 495-66v253H0z" fill="#173c4a"/>
+</svg>
