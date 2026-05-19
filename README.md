@@ -1,0 +1,136 @@
+# Villa San Vito - Landing estática
+
+Landing page estática y de bajo mantenimiento para Villa San Vito, ubicada en Raito, Vietri sul Mare, Campania, Italia.
+
+El sitio es únicamente informativo. No gestiona reservas directas, pagos, datos de tarjeta, calendarios de disponibilidad, usuarios ni panel de administración. Los botones de reserva derivan a Airbnb, Booking o Vrbo.
+
+## Estructura
+
+```text
+/
+├── index.html
+├── styles.css
+├── script.js
+└── assets/
+    └── images/
+```
+
+## Editar contenido
+
+- Los textos principales en inglés están en `index.html`.
+- Los textos en español, italiano y las etiquetas multilingües están en `script.js`, dentro del objeto `translations`.
+- Para mantener el sitio simple, edita esos archivos directamente y vuelve a publicar.
+
+## Reemplazar imágenes
+
+El sitio ya usa fotos reales copiadas en `assets/images/`. Quedan algunos SVG como respaldo o placeholders, pero la landing principal apunta a archivos `.jpg`.
+
+Nombres recomendados:
+
+- `hero-terrace-sea-view.jpg`
+- `terrace-gulf-view.jpg`
+- `private-garden.jpg`
+- `lemon-tree.jpg`
+- `living-room.jpg`
+- `kitchen-tiles.jpg`
+- `dining-table.jpg`
+- `table-setting.jpg`
+- `main-bedroom.jpg`
+- `twin-bedroom.jpg`
+- `interior-arch.jpg`
+- `sitting-room.jpg`
+- `villa-sign.jpg`
+
+Puedes hacerlo de dos formas:
+
+1. Reemplazar cada JPG por otra foto usando el mismo nombre.
+2. Exportar las fotos como WebP o JPG, por ejemplo `hero-terrace-sea-view.webp`, y actualizar los atributos `src` y `data-full` correspondientes.
+
+Tamaños sugeridos:
+
+- Hero: 1600 a 2200 px de ancho.
+- Galería: 1000 a 1600 px de ancho.
+- Open Graph: actualmente usa `hero-terrace-sea-view.jpg`; puedes crear una versión 1200 x 630 px si quieres más control.
+
+Mantén siempre textos `alt` descriptivos en `index.html`.
+
+## Cambiar links de reserva
+
+Los links de reserva están en `index.html`.
+
+Links actuales:
+
+- Airbnb: `http://airbnb.com/h/costieraamalfitanavillasanvito`
+- Booking: `https://www.booking.com/hotel/it/villa-san-vito-raito18.es.html?aid=318615&label=New_Italian_IT_IT_21439071025-UNZN0NGydu%2Ab2jBBcXOAlgSM640938613103%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg-IRmxiX5%401778943127&sid=8b3a113a5c9da800ff83762e83291d77&dest_id=-132243&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1779191673&srpvid=97bf53bc6be919a9&type=total&ucfs=1&`
+- Vrbo: pending
+
+Para agregar Vrbo:
+
+1. Busca `EDIT VRBO URL` en `index.html`.
+2. Reemplaza `href="#"` por la URL oficial de Vrbo.
+3. Quita la clase `pending-link` de los links de Vrbo.
+
+Todos los links externos deben conservar:
+
+```html
+target="_blank" rel="noopener noreferrer"
+```
+
+## Cambiar email
+
+Busca `[CONTACT_EMAIL]` y `CONTACT_EMAIL` en `index.html`.
+
+Reemplaza ambos por el email público que quieras mostrar, por ejemplo:
+
+```html
+<a href="mailto:hello@example.com">hello@example.com</a>
+```
+
+## Agregar Google Maps
+
+Busca `GOOGLE_MAPS_EMBED_URL` en `index.html`.
+
+Reemplaza:
+
+```html
+src="about:blank"
+```
+
+por la URL embed de Google Maps. Si prefieres no mostrar la dirección exacta, usa un mapa general de Raito o Vietri sul Mare.
+
+## SEO
+
+Antes de publicar, revisa en `index.html`:
+
+- `<link rel="canonical" href="https://example.com/">`
+- Open Graph image path
+- JSON-LD `image`
+- Cualquier URL pública final del dominio
+
+No agregues precios, teléfonos ni dirección exacta salvo que estén confirmados y sean datos pensados para mostrarse públicamente.
+
+## Publicar en Netlify
+
+1. Crea una cuenta en Netlify.
+2. Arrastra la carpeta del proyecto a Netlify Drop o conecta un repositorio Git.
+3. Usa la configuración estática por defecto. No hace falta build command.
+4. Si Netlify pregunta por el directorio de publicación, usa la raíz del proyecto.
+
+## Publicar en Vercel
+
+1. Crea una cuenta en Vercel.
+2. Importa el repositorio Git o sube el proyecto.
+3. Framework preset: Other.
+4. Build command: dejar vacío.
+5. Output directory: dejar vacío o usar la raíz del proyecto.
+
+## Publicar en un hosting estático común
+
+Sube estos archivos al directorio público del hosting:
+
+- `index.html`
+- `styles.css`
+- `script.js`
+- `assets/images/`
+
+La página funciona sin backend.
