@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Villa San Vito | Private Amalfi Coast Villa in Raito, Italy</title>
-    <meta name="description" content="Stay at Villa San Vito, a private three-level villa in Raito near Vietri sul Mare, with sea views, garden terraces, parking and easy access to the Amalfi Coast.">
+    <title>Villa San Vito | Private Amalfi Coast Villa with Sea View</title>
+    <meta name="description" content="Stay at Villa San Vito, a private Amalfi Coast villa in Raito with sea views, lemon trees, terraces, garden, parking and space for families, couples and friends.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://example.com/">
+    <!-- EDIT SEO: add a canonical URL here after publishing on your final domain. -->
 
-    <meta property="og:title" content="Villa San Vito | Private Amalfi Coast Villa in Raito, Italy">
-    <meta property="og:description" content="A private three-level villa in Raito near Vietri sul Mare, with sea views, garden terraces, parking and easy access to the Amalfi Coast.">
-    <!-- EDIT: replace this Open Graph image with a real hero photo before launch. -->
+    <meta property="og:title" content="Villa San Vito — Your Private Villa on the Amalfi Coast">
+    <meta property="og:description" content="A sea-view villa in Raito, near Vietri sul Mare, created for travelers looking beyond Amalfi Coast hotels and resorts.">
     <meta property="og:image" content="assets/images/hero-terrace-sea-view.jpg">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
@@ -18,13 +17,18 @@
     <link rel="preload" href="assets/images/hero-terrace-sea-view.jpg" as="image">
     <link rel="stylesheet" href="styles.css">
 
+    <!-- EDIT SCHEMA: update URLs or public details only when confirmed. Do not add prices, phone, 5-star classification, all-inclusive or beachfront claims. -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LodgingBusiness",
+        "@type": "VacationRental",
         "name": "Villa San Vito",
-        "description": "Private three-level villa in Raito near Vietri sul Mare, with sea views, garden terraces, parking and easy access to the Amalfi Coast.",
-        "image": "assets/images/hero-terrace-sea-view.jpg",
+        "description": "Villa San Vito is a private Amalfi Coast villa in Raito near Vietri sul Mare, with sea views over the Gulf of Salerno, terraces, private garden, lemon trees, parking, WiFi and space for up to six guests.",
+        "image": [
+          "assets/images/hero-terrace-sea-view.jpg",
+          "assets/images/terrace-gulf-view.jpg",
+          "assets/images/private-garden.jpg"
+        ],
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Raito",
@@ -36,29 +40,23 @@
           "ratingValue": "4.93",
           "reviewCount": "14"
         },
-        "numberOfRooms": "3 bedrooms",
-        "maximumAttendeeCapacity": 6,
+        "occupancy": {
+          "@type": "QuantitativeValue",
+          "maxValue": 6
+        },
+        "numberOfBedrooms": 3,
         "amenityFeature": [
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Fast WiFi",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Private parking",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Sea views",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Private garden",
-            "value": true
-          }
+          { "@type": "LocationFeatureSpecification", "name": "Sea view", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Private garden", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Terrace", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "WiFi", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Private parking", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Kitchen", "value": true }
+        ],
+        "sameAs": [
+          "http://airbnb.com/h/costieraamalfitanavillasanvito",
+          "https://www.booking.com/hotel/it/villa-san-vito-raito18.es.html",
+          "https://www.vrbo.com/11912594ha"
         ]
       }
     </script>
@@ -68,14 +66,13 @@
     <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
     <header class="site-header" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Villa San Vito home">
-        <span>Villa San Vito</span>
-      </a>
+      <a class="brand" href="#top" aria-label="Villa San Vito home">Villa San Vito</a>
 
       <nav class="main-nav" aria-label="Main menu">
-        <a href="#villa" data-i18n="nav.villa">The villa</a>
+        <a href="#villa" data-i18n="nav.villa">The Villa</a>
+        <a href="#story" data-i18n="nav.story">Story</a>
+        <a href="#views" data-i18n="nav.views">Views</a>
         <a href="#location" data-i18n="nav.location">Location</a>
-        <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
         <a href="#book" data-i18n="nav.book">Book</a>
       </nav>
 
@@ -88,24 +85,27 @@
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
-        <!-- EDIT PHOTOS: replace this hero image with another villa or Gulf of Salerno photo if desired. -->
-        <picture>
-          <img src="assets/images/hero-terrace-sea-view.jpg" width="1440" height="1080" alt="Terrace at Villa San Vito overlooking the Gulf of Salerno" fetchpriority="high">
-        </picture>
+        <!-- EDIT IMAGES: replace hero-terrace-sea-view.jpg with another atmospheric hero image if desired. -->
+        <img src="assets/images/hero-terrace-sea-view.jpg" width="1440" height="1080" alt="Villa San Vito private villa Amalfi Coast with sea view" fetchpriority="high">
 
         <div class="hero-overlay">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Raito, Vietri sul Mare, Campania</p>
-          <h1 id="hero-title" data-i18n="hero.title">Villa San Vito: a timeless Amalfi Coast retreat</h1>
-          <p class="hero-copy" data-i18n="hero.subtitle">A private three-level villa in Raito, near Vietri sul Mare, with sea views, garden terraces and easy access to Salerno, Amalfi, Ravello and Positano.</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Raito, Amalfi Coast</p>
+          <h1 id="hero-title" data-i18n="hero.title">Villa San Vito</h1>
+          <p class="hero-copy" data-i18n="hero.subtitle">A private sea-view villa above Vietri sul Mare, where the Amalfi Coast feels slower, quieter and more intimate.</p>
 
-          <div class="hero-actions" aria-label="Reservation platforms">
-            <!-- EDIT LINKS: change external booking URLs here if needed. -->
-            <a class="button button-primary" href="http://airbnb.com/h/costieraamalfitanavillasanvito" target="_blank" rel="noopener noreferrer" data-i18n="buttons.airbnb">Book on Airbnb</a>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#story" data-i18n="buttons.discover">Discover the villa</a>
+            <!-- EDIT BOOKING LINKS: update platform URLs here, in booking cards, footer and schema sameAs if they change. -->
+            <a class="button button-light" href="http://airbnb.com/h/costieraamalfitanavillasanvito" target="_blank" rel="noopener noreferrer" data-i18n="buttons.airbnb">Book on Airbnb</a>
             <a class="button button-light" href="https://www.booking.com/hotel/it/villa-san-vito-raito18.es.html?aid=318615&amp;label=New_Italian_IT_IT_21439071025-UNZN0NGydu%2Ab2jBBcXOAlgSM640938613103%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg-IRmxiX5%401778943127&amp;sid=8b3a113a5c9da800ff83762e83291d77&amp;dest_id=-132243&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1779191673&amp;srpvid=97bf53bc6be919a9&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer" data-i18n="buttons.booking">Book on Booking</a>
             <a class="button button-light" href="https://www.vrbo.com/11912594ha" target="_blank" rel="noopener noreferrer" data-i18n="buttons.vrbo">Book on Vrbo</a>
           </div>
 
-          <p class="platform-note" data-i18n="hero.note">Reservations are managed exclusively through trusted travel platforms.</p>
+          <ul class="trust-list" aria-label="Villa trust points">
+            <li data-i18n="trust.platforms">Reservations through trusted platforms</li>
+            <li data-i18n="trust.private">Private villa, not a hotel</li>
+            <li data-i18n="trust.sea">Sea views over the Gulf of Salerno</li>
+          </ul>
         </div>
       </section>
 
@@ -114,101 +114,87 @@
         <div class="fact"><strong>3</strong><span data-i18n="facts.bedrooms">3 bedrooms</span></div>
         <div class="fact"><strong>5</strong><span data-i18n="facts.beds">5 beds</span></div>
         <div class="fact"><strong>3</strong><span data-i18n="facts.bathrooms">3 bathrooms</span></div>
-        <div class="fact"><strong>P</strong><span data-i18n="facts.parking">Private parking</span></div>
+        <div class="fact"><strong>Garden</strong><span data-i18n="facts.garden">Private garden</span></div>
         <div class="fact"><strong>WiFi</strong><span data-i18n="facts.wifi">Fast WiFi</span></div>
-        <div class="fact"><strong>Sea</strong><span data-i18n="facts.views">Sea views</span></div>
+        <div class="fact"><strong>Parking</strong><span data-i18n="facts.parking">Private parking</span></div>
       </section>
 
-      <section class="section intro" aria-labelledby="intro-title">
-        <div class="section-kicker" data-i18n="intro.kicker">A calmer way to stay on the coast</div>
-        <h2 id="intro-title" data-i18n="intro.title">Space, terraces and Gulf views above Vietri sul Mare</h2>
-        <p data-i18n="intro.copy">Set in the quiet village of Raito, above Vietri sul Mare, Villa San Vito is designed for travelers who want space, privacy and a slower way to experience the Amalfi Coast. The villa offers three levels, outdoor terraces, a private garden and open views toward the Gulf of Salerno, while keeping guests within reach of Salerno, Amalfi, Ravello, Positano, Paestum and Pompeii.</p>
-      </section>
-
-      <section class="section gallery-section" aria-labelledby="gallery-title">
-        <div class="section-heading">
-          <div>
-            <div class="section-kicker" data-i18n="gallery.kicker">Photo gallery</div>
-            <h2 id="gallery-title" data-i18n="gallery.title">Mediterranean light, garden terraces and generous interiors</h2>
+      <section class="story-section" id="story" aria-labelledby="story-title">
+        <div class="story-frame">
+          <p class="section-kicker" data-i18n="story.kicker">A quieter way to experience the Amalfi Coast</p>
+          <h2 id="story-title" data-i18n="story.title">There are places you visit. And there are places that feel like a secret discovered too late.</h2>
+          <div class="ornament" aria-hidden="true"></div>
+          <div class="story-copy">
+            <p data-i18n="story.p1">High above Raito, a small village suspended over the Amalfi Coast, there is a villa where time seems to move more slowly.</p>
+            <p data-i18n="story.p2">Mornings begin with the scent of lemon trees, windows open to the endless blue of the Gulf of Salerno, and every terrace becomes one of Italy’s most beautiful balconies.</p>
+            <p data-i18n="story.p3">Villa San Vito is not just a place to stay. It is a way to experience the Amalfi Coast like a local: away from the tourist noise, yet close to everything that makes this corner of Italy unforgettable.</p>
+            <p data-i18n="story.p4">Just within reach of Amalfi, Positano and Ravello, the villa brings together nature, privacy and hand-painted views. Three levels designed for sharing, resting and disconnecting: generous interiors, private gardens, unforgettable terraces and nights when the sea seems to blend with the silence.</p>
+            <p class="story-pause" data-i18n="story.p5">Here, breakfasts last for hours. Conversations stretch beneath the stars. And every corner invites you to stay one more day.</p>
+            <p data-i18n="story.p6">Ideal for families, groups of friends or travelers looking for more than accommodation: a way to live Italy from within.</p>
+            <p class="story-signature" data-i18n="story.signature">Villa San Vito. Your home on the Amalfi Coast.</p>
           </div>
-          <p data-i18n="gallery.note">Selected scenes from the terraces, garden, interiors and coastal setting.</p>
-        </div>
-
-        <div class="gallery-grid">
-          <button class="gallery-item large" type="button" data-full="assets/images/terrace-gulf-view.jpg">
-            <img src="assets/images/terrace-gulf-view.jpg" loading="lazy" width="1440" height="1080" alt="Furnished terrace dining area with a view over the Gulf of Salerno">
-            <span data-i18n="gallery.item1">Terrace and sea view</span>
-          </button>
-          <button class="gallery-item" type="button" data-full="assets/images/private-garden.jpg">
-            <img src="assets/images/private-garden.jpg" loading="lazy" width="1440" height="1080" alt="Private garden with Mediterranean trees at Villa San Vito">
-            <span data-i18n="gallery.item2">Private garden</span>
-          </button>
-          <button class="gallery-item" type="button" data-full="assets/images/lemon-tree.jpg">
-            <img src="assets/images/lemon-tree.jpg" loading="lazy" width="1440" height="1080" alt="Lemon tree in the garden with the sea and village in the background">
-            <span data-i18n="gallery.item3">Lemon tree</span>
-          </button>
-          <button class="gallery-item" type="button" data-full="assets/images/kitchen-tiles.jpg">
-            <img src="assets/images/kitchen-tiles.jpg" loading="lazy" width="720" height="540" alt="Fully equipped kitchen with Vietri-style tiles and dining table">
-            <span data-i18n="gallery.item4">Kitchen</span>
-          </button>
-          <button class="gallery-item" type="button" data-full="assets/images/dining-table.jpg">
-            <img src="assets/images/dining-table.jpg" loading="lazy" width="1200" height="900" alt="Dining table set with ceramic details at Villa San Vito">
-            <span data-i18n="gallery.item5">Dining details</span>
-          </button>
-          <button class="gallery-item" type="button" data-full="assets/images/table-setting.jpg">
-            <img src="assets/images/table-setting.jpg" loading="lazy" width="1200" height="900" alt="Close-up of a table setting with glassware and ceramic details">
-            <span data-i18n="gallery.item6">Table setting</span>
-          </button>
-          <button class="gallery-item" type="button" data-full="assets/images/main-bedroom.jpg">
-            <img src="assets/images/main-bedroom.jpg" loading="lazy" width="1440" height="1080" alt="Main bedroom with double bed and calm coastal colors">
-            <span data-i18n="gallery.item7">Main bedroom</span>
-          </button>
-          <button class="gallery-item" type="button" data-full="assets/images/twin-bedroom.jpg">
-            <img src="assets/images/twin-bedroom.jpg" loading="lazy" width="1440" height="1080" alt="Bedroom with single beds for families or small groups">
-            <span data-i18n="gallery.item8">Single bedrooms</span>
-          </button>
-          <button class="gallery-item" type="button" data-full="assets/images/interior-arch.jpg">
-            <img src="assets/images/interior-arch.jpg" loading="lazy" width="720" height="960" alt="Interior arch and spiral staircase with warm afternoon light">
-            <span data-i18n="gallery.item9">Interior arch</span>
-          </button>
-          <button class="gallery-item" type="button" data-full="assets/images/living-room.jpg">
-            <img src="assets/images/living-room.jpg" loading="lazy" width="1200" height="900" alt="Living room with sofa, framed posters and arched window">
-            <span data-i18n="gallery.item10">Living room</span>
-          </button>
-          <button class="gallery-item" type="button" data-full="assets/images/sitting-room.jpg">
-            <img src="assets/images/sitting-room.jpg" loading="lazy" width="1440" height="1080" alt="Sitting room with sofa, armchairs and Amalfi Coast map">
-            <span data-i18n="gallery.item11">Sitting room</span>
-          </button>
-          <button class="gallery-item wide" type="button" data-full="assets/images/villa-sign.jpg">
-            <img src="assets/images/villa-sign.jpg" loading="lazy" width="1440" height="1080" alt="Villa San Vito ceramic sign at the entrance">
-            <span data-i18n="gallery.item12">Villa details</span>
-          </button>
         </div>
       </section>
 
-      <section class="section benefits" aria-labelledby="benefits-title">
-        <div class="section-kicker" data-i18n="benefits.kicker">Why guests love Villa San Vito</div>
-        <h2 id="benefits-title" data-i18n="benefits.title">A private base with the practical comforts travelers need</h2>
-
-        <div class="benefit-grid">
-          <article><h3 data-i18n="benefits.1.title">Sea views over the Gulf of Salerno</h3><p data-i18n="benefits.1.copy">Open coastal views from terraces and outdoor areas.</p></article>
-          <article><h3 data-i18n="benefits.2.title">Private garden and furnished terraces</h3><p data-i18n="benefits.2.copy">Outdoor spaces for breakfast, reading and relaxed evenings.</p></article>
-          <article><h3 data-i18n="benefits.3.title">Three-level villa</h3><p data-i18n="benefits.3.copy">Generous indoor and outdoor space for families and small groups.</p></article>
-          <article><h3 data-i18n="benefits.4.title">Fast WiFi and work area</h3><p data-i18n="benefits.4.copy">A dedicated study area supports remote work and longer stays.</p></article>
-          <article><h3 data-i18n="benefits.5.title">Private parking inside the property</h3><p data-i18n="benefits.5.copy">Outdoor parking for 2 to 3 cars, a valuable comfort on the coast.</p></article>
-          <article><h3 data-i18n="benefits.6.title">Fully equipped kitchen</h3><p data-i18n="benefits.6.copy">Cook at home after exploring nearby towns and coastal villages.</p></article>
-          <article><h3 data-i18n="benefits.7.title">Strategic day-trip base</h3><p data-i18n="benefits.7.copy">Within reach of Amalfi, Ravello, Positano, Paestum and Pompeii.</p></article>
-          <article><h3 data-i18n="benefits.8.title">Hosted by Rossella</h3><p data-i18n="benefits.8.copy">The host speaks English, Spanish and Italian.</p></article>
+      <section class="editorial-image image-left" aria-label="Lemon tree and sea view">
+        <img src="assets/images/lemon-tree.jpg" loading="lazy" width="1440" height="1080" alt="Lemon grove villa Amalfi Coast terrace in Raito">
+        <div>
+          <p class="section-kicker" data-i18n="slow.kicker">Mediterranean stillness</p>
+          <h2 data-i18n="slow.title">A slower rhythm above the Gulf of Salerno</h2>
+          <p data-i18n="slow.copy">This is not the polished routine of a large Amalfi Coast resort. It is the quiet of a private garden, the shade of lemon leaves, the comfort of a kitchen, and terraces where the day can unfold without hurry.</p>
         </div>
+      </section>
+
+      <section class="seo-section" aria-labelledby="seo-title">
+        <div class="section-kicker" data-i18n="seo.kicker">Where to stay in Amalfi Coast</div>
+        <h2 id="seo-title" data-i18n="seo.title">Where to stay in Amalfi Coast: a private villa alternative to hotels and resorts</h2>
+        <p data-i18n="seo.copy">For travelers comparing the best hotels in Amalfi Coast, luxury hotels in Amalfi Coast Italy, boutique hotels, resorts or vacation rentals, Villa San Vito offers a different kind of stay: the privacy of a private villa, the comfort of generous indoor and outdoor spaces, and sea views over the Gulf of Salerno. It is not a hotel or an all-inclusive resort, but a Mediterranean luxury stay in Italy for those who prefer space, silence and a more personal connection with the coast.</p>
+      </section>
+
+      <section class="compare-section" aria-labelledby="compare-title">
+        <div class="section-heading compact">
+          <div>
+            <p class="section-kicker" data-i18n="compare.kicker">Private by design</p>
+            <h2 id="compare-title" data-i18n="compare.title">Not a hotel. Something more private.</h2>
+          </div>
+          <p data-i18n="compare.copy">If you are searching for family hotels in Amalfi Coast, honeymoon hotels, beachfront hotels or 5 star hotels in Amalfi Coast, Villa San Vito may appeal for a different reason: privacy. This is a private Amalfi Coast villa with sea view, terraces, a garden, lemon trees and space to live at your own pace.</p>
+        </div>
+
+        <div class="soft-card-grid">
+          <article><h3 data-i18n="compare.card1.title">More privacy than a hotel room</h3><p data-i18n="compare.card1.copy">The villa is yours to inhabit, from breakfast on the terrace to quiet evenings in the garden.</p></article>
+          <article><h3 data-i18n="compare.card2.title">More space for families and friends</h3><p data-i18n="compare.card2.copy">Three bedrooms, generous interiors and outdoor areas make it easy to share time without feeling crowded.</p></article>
+          <article><h3 data-i18n="compare.card3.title">A quieter base near iconic towns</h3><p data-i18n="compare.card3.copy">Return to Raito after exploring Amalfi, Ravello, Positano, Vietri sul Mare and Salerno.</p></article>
+          <article><h3 data-i18n="compare.card4.title">A sea-view villa with garden terraces</h3><p data-i18n="compare.card4.copy">A calm alternative to crowded Amalfi Coast resorts, with outdoor spaces and Gulf views.</p></article>
+          <article><h3 data-i18n="compare.card5.title">A local feeling away from the busiest areas</h3><p data-i18n="compare.card5.copy">Stay above Vietri sul Mare and experience the coast from a more intimate village setting.</p></article>
+        </div>
+      </section>
+
+      <section class="audience-section" aria-labelledby="audience-title">
+        <div>
+          <p class="section-kicker" data-i18n="audience.kicker">For couples, families and slow travelers</p>
+          <h2 id="audience-title" data-i18n="audience.title">A coastal villa for the way you actually want to travel</h2>
+        </div>
+        <p data-i18n="audience.copy">Couples looking beyond Amalfi Coast honeymoon hotels will find quiet terraces, sea views and intimate corners. Families comparing family hotels in Amalfi Coast will find three bedrooms, a full kitchen, private parking and space to share. And travelers dreaming of a wellness retreat Amalfi Coast experience will find something simple but rare: silence, lemon trees, open air and time.</p>
       </section>
 
       <section class="section villa" id="villa" aria-labelledby="villa-title">
         <div class="section-heading">
           <div>
-            <div class="section-kicker" data-i18n="villa.kicker">The villa</div>
-            <h2 id="villa-title" data-i18n="villa.title">Three levels designed for privacy and shared time</h2>
+            <p class="section-kicker" data-i18n="villa.kicker">The villa</p>
+            <h2 id="villa-title" data-i18n="villa.title">Three levels designed for privacy, views and shared time</h2>
           </div>
           <p data-i18n="villa.copy">Villa San Vito gives each part of the stay its own rhythm: open living areas on the ground floor, restful bedrooms above, and terraces that keep the sea in view.</p>
+        </div>
+
+        <div class="villa-feature-grid">
+          <article><strong>3</strong><span data-i18n="villa.stat.levels">levels</span></article>
+          <article><strong>3</strong><span data-i18n="villa.stat.bedrooms">bedrooms</span></article>
+          <article><strong>5</strong><span data-i18n="villa.stat.beds">beds</span></article>
+          <article><strong>3</strong><span data-i18n="villa.stat.bathrooms">bathrooms</span></article>
+          <article><strong>Sea</strong><span data-i18n="villa.stat.views">Gulf views</span></article>
+          <article><strong>Garden</strong><span data-i18n="villa.stat.garden">private outdoor space</span></article>
+          <article><strong>WiFi</strong><span data-i18n="villa.stat.wifi">fast connection</span></article>
+          <article><strong>Parking</strong><span data-i18n="villa.stat.parking">inside the property</span></article>
         </div>
 
         <div class="level-list">
@@ -235,13 +221,74 @@
         </div>
       </section>
 
+      <section class="section gallery-section" id="views" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker" data-i18n="gallery.kicker">Views and interiors</p>
+            <h2 id="gallery-title" data-i18n="gallery.title">Mediterranean light, garden terraces and generous interiors</h2>
+          </div>
+          <p data-i18n="gallery.note">Selected scenes from the terraces, garden, interiors and coastal setting.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <button class="gallery-item hero-tile" type="button" data-full="assets/images/terrace-gulf-view.jpg">
+            <img src="assets/images/terrace-gulf-view.jpg" loading="lazy" width="1440" height="1080" alt="Sea view terrace near Vietri sul Mare Amalfi Coast">
+            <span data-i18n="gallery.item1">Terrace and sea view</span>
+          </button>
+          <button class="gallery-item tall" type="button" data-full="assets/images/private-garden.jpg">
+            <img src="assets/images/private-garden.jpg" loading="lazy" width="1440" height="1080" alt="Private garden at Villa San Vito Amalfi Coast vacation rental">
+            <span data-i18n="gallery.item2">Private garden</span>
+          </button>
+          <button class="gallery-item" type="button" data-full="assets/images/lemon-tree.jpg">
+            <img src="assets/images/lemon-tree.jpg" loading="lazy" width="1440" height="1080" alt="Lemon grove villa Amalfi Coast terrace in Raito">
+            <span data-i18n="gallery.item3">Lemon tree</span>
+          </button>
+          <button class="gallery-item" type="button" data-full="assets/images/kitchen-tiles.jpg">
+            <img src="assets/images/kitchen-tiles.jpg" loading="lazy" width="720" height="540" alt="Fully equipped kitchen in a private villa Amalfi Coast stay">
+            <span data-i18n="gallery.item4">Kitchen</span>
+          </button>
+          <button class="gallery-item wide" type="button" data-full="assets/images/dining-table.jpg">
+            <img src="assets/images/dining-table.jpg" loading="lazy" width="1200" height="900" alt="Mediterranean luxury stay Italy dining table at Villa San Vito">
+            <span data-i18n="gallery.item5">Dining details</span>
+          </button>
+          <button class="gallery-item" type="button" data-full="assets/images/table-setting.jpg">
+            <img src="assets/images/table-setting.jpg" loading="lazy" width="1200" height="900" alt="Italian coastal villa for couples table setting detail">
+            <span data-i18n="gallery.item6">Table setting</span>
+          </button>
+          <button class="gallery-item" type="button" data-full="assets/images/main-bedroom.jpg">
+            <img src="assets/images/main-bedroom.jpg" loading="lazy" width="1440" height="1080" alt="Main bedroom in Villa San Vito private Amalfi Coast villa">
+            <span data-i18n="gallery.item7">Main bedroom</span>
+          </button>
+          <button class="gallery-item" type="button" data-full="assets/images/twin-bedroom.jpg">
+            <img src="assets/images/twin-bedroom.jpg" loading="lazy" width="1440" height="1080" alt="Bedroom for families at Villa San Vito Amalfi Coast vacation rental">
+            <span data-i18n="gallery.item8">Single bedrooms</span>
+          </button>
+          <button class="gallery-item tall" type="button" data-full="assets/images/interior-arch.jpg">
+            <img src="assets/images/interior-arch.jpg" loading="lazy" width="720" height="960" alt="Historic villa interior arch and spiral staircase in Raito">
+            <span data-i18n="gallery.item9">Interior arch</span>
+          </button>
+          <button class="gallery-item" type="button" data-full="assets/images/living-room.jpg">
+            <img src="assets/images/living-room.jpg" loading="lazy" width="1200" height="900" alt="Living room in Mediterranean luxury stay Italy at Villa San Vito">
+            <span data-i18n="gallery.item10">Living room</span>
+          </button>
+          <button class="gallery-item" type="button" data-full="assets/images/sitting-room.jpg">
+            <img src="assets/images/sitting-room.jpg" loading="lazy" width="1440" height="1080" alt="Sitting room with Amalfi Coast map in private villa">
+            <span data-i18n="gallery.item11">Sitting room</span>
+          </button>
+          <button class="gallery-item wide" type="button" data-full="assets/images/villa-sign.jpg">
+            <img src="assets/images/villa-sign.jpg" loading="lazy" width="1440" height="1080" alt="Villa San Vito ceramic sign in Raito Amalfi Coast">
+            <span data-i18n="gallery.item12">Villa details</span>
+          </button>
+        </div>
+      </section>
+
       <section class="section location" id="location" aria-labelledby="location-title">
         <div class="location-content">
           <div>
-            <div class="section-kicker" data-i18n="location.kicker">Location</div>
+            <p class="section-kicker" data-i18n="location.kicker">Location</p>
             <h2 id="location-title" data-i18n="location.title">Raito, above Vietri sul Mare</h2>
             <p data-i18n="location.copy">Raito is a quiet village above Vietri sul Mare, known for its views, calm atmosphere and proximity to Salerno. From here, guests can explore the Amalfi Coast while returning to a private and peaceful home base at the end of the day.</p>
-            <p class="muted" data-i18n="location.note">The website can show the general area only. Exact address details may be handled through the booking platform.</p>
+            <p class="muted" data-i18n="location.note">The website shows the general area. Exact address details can be managed through the booking platform.</p>
           </div>
 
           <div class="map-placeholder" aria-label="Map of Raito, Vietri sul Mare">
@@ -252,13 +299,13 @@
       </section>
 
       <section class="section nearby" aria-labelledby="nearby-title">
-        <div class="section-kicker" data-i18n="nearby.kicker">Explore nearby</div>
-        <h2 id="nearby-title" data-i18n="nearby.title">Coastal towns, culture and archaeology within reach</h2>
+        <p class="section-kicker" data-i18n="nearby.kicker">Explore the coast</p>
+        <h2 id="nearby-title" data-i18n="nearby.title">Classic Amalfi Coast stops within reach</h2>
 
         <div class="nearby-grid">
           <article><h3>Vietri sul Mare</h3><p data-i18n="nearby.vietri">A nearby coastal town known for ceramics, sea views and relaxed local character.</p></article>
           <article><h3>Salerno</h3><p data-i18n="nearby.salerno">A practical gateway for transport, dining and waterfront walks near the Amalfi Coast.</p></article>
-          <article><h3>Amalfi</h3><p data-i18n="nearby.amalfi">One of the coast's signature towns, suitable for a scenic day trip.</p></article>
+          <article><h3>Amalfi</h3><p data-i18n="nearby.amalfi">A classic Amalfi Coast stop and a beautiful day trip from the villa.</p></article>
           <article><h3>Ravello</h3><p data-i18n="nearby.ravello">A refined hill town loved for gardens, views and cultural heritage.</p></article>
           <article><h3>Positano</h3><p data-i18n="nearby.positano">A famous vertical seaside village reachable as part of a coastal itinerary.</p></article>
           <article><h3>Pompeii</h3><p data-i18n="nearby.pompeii">An essential archaeological site for travelers interested in Roman history.</p></article>
@@ -269,10 +316,10 @@
       <section class="section booking" id="book" aria-labelledby="booking-title">
         <div class="section-heading">
           <div>
-            <div class="section-kicker" data-i18n="booking.kicker">Reservations</div>
-            <h2 id="booking-title" data-i18n="booking.title">Book through your preferred platform</h2>
+            <p class="section-kicker" data-i18n="booking.kicker">Reservations</p>
+            <h2 id="booking-title" data-i18n="booking.title">Book Villa San Vito through your preferred platform</h2>
           </div>
-          <p data-i18n="booking.copy">Choose the marketplace you already trust. Prices, availability and cancellation policies are confirmed directly on each platform.</p>
+          <p data-i18n="booking.copy">Reservations, payments, availability and cancellation policies are managed directly by Airbnb, Booking and Vrbo. Choose the platform you prefer and complete your reservation securely there.</p>
         </div>
 
         <div class="booking-grid">
@@ -293,12 +340,12 @@
           </article>
         </div>
 
-        <p class="reservation-disclaimer" data-i18n="booking.disclaimer">All reservations, payments, availability and cancellation policies are managed directly by Airbnb, Booking or Vrbo. This website is an informational showcase for Villa San Vito.</p>
+        <p class="reservation-disclaimer" data-i18n="booking.disclaimer">This website is an informational showcase for Villa San Vito. Direct bookings are not processed here.</p>
       </section>
 
       <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
         <div>
-          <div class="section-kicker" data-i18n="reviews.kicker">Guest reviews</div>
+          <p class="section-kicker" data-i18n="reviews.kicker">Guest reviews</p>
           <h2 id="reviews-title" data-i18n="reviews.title">Trusted stays, verified platform reviews</h2>
         </div>
 
@@ -318,41 +365,41 @@
       </section>
 
       <section class="section faq" aria-labelledby="faq-title">
-        <div class="section-kicker" data-i18n="faq.kicker">Questions</div>
+        <p class="section-kicker" data-i18n="faq.kicker">Questions</p>
         <h2 id="faq-title" data-i18n="faq.title">Frequently asked questions</h2>
 
         <div class="faq-list">
           <details>
-            <summary data-i18n="faq.1.q">Can I book directly on this website?</summary>
-            <p data-i18n="faq.1.a">No. Reservations are handled exclusively through Airbnb, Booking or Vrbo.</p>
+            <summary data-i18n="faq.1.q">Is Villa San Vito one of the best places to stay in Amalfi Coast?</summary>
+            <p data-i18n="faq.1.a">Villa San Vito is a private vacation rental in Raito, ideal for travelers wondering where to stay in Amalfi Coast and looking for sea views, privacy and more space than a traditional hotel room.</p>
           </details>
           <details>
-            <summary data-i18n="faq.2.q">Which platform should I use to reserve?</summary>
-            <p data-i18n="faq.2.a">You can choose the platform you prefer. Availability, prices and cancellation policies may vary by platform.</p>
+            <summary data-i18n="faq.2.q">Is Villa San Vito a hotel or a private villa?</summary>
+            <p data-i18n="faq.2.a">Villa San Vito is not a hotel. It is a private villa Amalfi Coast rental available through Airbnb, Booking and Vrbo.</p>
           </details>
           <details>
-            <summary data-i18n="faq.3.q">Is Villa San Vito suitable for families?</summary>
-            <p data-i18n="faq.3.a">Yes. The villa can host up to 6 guests and offers multiple bedrooms, outdoor areas and a fully equipped kitchen.</p>
+            <summary data-i18n="faq.3.q">Is this a good alternative to luxury hotels in Amalfi Coast Italy?</summary>
+            <p data-i18n="faq.3.a">Yes, for travelers who prefer privacy, terraces, a garden and a local atmosphere instead of hotel services, Villa San Vito can be a strong alternative to luxury hotels Amalfi Coast Italy.</p>
           </details>
           <details>
-            <summary data-i18n="faq.4.q">Does the villa have parking?</summary>
-            <p data-i18n="faq.4.a">Yes. Private outdoor parking is available inside the property.</p>
+            <summary data-i18n="faq.4.q">Is Villa San Vito suitable for families?</summary>
+            <p data-i18n="faq.4.a">Yes. Families comparing family hotels Amalfi Coast may appreciate the villa’s three bedrooms, full kitchen, parking, outdoor areas and space for up to six guests.</p>
           </details>
           <details>
-            <summary data-i18n="faq.5.q">Is there WiFi?</summary>
-            <p data-i18n="faq.5.a">Yes. The villa offers fast WiFi and an extender for outdoor areas.</p>
+            <summary data-i18n="faq.5.q">Is Villa San Vito good for couples?</summary>
+            <p data-i18n="faq.5.a">Yes. Couples looking for an Italian coastal villa for couples or an alternative to Amalfi Coast honeymoon hotels may enjoy the quiet terraces, sea views and private setting.</p>
           </details>
           <details>
-            <summary data-i18n="faq.6.q">What time are check-in and check-out?</summary>
-            <p data-i18n="faq.6.a">Check-in is from 3:00 PM to 5:00 PM. Check-out is before 11:00 AM.</p>
+            <summary data-i18n="faq.6.q">Is Villa San Vito beachfront?</summary>
+            <p data-i18n="faq.6.a">Villa San Vito is not described as a beachfront hotel. It is a sea-view villa in Raito, above Vietri sul Mare, with views toward the Gulf of Salerno.</p>
           </details>
           <details>
-            <summary data-i18n="faq.7.q">Is the exact address public?</summary>
-            <p data-i18n="faq.7.a">The website may show the general area. Exact details can be managed through the booking platform.</p>
+            <summary data-i18n="faq.7.q">Is Villa San Vito all inclusive?</summary>
+            <p data-i18n="faq.7.a">No. Villa San Vito is not an all inclusive Amalfi Coast resort. It is a private vacation rental with kitchen, garden, terraces and booking through external platforms.</p>
           </details>
           <details>
-            <summary data-i18n="faq.8.q">Are cancellation policies the same on every platform?</summary>
-            <p data-i18n="faq.8.a">No. Guests should check the final cancellation policy on the platform they use to book.</p>
+            <summary data-i18n="faq.8.q">Can I book directly on this website?</summary>
+            <p data-i18n="faq.8.a">No. All reservations are completed through Airbnb, Booking or Vrbo.</p>
           </details>
         </div>
       </section>

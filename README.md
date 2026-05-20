@@ -90,7 +90,7 @@ Reemplaza el valor de `src` por otra URL embed de Google Maps si quieres cambiar
 
 Antes de publicar, revisa en `index.html`:
 
-- `<link rel="canonical" href="https://example.com/">`
+- Canonical URL: agrega un `<link rel="canonical" href="URL_FINAL">` cuando tengas el dominio final.
 - Open Graph image path
 - JSON-LD `image`
 - Cualquier URL pública final del dominio
