@@ -40,6 +40,7 @@ Nombres recomendados:
 - `interior-arch.jpg`
 - `sitting-room.jpg`
 - `villa-sign.jpg`
+- `vietri-sul-mare-area.jpg`
 
 Puedes hacerlo de dos formas:
 
@@ -53,6 +54,8 @@ Tamaños sugeridos:
 - Open Graph: actualmente usa `hero-terrace-sea-view.jpg`; puedes crear una versión 1200 x 630 px si quieres más control.
 
 Mantén siempre textos `alt` descriptivos en `index.html`.
+
+Crédito de imagen externa: `vietri-sul-mare-area.jpg` proviene de Wikimedia Commons, archivo "Vietri sul Mare (Italy).jpg", autor Bernard Gagnon, licencia CC BY-SA 4.0. Si reemplazas esa foto por una imagen de banco propia, puedes eliminar esta nota.
 
 ## Cambiar links de reserva
 
