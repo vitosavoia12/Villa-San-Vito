@@ -40,7 +40,7 @@ Nombres recomendados:
 - `interior-arch.jpg`
 - `sitting-room.jpg`
 - `villa-sign.jpg`
-- `vietri-sul-mare-area.jpg`
+- `vietri-coast-view.jpg`
 
 Puedes hacerlo de dos formas:
 
@@ -55,7 +55,7 @@ Tamaños sugeridos:
 
 Mantén siempre textos `alt` descriptivos en `index.html`.
 
-Crédito de imagen externa: `vietri-sul-mare-area.jpg` proviene de Wikimedia Commons, archivo "Vietri sul Mare (Italy).jpg", autor Bernard Gagnon, licencia CC BY-SA 4.0. Si reemplazas esa foto por una imagen de banco propia, puedes eliminar esta nota.
+Crédito de imagen externa: `vietri-coast-view.jpg` proviene de Wikimedia Commons, archivo "Vietri sul Mare (Italy).jpg", autor Bernard Gagnon, licencia CC BY-SA 4.0. Si reemplazas esa foto por una imagen de banco propia, puedes eliminar esta nota.
 
 ## Cambiar links de reserva
 
