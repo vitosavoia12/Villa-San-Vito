@@ -70,14 +70,20 @@ Todos los links externos deben conservar:
 target="_blank" rel="noopener noreferrer"
 ```
 
-## Cambiar email
+## Cambiar crédito del footer
 
-Busca `[CONTACT_EMAIL]` y `CONTACT_EMAIL` en `index.html`.
-
-Reemplaza ambos por el email público que quieras mostrar, por ejemplo:
+El footer incluye:
 
 ```html
-<a href="mailto:hello@example.com">hello@example.com</a>
+Powered by <a href="mailto:vitosavoia12@gmail.com">Vito Savoia</a>
+```
+
+Para cambiar el crédito o el email, busca `footer-credit` en `index.html`.
+
+Ejemplo:
+
+```html
+Powered by <a href="mailto:hello@example.com">Nombre Apellido</a>
 ```
 
 ## Agregar Google Maps

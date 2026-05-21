@@ -343,6 +343,20 @@ summary:focus-visible {
   font-weight: 800;
 }
 
+.arrival-visual {
+  width: min(1180px, calc(100% - 2rem));
+  margin: clamp(2rem, 5vw, 4rem) auto 0;
+}
+
+.arrival-visual img {
+  display: block;
+  width: 100%;
+  max-height: 34rem;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: var(--shadow);
+}
+
 .section,
 .seo-section,
 .compare-section,
@@ -483,6 +497,13 @@ summary:focus-visible {
 .section-heading > p {
   margin: 0;
   max-width: 470px;
+}
+
+.section-intro {
+  max-width: 720px;
+  margin: 0.9rem 0 2rem;
+  font-size: clamp(1.05rem, 2vw, 1.22rem);
+  line-height: 1.7;
 }
 
 .section-heading.compact {
@@ -803,6 +824,13 @@ details p {
   color: rgba(255, 255, 255, 0.78);
 }
 
+.footer-credit a {
+  color: #fff;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -965,6 +993,10 @@ details p {
 
   .trust-list {
     display: grid;
+  }
+
+  .arrival-visual img {
+    max-height: 22rem;
   }
 }
 
