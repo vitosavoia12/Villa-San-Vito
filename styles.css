@@ -207,11 +207,12 @@ a {
 
 .eyebrow,
 .section-kicker {
-  margin: 0 0 0.75rem;
-  color: var(--gold);
-  font-size: 0.78rem;
+  margin: 0 0 0.9rem;
+  color: #8a4d2f;
+  font-size: clamp(0.88rem, 1.2vw, 1rem);
   font-weight: 800;
   letter-spacing: 0;
+  line-height: 1.35;
   text-transform: uppercase;
 }
 
@@ -230,9 +231,10 @@ a {
 }
 
 .hero h1 {
-  max-width: 900px;
-  font-size: clamp(4rem, 13vw, 9.5rem);
-  line-height: 0.88;
+  max-width: 1100px;
+  font-size: clamp(3.05rem, 10vw, 8.3rem);
+  line-height: 0.92;
+  white-space: nowrap;
 }
 
 .hero-copy {
@@ -430,7 +432,7 @@ summary:focus-visible {
 .editorial-image h2 {
   max-width: 920px;
   color: var(--sea-deep);
-  font-size: clamp(1.9rem, 4.5vw, 3.7rem);
+  font-size: clamp(1.75rem, 3.7vw, 3.1rem);
 }
 
 .section p,
@@ -455,7 +457,8 @@ summary:focus-visible {
 .story-frame h2 {
   max-width: 820px;
   color: var(--sea-deep);
-  font-size: clamp(1.95rem, 4.6vw, 3.8rem);
+  font-size: clamp(1.75rem, 4.2vw, 3.25rem);
+  white-space: pre-line;
 }
 
 .ornament {
@@ -532,6 +535,10 @@ summary:focus-visible {
 .compare-section h2,
 .compare-section p {
   color: #fff;
+}
+
+.compare-section .section-kicker {
+  color: #f1d394;
 }
 
 .compare-section .section-heading > p {
@@ -1057,7 +1064,7 @@ details p {
   }
 
   .hero h1 {
-    font-size: 3.7rem;
+    font-size: clamp(2.65rem, 14vw, 3.35rem);
   }
 
   .hero-actions .button {
