@@ -98,7 +98,8 @@ a {
 
 .main-nav a,
 .footer-links a,
-.platform-links a {
+.platform-links a,
+.instagram-note a {
   text-decoration: none;
 }
 
@@ -107,7 +108,8 @@ a {
 }
 
 .main-nav a:hover,
-.footer-links a:hover {
+.footer-links a:hover,
+.instagram-note a:hover {
   text-decoration: underline;
   text-underline-offset: 0.28em;
 }
@@ -198,6 +200,7 @@ a {
 .quiet-intro h2,
 .image-story h2,
 .day-notes h2,
+.photo-essay h2,
 .reservation-section h2 {
   margin: 0;
   font-family: var(--serif);
@@ -263,9 +266,45 @@ summary:focus-visible {
 .image-story,
 .day-notes,
 .map-section,
-.reservation-section {
+.reservation-section,
+.photo-essay,
+.section-marker {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
+}
+
+.section-marker {
+  display: grid;
+  grid-template-columns: minmax(1.5rem, 1fr) auto minmax(1.5rem, 1fr);
+  gap: clamp(0.8rem, 2vw, 1.4rem);
+  align-items: center;
+  padding: clamp(1.1rem, 3vw, 2rem) 0 0;
+  color: rgba(168, 93, 66, 0.72);
+}
+
+.section-marker::before,
+.section-marker::after {
+  content: "";
+  height: 1px;
+  background: var(--line);
+}
+
+.section-marker svg {
+  width: clamp(4.8rem, 11vw, 7rem);
+  height: auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.section-marker + .heritage-section,
+.section-marker + .image-story,
+.section-marker + .day-notes,
+.section-marker + .map-section,
+.section-marker + .reservation-section {
+  border-top: 0;
 }
 
 .quiet-intro {
@@ -360,6 +399,7 @@ summary:focus-visible {
 
 .image-story h2,
 .day-notes h2,
+.photo-essay h2,
 .reservation-section h2 {
   max-width: 720px;
   color: var(--sea);
@@ -408,6 +448,47 @@ summary:focus-visible {
 .note-list span {
   max-width: 460px;
   color: var(--muted);
+}
+
+.photo-essay {
+  padding: clamp(3rem, 7vw, 5rem) 0;
+}
+
+.photo-essay-intro {
+  max-width: 720px;
+  margin-bottom: clamp(2rem, 5vw, 3.6rem);
+}
+
+.photo-essay-intro p:not(.section-kicker) {
+  max-width: 560px;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: clamp(1.02rem, 1.7vw, 1.18rem);
+}
+
+.photo-grid {
+  column-count: 3;
+  column-gap: clamp(0.85rem, 2vw, 1.35rem);
+}
+
+.photo-card {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 clamp(1rem, 2.2vw, 1.5rem);
+  break-inside: avoid;
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  background: #eadfcd;
+}
+
+.photo-card figcaption {
+  margin-top: 0.58rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-style: italic;
 }
 
 .image-story-reverse {
@@ -490,6 +571,15 @@ summary:focus-visible {
   color: var(--clay);
 }
 
+.instagram-note {
+  font-size: 0.95rem;
+}
+
+.instagram-note a {
+  color: var(--clay);
+  font-weight: 850;
+}
+
 .site-footer {
   display: grid;
   gap: 1.5rem;
@@ -563,6 +653,12 @@ summary:focus-visible {
   }
 }
 
+@media (max-width: 860px) {
+  .photo-grid {
+    column-count: 2;
+  }
+}
+
 @media (max-width: 560px) {
   .site-header {
     align-items: start;
@@ -588,6 +684,14 @@ summary:focus-visible {
 
   .image-story img {
     aspect-ratio: 1 / 1.12;
+  }
+
+  .photo-grid {
+    column-count: 1;
+  }
+
+  .section-marker {
+    width: min(100%, calc(100% - 2rem));
   }
 }
 
