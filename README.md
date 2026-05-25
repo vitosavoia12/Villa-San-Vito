@@ -4,6 +4,12 @@ Landing page estática y de bajo mantenimiento para Villa San Vito, ubicada en R
 
 El sitio es únicamente informativo. No gestiona reservas directas, pagos, datos de tarjeta, calendarios de disponibilidad, usuarios ni panel de administración. Los botones de reserva derivan a Airbnb, Booking o Vrbo.
 
+## Criterio editorial
+
+La landing está diseñada para sentirse más cercana a una pieza editorial mediterránea que a una ficha de reserva. Prioriza atmósfera, paisaje, terrazas, jardín, vistas, detalles y ritmo lento.
+
+Evita volver a poner como eje principal camas, baños, números, fichas técnicas o grillas extensas de interiores. Los detalles prácticos deben quedar resumidos y derivar a Airbnb, Booking y Vrbo.
+
 ## Estructura
 
 ```text
@@ -59,7 +65,7 @@ Tamaños sugeridos:
 
 Mantén siempre textos `alt` descriptivos en `index.html`.
 
-La galeria actual esta pensada como seleccion editorial: pocos sectores completos y mas detalles de la villa. Si agregas nuevas fotos, intenta conservar ese criterio para que no parezca una ficha inmobiliaria.
+La galeria actual esta pensada como seleccion editorial: vistas, terraza, jardin, mesa, azulejos y detalles. Si agregas nuevas fotos, intenta conservar ese criterio para que no parezca una ficha inmobiliaria ni una ficha tipo Booking.
 
 ## Cambiar links de reserva
 
