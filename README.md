@@ -31,26 +31,14 @@ Evita volver a poner como eje principal camas, baños, números, fichas técnica
 
 El sitio ya usa fotos reales copiadas en `assets/images/`. Quedan algunos SVG como respaldo o placeholders, pero la landing principal apunta a archivos `.jpg`.
 
-Nombres recomendados:
+Imagenes activas en la landing:
 
 - `hero-terrace-sea-view.jpg`
-- `terrace-gulf-view.jpg`
 - `private-garden.jpg`
 - `lemon-tree.jpg`
 - `raito-history.jpg`
-- `mansarda-detail.jpg`
-- `bedroom-garden.jpg`
-- `bedroom-sea.jpg`
-- `mansarda-bedroom.jpg`
-- `living-room.jpg`
-- `kitchen-tiles.jpg`
-- `dining-table.jpg`
-- `table-setting.jpg`
-- `main-bedroom.jpg`
-- `twin-bedroom.jpg`
-- `interior-arch.jpg`
-- `sitting-room.jpg`
-- `villa-sign.jpg`
+
+El resto de imagenes en `assets/images/` queda disponible como archivo de respaldo, pero no forma parte de la landing actual.
 
 Puedes hacerlo de dos formas:
 
@@ -60,12 +48,12 @@ Puedes hacerlo de dos formas:
 Tamaños sugeridos:
 
 - Hero: 1600 a 2200 px de ancho.
-- Galería: 1000 a 1600 px de ancho.
+- Secciones editoriales: 1200 a 1800 px de ancho.
 - Open Graph: actualmente usa `hero-terrace-sea-view.jpg`; puedes crear una versión 1200 x 630 px si quieres más control.
 
 Mantén siempre textos `alt` descriptivos en `index.html`.
 
-La galeria actual esta pensada como seleccion editorial: vistas, terraza, jardin, mesa, azulejos y detalles. Si agregas nuevas fotos, intenta conservar ese criterio para que no parezca una ficha inmobiliaria ni una ficha tipo Booking.
+La landing actual usa pocas imagenes grandes: vista, historia de Raito, jardin y limonero. Si agregas nuevas fotos, intenta conservar ese criterio para que no parezca una ficha inmobiliaria ni una ficha tipo Booking.
 
 ## Cambiar links de reserva
 
@@ -98,12 +86,6 @@ Ejemplo:
 ```html
 Powered by <a href="mailto:hello@example.com">Nombre Apellido</a>
 ```
-
-## Agregar Google Maps
-
-Busca el iframe dentro de la sección `Location` en `index.html`.
-
-Reemplaza el valor de `src` por otra URL embed de Google Maps si quieres cambiar la zona mostrada. El sitio ya incluye un mapa general de Raito, Vietri sul Mare.
 
 ## SEO
 

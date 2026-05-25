@@ -259,6 +259,7 @@ summary:focus-visible {
 }
 
 .quiet-intro,
+.heritage-section,
 .image-story,
 .day-notes,
 .reservation-section {
@@ -285,6 +286,48 @@ summary:focus-visible {
   font-family: var(--serif);
   font-size: clamp(1.2rem, 2.2vw, 1.55rem);
   line-height: 1.55;
+}
+
+.heritage-section {
+  display: grid;
+  gap: clamp(1.8rem, 4vw, 3rem);
+  align-items: end;
+  padding: clamp(3rem, 7vw, 5.5rem) 0;
+  border-top: 1px solid var(--line);
+}
+
+.heritage-section figure {
+  margin: 0;
+}
+
+.heritage-section img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+.heritage-section figcaption {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-style: italic;
+}
+
+.heritage-section h2 {
+  margin: 0;
+  max-width: 760px;
+  color: var(--sea);
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4.3vw, 3.7rem);
+  line-height: 1.02;
+}
+
+.heritage-section p:not(.section-kicker) {
+  max-width: 620px;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: clamp(1.02rem, 1.7vw, 1.18rem);
 }
 
 .image-story {
@@ -444,6 +487,10 @@ summary:focus-visible {
 
   .image-story {
     grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.75fr);
+  }
+
+  .heritage-section {
+    grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.72fr);
   }
 
   .image-story-reverse figure {
