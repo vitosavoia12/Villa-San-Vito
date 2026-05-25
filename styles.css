@@ -210,8 +210,9 @@ a {
 }
 
 .hero h1 {
-  max-width: 980px;
-  font-size: clamp(3.3rem, 11vw, 8.8rem);
+  max-width: 1040px;
+  font-size: clamp(3rem, 8vw, 6.9rem);
+  text-wrap: balance;
 }
 
 .hero-copy {
@@ -345,6 +346,7 @@ summary:focus-visible {
   max-width: 100%;
   max-height: 540px;
   margin: 0 auto;
+  border-radius: 8px;
   background: #eadfcd;
 }
 
@@ -387,6 +389,7 @@ summary:focus-visible {
   width: 100%;
   aspect-ratio: 4 / 5;
   max-height: 720px;
+  border-radius: 8px;
   object-fit: cover;
 }
 
@@ -481,6 +484,7 @@ summary:focus-visible {
 .photo-card img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
   background: #eadfcd;
 }
 
@@ -674,7 +678,7 @@ summary:focus-visible {
   }
 
   .hero h1 {
-    font-size: clamp(3rem, 18vw, 4.35rem);
+    font-size: clamp(2.65rem, 13vw, 3.8rem);
   }
 
   .hero-actions .button,
