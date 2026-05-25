@@ -262,6 +262,7 @@ summary:focus-visible {
 .heritage-section,
 .image-story,
 .day-notes,
+.map-section,
 .reservation-section {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
@@ -291,7 +292,7 @@ summary:focus-visible {
 .heritage-section {
   display: grid;
   gap: clamp(1.8rem, 4vw, 3rem);
-  align-items: end;
+  align-items: center;
   padding: clamp(3rem, 7vw, 5.5rem) 0;
   border-top: 1px solid var(--line);
 }
@@ -301,10 +302,11 @@ summary:focus-visible {
 }
 
 .heritage-section img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  object-position: center;
+  width: auto;
+  max-width: 100%;
+  max-height: 540px;
+  margin: 0 auto;
+  background: #eadfcd;
 }
 
 .heritage-section figcaption {
@@ -371,6 +373,10 @@ summary:focus-visible {
   font-size: clamp(1.04rem, 1.8vw, 1.22rem);
 }
 
+.image-story p + p {
+  margin-top: 0.8rem;
+}
+
 .day-notes {
   padding: clamp(3.5rem, 8vw, 6rem) 0;
   border-top: 1px solid var(--line);
@@ -410,6 +416,46 @@ summary:focus-visible {
   max-width: none;
   padding-left: max(1rem, calc((100vw - 1120px) / 2));
   padding-right: max(1rem, calc((100vw - 1120px) / 2));
+}
+
+.map-section {
+  display: grid;
+  gap: clamp(1.8rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(3.5rem, 8vw, 6rem) 0;
+  border-top: 1px solid var(--line);
+}
+
+.map-section h2 {
+  margin: 0;
+  max-width: 720px;
+  color: var(--sea);
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4.3vw, 3.7rem);
+  line-height: 1.02;
+}
+
+.map-section p:not(.section-kicker) {
+  max-width: 520px;
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: clamp(1.02rem, 1.7vw, 1.18rem);
+}
+
+.map-frame {
+  position: relative;
+  min-height: 25rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--paper-soft);
+}
+
+.map-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .reservation-section {
@@ -490,7 +536,11 @@ summary:focus-visible {
   }
 
   .heritage-section {
-    grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.72fr);
+    grid-template-columns: minmax(300px, 0.82fr) minmax(0, 1fr);
+  }
+
+  .map-section {
+    grid-template-columns: minmax(0, 0.72fr) minmax(320px, 1fr);
   }
 
   .image-story-reverse figure {

@@ -87,6 +87,12 @@ Ejemplo:
 Powered by <a href="mailto:hello@example.com">Nombre Apellido</a>
 ```
 
+## Cambiar Google Maps
+
+Busca el iframe dentro de la sección `Location` en `index.html`.
+
+Reemplaza el valor de `src` por otra URL embed de Google Maps si quieres cambiar la zona mostrada. El sitio muestra el área general de Raito, Vietri sul Mare; no publica la dirección exacta.
+
 ## SEO
 
 Antes de publicar, revisa en `index.html`:
