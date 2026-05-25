@@ -31,6 +31,11 @@ Nombres recomendados:
 - `terrace-gulf-view.jpg`
 - `private-garden.jpg`
 - `lemon-tree.jpg`
+- `raito-history.jpg`
+- `mansarda-detail.jpg`
+- `bedroom-garden.jpg`
+- `bedroom-sea.jpg`
+- `mansarda-bedroom.jpg`
 - `living-room.jpg`
 - `kitchen-tiles.jpg`
 - `dining-table.jpg`
@@ -53,6 +58,8 @@ Tamaños sugeridos:
 - Open Graph: actualmente usa `hero-terrace-sea-view.jpg`; puedes crear una versión 1200 x 630 px si quieres más control.
 
 Mantén siempre textos `alt` descriptivos en `index.html`.
+
+La galeria actual esta pensada como seleccion editorial: pocos sectores completos y mas detalles de la villa. Si agregas nuevas fotos, intenta conservar ese criterio para que no parezca una ficha inmobiliaria.
 
 ## Cambiar links de reserva
 
