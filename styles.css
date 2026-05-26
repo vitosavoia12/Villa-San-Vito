@@ -1,15 +1,16 @@
 :root {
-  --paper: #f8f3ea;
-  --paper-soft: #efe5d6;
-  --ink: #172524;
-  --muted: #6f746c;
-  --olive: #6f7652;
-  --olive-dark: #3e4a35;
-  --clay: #a85d42;
+  --paper: #f7f1e8;
+  --paper-soft: #eee4d6;
+  --ink: #172c2d;
+  --muted: #626b62;
+  --olive: #667154;
+  --olive-dark: #354331;
+  --clay: #9b5b42;
+  --gold: #c2a36d;
   --sea: #123f46;
-  --line: rgba(23, 37, 36, 0.16);
-  --serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
-  --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --line: rgba(23, 44, 45, 0.14);
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 * {
@@ -25,8 +26,11 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--sans);
-  font-size: 16px;
-  line-height: 1.65;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.76;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 img {
@@ -60,7 +64,7 @@ a {
   grid-template-columns: 1fr auto;
   gap: 0.8rem 1rem;
   align-items: center;
-  padding: 1rem clamp(1rem, 4vw, 3.25rem);
+  padding: 1.05rem clamp(1rem, 4vw, 3.25rem);
   color: #fff;
   transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
 }
@@ -75,7 +79,7 @@ a {
 .brand {
   color: inherit;
   font-family: var(--serif);
-  font-size: clamp(1.35rem, 3vw, 2rem);
+  font-size: 1.85rem;
   font-weight: 700;
   line-height: 1;
   text-decoration: none;
@@ -88,7 +92,8 @@ a {
   gap: 1.15rem;
   overflow-x: auto;
   color: inherit;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
+  font-weight: 700;
   scrollbar-width: none;
 }
 
@@ -126,7 +131,7 @@ a {
   background: transparent;
   color: inherit;
   cursor: pointer;
-  font: 800 0.72rem/1 var(--sans);
+  font: 800 0.7rem/1 var(--sans);
   padding: 0.55rem 0.6rem;
 }
 
@@ -146,7 +151,7 @@ a {
 
 .hero {
   position: relative;
-  min-height: 86svh;
+  min-height: 88svh;
   display: grid;
   align-items: end;
   overflow: hidden;
@@ -162,38 +167,39 @@ a {
 .hero > img {
   width: 100%;
   height: 100%;
+  filter: saturate(0.94) contrast(0.98);
   object-fit: cover;
 }
 
 .hero::after {
   content: "";
   background:
-    linear-gradient(180deg, rgba(12, 31, 32, 0.18), rgba(12, 31, 32, 0.08) 30%, rgba(12, 31, 32, 0.68)),
-    linear-gradient(90deg, rgba(12, 31, 32, 0.6), rgba(12, 31, 32, 0.14) 68%);
+    linear-gradient(180deg, rgba(12, 31, 32, 0.16), rgba(12, 31, 32, 0.04) 34%, rgba(12, 31, 32, 0.66)),
+    linear-gradient(90deg, rgba(12, 31, 32, 0.64), rgba(12, 31, 32, 0.12) 72%);
 }
 
 .hero-overlay {
   position: relative;
   z-index: 1;
-  width: min(1120px, calc(100% - 2rem));
+  width: min(1060px, calc(100% - 2rem));
   margin: 0 auto;
-  padding: 9rem 0 clamp(2.7rem, 7vh, 5rem);
+  padding: 9rem 0 clamp(3.2rem, 8vh, 5.8rem);
   color: #fff;
 }
 
 .eyebrow,
 .section-kicker {
-  margin: 0 0 0.8rem;
+  margin: 0 0 0.9rem;
   color: var(--clay);
-  font-size: clamp(0.78rem, 1vw, 0.9rem);
-  font-weight: 850;
+  font-size: 0.78rem;
+  font-weight: 800;
   letter-spacing: 0;
   line-height: 1.35;
   text-transform: uppercase;
 }
 
 .hero .eyebrow {
-  color: #e2b487;
+  color: #e4bd86;
 }
 
 .hero h1,
@@ -206,46 +212,50 @@ a {
   font-family: var(--serif);
   font-weight: 700;
   letter-spacing: 0;
-  line-height: 1.02;
-}
-
-.hero h1 {
-  max-width: 1040px;
-  font-size: clamp(3rem, 8vw, 6.9rem);
+  line-height: 0.98;
   text-wrap: balance;
 }
 
+.hero h1 {
+  max-width: 980px;
+  font-size: 6rem;
+}
+
 .hero-copy {
-  max-width: 560px;
-  margin: 1.1rem 0 0;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: clamp(1.05rem, 2vw, 1.32rem);
+  max-width: 650px;
+  margin: 1.25rem 0 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.08rem;
+  line-height: 1.72;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 2rem;
+  gap: 0.8rem;
+  margin-top: 2.2rem;
 }
 
 .button {
   display: inline-flex;
-  min-height: 3rem;
+  min-height: 3.1rem;
   align-items: center;
   justify-content: center;
+  border-radius: 2px;
   border: 1px solid currentColor;
-  padding: 0.82rem 1.08rem;
+  padding: 0.9rem 1.18rem;
   color: inherit;
-  font-weight: 850;
+  font-size: 0.9rem;
+  font-weight: 800;
   line-height: 1.1;
   text-align: center;
   text-decoration: none;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
 }
 
 .button-primary {
-  border-color: var(--clay);
-  background: var(--clay);
+  border-color: #b87954;
+  background: #b87954;
   color: #fff;
 }
 
@@ -253,6 +263,17 @@ a {
   border-color: rgba(255, 255, 255, 0.72);
   background: rgba(255, 255, 255, 0.06);
   color: #fff;
+}
+
+.button-primary:hover {
+  border-color: #d6ac75;
+  background: #d6ac75;
+  color: var(--ink);
+}
+
+.button-light:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.14);
 }
 
 .button:focus-visible,
@@ -279,8 +300,8 @@ summary:focus-visible {
   grid-template-columns: minmax(1.5rem, 1fr) auto minmax(1.5rem, 1fr);
   gap: clamp(0.8rem, 2vw, 1.4rem);
   align-items: center;
-  padding: clamp(1.1rem, 3vw, 2rem) 0 0;
-  color: rgba(168, 93, 66, 0.72);
+  padding: clamp(1.6rem, 3.4vw, 2.6rem) 0 0;
+  color: rgba(194, 163, 109, 0.86);
 }
 
 .section-marker::before,
@@ -295,7 +316,7 @@ summary:focus-visible {
   height: auto;
   fill: none;
   stroke: currentColor;
-  stroke-width: 2;
+  stroke-width: 1.7;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -309,31 +330,30 @@ summary:focus-visible {
 }
 
 .quiet-intro {
-  padding: clamp(4.5rem, 10vw, 8rem) 0 clamp(3rem, 7vw, 5rem);
+  padding: clamp(5.5rem, 10vw, 8.5rem) 0 clamp(4rem, 8vw, 6rem);
   text-align: center;
 }
 
 .quiet-intro h2 {
-  max-width: 880px;
+  max-width: 960px;
   margin: 0 auto;
   color: var(--sea);
-  font-size: clamp(2rem, 5vw, 4.35rem);
+  font-size: 4rem;
 }
 
 .quiet-intro p:not(.section-kicker) {
-  max-width: 650px;
-  margin: 1.4rem auto 0;
+  max-width: 720px;
+  margin: 1.55rem auto 0;
   color: var(--muted);
-  font-family: var(--serif);
-  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
-  line-height: 1.55;
+  font-size: 1.12rem;
+  line-height: 1.82;
 }
 
 .heritage-section {
   display: grid;
-  gap: clamp(1.8rem, 4vw, 3rem);
+  gap: clamp(2.2rem, 5vw, 4.2rem);
   align-items: center;
-  padding: clamp(3rem, 7vw, 5.5rem) 0;
+  padding: clamp(4.2rem, 8vw, 6.2rem) 0;
   border-top: 1px solid var(--line);
 }
 
@@ -348,6 +368,7 @@ summary:focus-visible {
   margin: 0 auto;
   border-radius: 8px;
   background: #eadfcd;
+  filter: saturate(0.92) contrast(0.98);
 }
 
 .heritage-section figcaption {
@@ -362,22 +383,24 @@ summary:focus-visible {
   max-width: 760px;
   color: var(--sea);
   font-family: var(--serif);
-  font-size: clamp(2rem, 4.3vw, 3.7rem);
-  line-height: 1.02;
+  font-size: 3.35rem;
+  line-height: 1;
+  text-wrap: balance;
 }
 
 .heritage-section p:not(.section-kicker) {
   max-width: 620px;
-  margin: 1rem 0 0;
+  margin: 1.1rem 0 0;
   color: var(--muted);
-  font-size: clamp(1.02rem, 1.7vw, 1.18rem);
+  font-size: 1.05rem;
+  line-height: 1.78;
 }
 
 .image-story {
   display: grid;
-  gap: clamp(2rem, 5vw, 4rem);
+  gap: clamp(2.4rem, 5.4vw, 4.5rem);
   align-items: center;
-  padding: clamp(3rem, 7vw, 5rem) 0;
+  padding: clamp(4.2rem, 8vw, 6rem) 0;
   border-top: 1px solid var(--line);
 }
 
@@ -390,6 +413,7 @@ summary:focus-visible {
   aspect-ratio: 4 / 5;
   max-height: 720px;
   border-radius: 8px;
+  filter: saturate(0.94) contrast(0.98);
   object-fit: cover;
 }
 
@@ -406,14 +430,15 @@ summary:focus-visible {
 .reservation-section h2 {
   max-width: 720px;
   color: var(--sea);
-  font-size: clamp(2rem, 4.3vw, 3.7rem);
+  font-size: 3.35rem;
 }
 
 .image-story p:not(.section-kicker) {
-  max-width: 500px;
-  margin: 1.15rem 0 0;
+  max-width: 560px;
+  margin: 1.2rem 0 0;
   color: var(--muted);
-  font-size: clamp(1.04rem, 1.8vw, 1.22rem);
+  font-size: 1.05rem;
+  line-height: 1.78;
 }
 
 .image-story p + p {
@@ -421,7 +446,7 @@ summary:focus-visible {
 }
 
 .day-notes {
-  padding: clamp(3.5rem, 8vw, 6rem) 0;
+  padding: clamp(4.5rem, 8.5vw, 6.6rem) 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -444,7 +469,7 @@ summary:focus-visible {
 .note-list strong {
   color: var(--olive-dark);
   font-family: var(--serif);
-  font-size: clamp(1.45rem, 2.8vw, 2.1rem);
+  font-size: 1.8rem;
   line-height: 1.1;
 }
 
@@ -453,20 +478,37 @@ summary:focus-visible {
   color: var(--muted);
 }
 
+.day-copy {
+  max-width: 840px;
+  margin-top: clamp(1.7rem, 3.2vw, 2.7rem);
+}
+
+.day-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.82;
+}
+
+.day-copy p + p {
+  margin-top: 1.3rem;
+}
+
 .photo-essay {
-  padding: clamp(3rem, 7vw, 5rem) 0;
+  padding: clamp(4rem, 8vw, 6.2rem) 0;
 }
 
 .photo-essay-intro {
-  max-width: 720px;
-  margin-bottom: clamp(2rem, 5vw, 3.6rem);
+  max-width: 760px;
+  margin-bottom: clamp(2.4rem, 5.4vw, 4rem);
 }
 
 .photo-essay-intro p:not(.section-kicker) {
-  max-width: 560px;
-  margin: 1rem 0 0;
+  max-width: 650px;
+  margin: 1.12rem 0 0;
   color: var(--muted);
-  font-size: clamp(1.02rem, 1.7vw, 1.18rem);
+  font-size: 1.05rem;
+  line-height: 1.78;
 }
 
 .photo-grid {
@@ -486,6 +528,7 @@ summary:focus-visible {
   height: auto;
   border-radius: 8px;
   background: #eadfcd;
+  filter: saturate(0.93) contrast(0.98);
 }
 
 .photo-card figcaption {
@@ -505,9 +548,9 @@ summary:focus-visible {
 
 .map-section {
   display: grid;
-  gap: clamp(1.8rem, 4vw, 3rem);
+  gap: clamp(2.2rem, 5vw, 4rem);
   align-items: center;
-  padding: clamp(3.5rem, 8vw, 6rem) 0;
+  padding: clamp(4.2rem, 8vw, 6.2rem) 0;
   border-top: 1px solid var(--line);
 }
 
@@ -516,21 +559,24 @@ summary:focus-visible {
   max-width: 720px;
   color: var(--sea);
   font-family: var(--serif);
-  font-size: clamp(2rem, 4.3vw, 3.7rem);
-  line-height: 1.02;
+  font-size: 3.35rem;
+  line-height: 1;
+  text-wrap: balance;
 }
 
 .map-section p:not(.section-kicker) {
-  max-width: 520px;
-  margin: 1rem 0 0;
+  max-width: 600px;
+  margin: 1.12rem 0 0;
   color: var(--muted);
-  font-size: clamp(1.02rem, 1.7vw, 1.18rem);
+  font-size: 1.05rem;
+  line-height: 1.78;
 }
 
 .map-frame {
   position: relative;
   min-height: 25rem;
   overflow: hidden;
+  border-radius: 8px;
   border: 1px solid var(--line);
   background: var(--paper-soft);
 }
@@ -544,39 +590,45 @@ summary:focus-visible {
 }
 
 .reservation-section {
-  padding: clamp(4rem, 9vw, 7rem) 0;
+  padding: clamp(5rem, 9vw, 7.4rem) 0;
   text-align: center;
 }
 
 .reservation-section p:not(.section-kicker) {
   max-width: 560px;
-  margin: 1rem auto 0;
+  margin: 1.1rem auto 0;
   color: var(--muted);
+  line-height: 1.76;
 }
 
 .platform-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.75rem;
-  margin-top: 2rem;
+  gap: 0.85rem;
+  margin-top: 2.2rem;
 }
 
 .platform-links a {
-  min-width: 9rem;
+  min-width: 9.4rem;
+  border-radius: 2px;
   border: 1px solid var(--line);
-  padding: 0.9rem 1.2rem;
+  background: rgba(255, 255, 255, 0.24);
+  padding: 0.95rem 1.25rem;
   color: var(--sea);
-  font-weight: 850;
+  font-size: 0.92rem;
+  font-weight: 800;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
 }
 
 .platform-links a:hover {
   border-color: var(--clay);
-  color: var(--clay);
+  background: var(--clay);
+  color: #fff;
 }
 
 .instagram-note {
-  font-size: 0.95rem;
+  font-size: 0.94rem;
 }
 
 .instagram-note a {
@@ -658,6 +710,30 @@ summary:focus-visible {
 }
 
 @media (max-width: 860px) {
+  .hero h1 {
+    font-size: 4.55rem;
+  }
+
+  .quiet-intro h2,
+  .heritage-section h2,
+  .image-story h2,
+  .day-notes h2,
+  .photo-essay h2,
+  .map-section h2,
+  .reservation-section h2 {
+    font-size: 3rem;
+  }
+
+  .hero-copy,
+  .quiet-intro p:not(.section-kicker),
+  .heritage-section p:not(.section-kicker),
+  .image-story p:not(.section-kicker),
+  .day-copy p,
+  .photo-essay-intro p:not(.section-kicker),
+  .map-section p:not(.section-kicker) {
+    font-size: 1rem;
+  }
+
   .photo-grid {
     column-count: 2;
   }
@@ -678,7 +754,27 @@ summary:focus-visible {
   }
 
   .hero h1 {
-    font-size: clamp(2.65rem, 13vw, 3.8rem);
+    font-size: 3rem;
+  }
+
+  .quiet-intro h2,
+  .heritage-section h2,
+  .image-story h2,
+  .day-notes h2,
+  .photo-essay h2,
+  .map-section h2,
+  .reservation-section h2 {
+    font-size: 2.35rem;
+  }
+
+  .quiet-intro {
+    text-align: left;
+  }
+
+  .quiet-intro h2,
+  .quiet-intro p:not(.section-kicker) {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .hero-actions .button,
