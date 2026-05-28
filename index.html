@@ -1,38 +1,36 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Villa San Vito | Private Amalfi Coast Villa with Sea View</title>
-    <meta name="description" content="Stay at Villa San Vito, a private Amalfi Coast villa in Raito with sea views, lemon trees, terraces, garden, parking and space for families, couples and friends.">
+    <title>Villa San Vito | Casa mediterranea a Raito</title>
+    <meta name="description" content="Villa San Vito è una casa mediterranea a Raito, sopra Vietri sul Mare, con vista sul Golfo di Salerno, giardino, terrazze e prenotazioni tramite Airbnb, Booking e Vrbo.">
     <meta name="robots" content="index, follow">
-    <!-- EDIT SEO: add a canonical URL here after publishing on your final domain. -->
 
-    <meta property="og:title" content="Villa San Vito — Your Private Villa on the Amalfi Coast">
-    <meta property="og:description" content="A sea-view villa in Raito, near Vietri sul Mare, created for travelers looking beyond Amalfi Coast hotels and resorts.">
+    <meta property="og:title" content="Villa San Vito">
+    <meta property="og:description" content="Una casa mediterranea a Raito, piccolo borgo della Costiera Amalfitana, con giardino, terrazze e vista sul Golfo di Salerno.">
     <meta property="og:image" content="assets/images/hero-terrace-sea-view.jpg">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:locale" content="it_IT">
 
     <link rel="preload" href="assets/images/hero-terrace-sea-view.jpg" as="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Raleway:wght@300;400;500;600;700&family=Tinos:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
-    <!-- EDIT SCHEMA: update URLs or public details only when confirmed. Do not add prices, phone, 5-star classification, all-inclusive or beachfront claims. -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "VacationRental",
         "name": "Villa San Vito",
-        "description": "Villa San Vito is a private Amalfi Coast villa in Raito near Vietri sul Mare, with sea views over the Gulf of Salerno, terraces, private garden, lemon trees, parking, internet and space for up to six guests.",
+        "description": "Villa San Vito is a private Amalfi Coast villa in Raito near Vietri sul Mare, with sea views over the Gulf of Salerno, terraces, private garden, lemon trees, parking and space for up to six guests.",
         "image": [
           "assets/images/hero-terrace-sea-view.jpg",
-          "assets/images/terrace-gulf-view.jpg",
-          "assets/images/raito-history.jpg",
           "assets/images/terrace-gulf-chair.jpg",
-          "assets/images/villa-sign.jpg"
+          "assets/images/white-facade-palms.jpg",
+          "assets/images/private-garden.jpg",
+          "assets/images/quiet-bedroom.jpg"
         ],
         "address": {
           "@type": "PostalAddress",
@@ -40,24 +38,10 @@
           "addressRegion": "Campania",
           "addressCountry": "IT"
         },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.93",
-          "reviewCount": "14"
-        },
         "occupancy": {
           "@type": "QuantitativeValue",
           "maxValue": 6
         },
-        "numberOfBedrooms": 3,
-        "amenityFeature": [
-          { "@type": "LocationFeatureSpecification", "name": "Sea view", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Private garden", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Terrace", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Internet", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Private parking", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Kitchen", "value": true }
-        ],
         "sameAs": [
           "http://airbnb.com/h/costieraamalfitanavillasanvito",
           "https://www.booking.com/hotel/it/villa-san-vito-raito18.es.html",
@@ -69,242 +53,147 @@
   </head>
 
   <body>
-    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="skip">Vai al contenuto</a>
 
-    <header class="site-header" aria-label="Primary navigation">
+    <header class="site-header" aria-label="Navigazione principale">
       <a class="brand" href="#top" aria-label="Villa San Vito home">Villa San Vito</a>
 
-      <nav class="main-nav" aria-label="Main menu">
-        <a href="#story" data-i18n="nav.story">House</a>
-        <a href="#heritage" data-i18n="nav.heritage">History</a>
-        <a href="#garden" data-i18n="nav.garden">Garden</a>
-        <a href="#photos" data-i18n="nav.photos">Photos</a>
-        <a href="#raito" data-i18n="nav.raito">Raito</a>
-        <a href="#location" data-i18n="nav.location">Location</a>
-        <a href="#book" data-i18n="nav.book">Reserve</a>
+      <nav class="main-nav" aria-label="Menu principale">
+        <a href="#storia" data-i18n="nav.history">Storia</a>
+        <a href="#villa" data-i18n="nav.villa">Villa</a>
+        <a href="#camere" data-i18n="nav.rooms">Camere</a>
+        <a href="#esterni" data-i18n="nav.outdoors">Esterni</a>
+        <a href="#posizione" data-i18n="nav.location">Posizione</a>
+        <a href="#prenota" data-i18n="nav.book">Prenota</a>
       </nav>
 
-      <div class="language-switcher" aria-label="Language selector">
-        <button type="button" class="is-active" data-lang="en" aria-pressed="true">EN</button>
+      <div class="language-switcher" aria-label="Selettore lingua">
+        <button type="button" class="is-active" data-lang="it" aria-pressed="true">IT</button>
         <button type="button" data-lang="es" aria-pressed="false">ES</button>
-        <button type="button" data-lang="it" aria-pressed="false">IT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
     </header>
 
     <main id="main">
-      <section class="hero" id="top" aria-labelledby="hero-title">
-        <!-- EDIT IMAGES: keep one strong hero image. Avoid adding many photos above the fold. -->
-        <img src="assets/images/hero-terrace-sea-view.jpg" width="1440" height="1080" alt="Sea-view terrace at Villa San Vito above Vietri sul Mare" fetchpriority="high">
+      <section class="opening" id="top" aria-labelledby="opening-title">
+        <div class="opening-heading">
+          <p class="section-kicker" data-i18n="opening.kicker">Raito, Costiera Amalfitana</p>
+          <h1 id="opening-title" data-i18n="opening.title">Villa San Vito</h1>
+        </div>
 
-        <div class="hero-overlay">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Amalfi Coast</p>
-          <h1 id="hero-title" data-i18n="hero.title">The stay you were looking for</h1>
-          <p class="hero-copy" data-i18n="hero.subtitle">Set in Raito, the small balcony of the Amalfi Coast that many pass by, our house welcomes visitors with the best charms of Mediterranean life: slow hours, garden aromas, sea air, and everything needed for an unforgettable Italian experience.</p>
-
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="#story" data-i18n="buttons.discover">Discover the villa</a>
-            <a class="button button-light" href="#book" data-i18n="buttons.platforms">Reservation links</a>
-          </div>
+        <div class="photo-series" aria-label="Selezione fotografica della villa">
+          <figure class="photo-series-item photo-series-large">
+            <img src="assets/images/hero-terrace-sea-view.jpg" width="1440" height="1080" alt="Terrazza con vista sul Golfo di Salerno a Villa San Vito" fetchpriority="high">
+          </figure>
+          <figure class="photo-series-item">
+            <img src="assets/images/terrace-gulf-chair.jpg" width="960" height="1280" alt="Sedia sulla terrazza affacciata sul Golfo di Salerno" loading="lazy">
+          </figure>
+          <figure class="photo-series-item">
+            <img src="assets/images/white-facade-palms.jpg" width="960" height="1280" alt="Facciata bianca di Villa San Vito con palme" loading="lazy">
+          </figure>
+          <figure class="photo-series-item">
+            <img src="assets/images/private-garden.jpg" width="1440" height="1080" alt="Giardino privato e ombra mediterranea a Villa San Vito" loading="lazy">
+          </figure>
+          <figure class="photo-series-item">
+            <img src="assets/images/villa-sign.jpg" width="960" height="720" alt="Targa in ceramica Villa San Vito" loading="lazy">
+          </figure>
         </div>
       </section>
 
-      <section class="quiet-intro" id="story" aria-labelledby="story-title">
-        <p class="section-kicker" data-i18n="intro.kicker">The house</p>
-        <h2 id="story-title" data-i18n="intro.title">It does not follow a hotel rhythm, it breathes like a house facing the sea</h2>
-        <p data-i18n="intro.copy">Villa San Vito is an old nineteenth-century residence made for days that stretch without hurry: coffee on the terrace, shade in the garden, warm afternoons in Raito and the Gulf of Salerno always below.</p>
-        <p data-i18n="intro.copy2">Its charm is not in excess, but in atmosphere: stone, silence, terraces, simple meals and that rare feeling, increasingly valuable, of returning to a private house after exploring the coast.</p>
+      <section class="welcome" aria-labelledby="welcome-title">
+        <p class="section-kicker" data-i18n="welcome.kicker">Benvenuti</p>
+        <h2 id="welcome-title" data-i18n="welcome.title">Benvenuti a Villa San Vito</h2>
+        <p data-i18n="welcome.copy">Situata a Raito, uno dei piccoli borghi della Costiera Amalfitana, Villa San Vito guarda il Golfo di Salerno da una posizione tranquilla, sospesa tra giardino, terrazze e luce di mare.</p>
+        <p data-i18n="welcome.copy2">Il sito è pensato come una piccola landing di atmosfera: poche immagini, sezioni chiare e un racconto essenziale del luogo, in attesa dei nuovi testi e delle nuove fotografie definitive.</p>
       </section>
 
-      <div class="section-marker" aria-hidden="true">
-        <svg viewBox="0 0 160 48" focusable="false">
-          <path d="M18 30c34-20 82-20 124 0"></path>
-          <path d="M52 20c-12-12-24-10-29 1 11 6 21 5 29-1z"></path>
-          <path d="M83 15c-9-13-22-14-29-5 8 8 19 10 29 5z"></path>
-          <path d="M109 21c7-14 19-18 29-10-6 10-17 15-29 10z"></path>
-        </svg>
-      </div>
-
-      <section class="heritage-section" id="heritage" aria-labelledby="heritage-title">
-        <div>
-          <p class="section-kicker" data-i18n="heritage.kicker">Raito, sunlit memory</p>
-          <h2 id="heritage-title" data-i18n="heritage.title">A village suspended between mountain and sea</h2>
-          <p data-i18n="heritage.copy">Raito carries an ancient promise of light. Suspended between mountain rock and the Gulf of Salerno, it gives Villa San Vito its most intimate character: warm stone, open terraces, sea air and the slow calm with which time seems to move along the coast.</p>
-          <p data-i18n="heritage.copy2">The house belongs to this landscape. Its nineteenth-century soul speaks with the local architecture: fresh rooms, outdoor passages, garden shade and views that still hold the memory of life above Vietri sul Mare.</p>
+      <section class="topic-section" id="storia" aria-labelledby="history-title">
+        <div class="topic-copy">
+          <p class="section-kicker" data-i18n="history.kicker">A. Storia</p>
+          <h2 id="history-title" data-i18n="history.title">Un borgo sospeso tra montagna e mare</h2>
+          <p data-i18n="history.copy">Raito conserva una memoria antica di luce e silenzio. Dalla roccia della montagna al Golfo di Salerno, il paesaggio dà alla casa il suo carattere più intimo: pietra, terrazze, aria di mare e una calma lenta.</p>
+          <p data-i18n="history.copy2">Villa San Vito appartiene a questa storia. La sua anima ottocentesca dialoga con l'architettura locale, con ambienti freschi, passaggi esterni e viste che raccontano la vita sopra Vietri sul Mare.</p>
         </div>
-        <figure>
-          <img src="assets/images/raito-history.jpg" loading="lazy" width="2048" height="1211" alt="Raito and Vietri in an 1819 painting by Josef Rabel">
-          <figcaption data-i18n="heritage.caption">Raito and Vietri in a painting by Josef Rabel, 1819</figcaption>
+        <figure class="topic-media">
+          <img src="assets/images/raito-history.jpg" width="2048" height="1211" alt="Raito e Vietri in un dipinto di Josef Rabel del 1819" loading="lazy">
+          <figcaption data-i18n="history.caption">Raito e Vietri in un dipinto di Josef Rabel, 1819</figcaption>
         </figure>
       </section>
 
-      <div class="section-marker" aria-hidden="true">
-        <svg viewBox="0 0 160 48" focusable="false">
-          <path d="M18 28c16-13 32-13 48 0s32 13 48 0 28-13 28-13"></path>
-          <path d="M40 35c15-8 30-8 45 0s30 8 45 0"></path>
-        </svg>
-      </div>
-
-      <section class="image-story" id="garden" aria-labelledby="garden-title">
-        <figure>
-          <img src="assets/images/private-garden.jpg" loading="lazy" width="1440" height="1080" alt="Private garden and shaded terrace at Villa San Vito">
-          <figcaption data-i18n="garden.caption">Garden shade and open-air corners.</figcaption>
+      <section class="topic-section topic-section-reverse" id="villa" aria-labelledby="villa-title">
+        <div class="topic-copy">
+          <p class="section-kicker" data-i18n="villa.kicker">B. Villa</p>
+          <h2 id="villa-title" data-i18n="villa.title">Una casa semplice, luminosa, vissuta</h2>
+          <p data-i18n="villa.copy">Villa San Vito non cerca il ritmo di un hotel. È una casa privata pensata per giornate che si allungano senza fretta: caffè in terrazza, ombra in giardino, stanze fresche e il Golfo sempre presente.</p>
+          <p data-i18n="villa.copy2">Quando sarà disponibile una fotografia dei proprietari o della famiglia, potrà entrare in questa sezione per rendere il racconto ancora più personale.</p>
+        </div>
+        <figure class="topic-media">
+          <img src="assets/images/white-facade-palms.jpg" width="960" height="1280" alt="Facciata bianca e palme a Villa San Vito" loading="lazy">
         </figure>
-        <div>
-          <p class="section-kicker" data-i18n="garden.kicker">Garden</p>
-          <h2 id="garden-title" data-i18n="garden.title">The villa also happens outside</h2>
-          <p data-i18n="garden.copy">Terraces, shade, leaves and a table that invites you to stay longer than planned. At Villa San Vito, the garden is not a detail: it is part of how the house is lived.</p>
-          <p data-i18n="garden.copy2">The interiors offer freshness and rest, but the memory of the stay usually remains outside: on the terrace, beneath the trees, with sea air and the view accompanying the slow hours.</p>
-        </div>
       </section>
 
-      <div class="section-marker" aria-hidden="true">
-        <svg viewBox="0 0 160 48" focusable="false">
-          <circle cx="80" cy="24" r="10"></circle>
-          <path d="M80 6v8M80 34v8M62 24h8M90 24h8M67 11l6 6M87 31l6 6M93 11l-6 6M73 31l-6 6"></path>
-        </svg>
-      </div>
-
-      <section class="day-notes" aria-labelledby="day-title">
-        <p class="section-kicker" data-i18n="day.kicker">A day here</p>
-        <h2 id="day-title" data-i18n="day.title">A house that changes with the light</h2>
-        <div class="day-copy">
-          <p data-i18n="day.copy">At Villa San Vito, the day begins slowly. The doors open to the Gulf, fresh air comes in from the sea and the morning invites you to linger a little longer at the table, unhurried, watching the coast wake below.</p>
-          <p data-i18n="day.copy2">When the sun rises, the house becomes a refuge: fresh interiors, garden shade, terraces for reading, talking or simply letting the hours pass. Outside, Raito keeps that bright silence of villages that do not need to impose themselves.</p>
-          <p data-i18n="day.copy3">At sunset, everything changes tone. Light falls over the Gulf of Salerno, the first village lights appear and the villa recovers its best rhythm: that of a house lived outside, among shade, stone, garden and sea.</p>
+      <section class="rooms-section" id="camere" aria-labelledby="rooms-title">
+        <div class="rooms-intro">
+          <p class="section-kicker" data-i18n="rooms.kicker">C. Camere</p>
+          <h2 id="rooms-title" data-i18n="rooms.title">Tre camere, un solo ritmo di quiete</h2>
+          <p data-i18n="rooms.copy">La zona notte è descritta in modo essenziale, senza trasformare il sito in una scheda tecnica. Le camere saranno raccontate con nomi e atmosfera: Frontemare, Il Limoneto e una terza camera da confermare nei testi finali.</p>
         </div>
-      </section>
-
-      <div class="section-marker" aria-hidden="true">
-        <svg viewBox="0 0 160 48" focusable="false">
-          <path d="M42 36V18c0-14 20-14 20 0v18"></path>
-          <path d="M98 36V18c0-14 20-14 20 0v18"></path>
-          <path d="M26 36h108"></path>
-          <path d="M62 28h36"></path>
-        </svg>
-      </div>
-
-      <section class="photo-essay" id="photos" aria-labelledby="photos-title">
-        <div class="photo-essay-intro">
-          <p class="section-kicker" data-i18n="photos.kicker">Atmosphere</p>
-          <h2 id="photos-title" data-i18n="photos.title">Postcards from a house facing the sea</h2>
-          <p data-i18n="photos.copy">Some houses cannot be understood in a single image. Villa San Vito reveals itself in parts: a quiet entrance, the shade of the garden, the terrace open to the Gulf, a fresh room, the afternoon light over Raito.</p>
-          <p data-i18n="photos.copy2">Each postcard holds a way of being: arriving quietly, opening the windows, stepping into the garden, watching the sky as night falls. Rather than showing everything, these images suggest the rhythm of the house: intimate, simple, luminous.</p>
-        </div>
-
-        <div class="photo-grid" aria-label="Villa San Vito photo selection">
-          <figure class="photo-card">
-            <img src="assets/images/villa-sign.jpg" loading="lazy" width="960" height="720" alt="Ceramic Villa San Vito sign by the entrance">
-            <figcaption data-i18n="photos.sign.caption">The ceramic sign at the entrance</figcaption>
-          </figure>
-          <figure class="photo-card">
-            <img src="assets/images/terracotta-pot-garden.jpg" loading="lazy" width="960" height="720" alt="Terracotta pot with garden leaves and sea beyond">
-            <figcaption data-i18n="photos.pot.caption">Terracotta, leaves and sea in the distance</figcaption>
-          </figure>
-          <figure class="photo-card">
-            <img src="assets/images/terrace-gulf-chair.jpg" loading="lazy" width="960" height="1280" alt="Terrace chair facing the Gulf of Salerno">
-            <figcaption data-i18n="photos.terrace.caption">A terrace open to the Gulf</figcaption>
-          </figure>
-          <figure class="photo-card">
-            <img src="assets/images/night-garden-sea.jpg" loading="lazy" width="960" height="1707" alt="Night garden at Villa San Vito with sea lights">
-            <figcaption data-i18n="photos.night.caption">The garden after dark</figcaption>
-          </figure>
-          <figure class="photo-card">
-            <img src="assets/images/garden-passage-palms.jpg" loading="lazy" width="960" height="1280" alt="Garden passage with palms beside Villa San Vito">
-            <figcaption data-i18n="photos.passage.caption">A garden passage beside the house</figcaption>
-          </figure>
-          <figure class="photo-card">
-            <img src="assets/images/white-facade-palms.jpg" loading="lazy" width="960" height="1280" alt="White facade of Villa San Vito with palms">
-            <figcaption data-i18n="photos.facade.caption">White walls, palms and sea light</figcaption>
-          </figure>
-          <figure class="photo-card">
-            <img src="assets/images/arched-window-garden.jpg" loading="lazy" width="960" height="1243" alt="Arched window with ironwork looking onto the garden">
-            <figcaption data-i18n="photos.window.caption">Ironwork, shade and garden outside</figcaption>
-          </figure>
-          <figure class="photo-card">
-            <img src="assets/images/ivy-arrival-path.jpg" loading="lazy" width="960" height="720" alt="Green arrival path with ivy wall at Villa San Vito">
-            <figcaption data-i18n="photos.path.caption">The green arrival path</figcaption>
-          </figure>
-          <figure class="photo-card">
-            <img src="assets/images/garden-gate.jpg" loading="lazy" width="960" height="720" alt="Private garden gate at Villa San Vito">
-            <figcaption data-i18n="photos.gate.caption">The private garden gate</figcaption>
-          </figure>
-          <figure class="photo-card">
-            <img src="assets/images/fireworks-gulf-night.jpg" loading="lazy" width="960" height="1707" alt="Fireworks over the Gulf seen from Villa San Vito">
-            <figcaption data-i18n="photos.fireworks.caption">Occasional lights over the Gulf</figcaption>
-          </figure>
-          <figure class="photo-card">
-            <img src="assets/images/quiet-bedroom.jpg" loading="lazy" width="960" height="720" alt="Quiet bedroom inside Villa San Vito">
-            <figcaption data-i18n="photos.room.caption">A simple room for rest</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <div class="section-marker" aria-hidden="true">
-        <svg viewBox="0 0 160 48" focusable="false">
-          <path d="M24 34c18-18 34-24 50-16s28 6 48-8"></path>
-          <path d="M48 28c-10-9-19-8-24 1 8 5 17 5 24-1z"></path>
-          <path d="M92 18c9-13 22-14 30-5-8 9-19 11-30 5z"></path>
-          <path d="M76 20v20"></path>
-        </svg>
-      </div>
-
-      <section class="image-story image-story-reverse" id="raito" aria-labelledby="raito-title">
-        <figure>
-          <img src="assets/images/lemon-tree.jpg" loading="lazy" width="1440" height="1080" alt="Lemon tree and sea view at Villa San Vito in Raito">
-          <figcaption data-i18n="raito.caption">Lemon trees, open sky and the Gulf of Salerno beyond</figcaption>
+        <figure class="rooms-photo">
+          <img src="assets/images/quiet-bedroom.jpg" width="960" height="720" alt="Camera semplice e luminosa a Villa San Vito" loading="lazy">
         </figure>
-        <div>
-          <p class="section-kicker" data-i18n="raito.kicker">Raito</p>
-          <h2 id="raito-title" data-i18n="raito.title">Close to the sea, far from the rush</h2>
-          <p data-i18n="raito.copy">Raito is one of those small Amalfi Coast villages best discovered without hurry. It sits just above Vietri sul Mare, suspended between the mountain and the Gulf of Salerno, with open views, quiet terraces and that Mediterranean air that mixes lemon trees, old stone and sea.</p>
-          <p data-i18n="raito.copy2">From Villa San Vito, the coast is within reach: Salerno, Amalfi, Ravello and Positano can all be part of the day. But on return, Raito offers another experience: calm streets, sunset light, silence and the feeling of coming back to a place of your own after the movement of the coast.</p>
-          <p data-i18n="raito.copy3">It is a good base for those who want to know the Amalfi Coast without sleeping in the middle of tourist noise. Close to everything, but with just enough distance to enjoy a slower rhythm.</p>
+        <div class="room-list" aria-label="Camere">
+          <article>
+            <span data-i18n="rooms.frontemare.label">Frontemare</span>
+            <p data-i18n="rooms.frontemare.copy">Una camera pensata per il riposo, vicina alla luce e al respiro del mare.</p>
+          </article>
+          <article>
+            <span data-i18n="rooms.limoneto.label">Il Limoneto</span>
+            <p data-i18n="rooms.limoneto.copy">Una stanza fresca, semplice, legata all'ombra del giardino e ai profumi mediterranei.</p>
+          </article>
+          <article>
+            <span data-i18n="rooms.third.label">Camera da definire</span>
+            <p data-i18n="rooms.third.copy">Il nome e il testo finale potranno essere aggiornati appena il cliente invierà la revisione italiana.</p>
+          </article>
         </div>
       </section>
 
-      <div class="section-marker" aria-hidden="true">
-        <svg viewBox="0 0 160 48" focusable="false">
-          <path d="M32 34c18-14 30-18 46-11 18 8 34 3 50-13"></path>
-          <path d="M52 34h70"></path>
-          <path d="M70 24c0-10 20-10 20 0v10"></path>
-        </svg>
-      </div>
-
-      <section class="map-section" id="location" aria-labelledby="location-title">
-        <div>
-          <p class="section-kicker" data-i18n="location.kicker">Location</p>
-          <h2 id="location-title" data-i18n="location.title">Raito, above Vietri sul Mare</h2>
-          <p data-i18n="location.copy">Raito sits in the heights of Vietri sul Mare, in a quiet area where the Amalfi Coast begins to open toward the Gulf of Salerno. It is an ideal point for those who want to stay close to the sea and the coast's most sought-after villages, while sleeping in a more serene setting.</p>
-          <p data-i18n="location.copy2">From here you can spend the day exploring Vietri, Salerno, Amalfi, Ravello or Positano, then return by late afternoon to the calm of the village. The exact location and arrival instructions are shared at the time of booking, to make access easier according to the chosen transport.</p>
+      <section class="topic-section" id="esterni" aria-labelledby="outdoors-title">
+        <div class="topic-copy">
+          <p class="section-kicker" data-i18n="outdoors.kicker">D. Esterni</p>
+          <h2 id="outdoors-title" data-i18n="outdoors.title">La villa succede anche fuori</h2>
+          <p data-i18n="outdoors.copy">Terrazze, ombra, foglie e una tavola che invita a restare più del previsto. Il giardino non è un dettaglio: è parte del modo di abitare la casa.</p>
+          <p data-i18n="outdoors.copy2">Gli esterni sono il luogo in cui la giornata rallenta: colazione al sole, pomeriggi sotto gli alberi, sera con le luci del Golfo in lontananza.</p>
         </div>
+        <figure class="topic-media">
+          <img src="assets/images/terrace-gulf-chair.jpg" width="960" height="1280" alt="Terrazza esterna affacciata sul Golfo" loading="lazy">
+        </figure>
+      </section>
 
-        <div class="map-frame" aria-label="Map of Raito, Vietri sul Mare">
-          <iframe title="Map of Raito, Vietri sul Mare, near Villa San Vito" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6052.4550205348205!2d14.71141999518224!3d40.66895582331015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bc1cf56db7f3d%3A0x2387c64bdea3a601!2s84019%20Raito%2C%20Salerno%2C%20Italia!5e0!3m2!1ses!2sar!4v1779208763703!5m2!1ses!2sar" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <section class="topic-section topic-section-reverse" id="posizione" aria-labelledby="location-title">
+        <div class="topic-copy">
+          <p class="section-kicker" data-i18n="location.kicker">E. Posizione</p>
+          <h2 id="location-title" data-i18n="location.title">Raito, sopra Vietri sul Mare</h2>
+          <p data-i18n="location.copy">Raito si trova sulle alture di Vietri sul Mare, in una zona tranquilla da cui la Costiera Amalfitana comincia ad aprirsi verso il Golfo di Salerno.</p>
+          <p data-i18n="location.copy2">Da qui si possono visitare Vietri, Salerno, Amalfi, Ravello o Positano durante il giorno, e tornare nel tardo pomeriggio alla calma del borgo. La posizione esatta viene condivisa al momento della prenotazione.</p>
+        </div>
+        <div class="map-frame" aria-label="Mappa di Raito, Vietri sul Mare">
+          <iframe title="Mappa di Raito, Vietri sul Mare, vicino a Villa San Vito" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6052.4550205348205!2d14.71141999518224!3d40.66895582331015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bc1cf56db7f3d%3A0x2387c64bdea3a601!2s84019%20Raito%2C%20Salerno%2C%20Italia!5e0!3m2!1ses!2sar!4v1779208763703!5m2!1ses!2sar" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
 
-      <div class="section-marker" aria-hidden="true">
-        <svg viewBox="0 0 160 48" focusable="false">
-          <path d="M42 32c18-12 58-12 76 0"></path>
-          <path d="M58 24c10-18 34-18 44 0"></path>
-          <path d="M80 8v12"></path>
-          <path d="M40 38h80"></path>
-        </svg>
-      </div>
+      <section class="booking-section" id="prenota" aria-labelledby="booking-title">
+        <p class="section-kicker" data-i18n="booking.kicker">F. Prenota / Contattaci</p>
+        <h2 id="booking-title" data-i18n="booking.title">Prenotazioni tramite piattaforme esterne</h2>
+        <p data-i18n="booking.copy">Villa San Vito non gestisce prenotazioni dirette dal sito. Disponibilità, condizioni e pagamenti sono gestiti sulle piattaforme esterne.</p>
 
-      <section class="reservation-section" id="book" aria-labelledby="booking-title">
-        <p class="section-kicker" data-i18n="booking.kicker">Reservations</p>
-        <h2 id="booking-title" data-i18n="booking.title">Book on trusted platforms</h2>
-        <p data-i18n="booking.copy">This site does not manage direct reservations. Availability, policies and payments are handled externally.</p>
-
-        <div class="platform-links" aria-label="Reservation platforms">
+        <div class="platform-links" aria-label="Piattaforme di prenotazione">
           <a href="http://airbnb.com/h/costieraamalfitanavillasanvito" target="_blank" rel="noopener noreferrer">Airbnb</a>
           <a href="https://www.booking.com/hotel/it/villa-san-vito-raito18.es.html?aid=318615&amp;label=New_Italian_IT_IT_21439071025-UNZN0NGydu%2Ab2jBBcXOAlgSM640938613103%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg-IRmxiX5%401778943127&amp;sid=8b3a113a5c9da800ff83762e83291d77&amp;dest_id=-132243&amp;dest_type=city&amp;dist=0&amp;group_adults=2&amp;group_children=0&amp;hapos=1&amp;hpos=1&amp;no_rooms=1&amp;req_adults=2&amp;req_children=0&amp;room1=A%2CA&amp;sb_price_type=total&amp;sr_order=popularity&amp;srepoch=1779191673&amp;srpvid=97bf53bc6be919a9&amp;type=total&amp;ucfs=1&amp;" target="_blank" rel="noopener noreferrer">Booking</a>
           <a href="https://www.vrbo.com/11912594ha" target="_blank" rel="noopener noreferrer">Vrbo</a>
         </div>
 
         <p class="instagram-note">
-          <span data-i18n="instagram.copy">Recent views and everyday moments are also on</span>
+          <span data-i18n="instagram.copy">Momenti recenti e viste della casa sono anche su</span>
           <a href="https://www.instagram.com/villasanvitomanagement/" target="_blank" rel="noopener noreferrer">Instagram</a>
         </p>
       </section>
@@ -314,7 +203,7 @@
       <div>
         <strong>Villa San Vito</strong>
         <p>Raito, Vietri sul Mare, Campania, Italy</p>
-        <p data-i18n="footer.reservations">Reservations are managed exclusively through Airbnb, Booking and Vrbo.</p>
+        <p data-i18n="footer.reservations">Prenotazioni gestite esclusivamente tramite Airbnb, Booking e Vrbo.</p>
         <p>Registration code: IT065157C2F4EHTJMP</p>
         <p class="footer-credit">Powered by <a href="mailto:vitosavoia12@gmail.com">Vito Savoia</a></p>
       </div>

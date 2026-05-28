@@ -10,6 +10,17 @@ La landing está diseñada para sentirse más cercana a una pieza editorial medi
 
 Evita volver a poner como eje principal camas, baños, números, fichas técnicas o grillas extensas de interiores. Los detalles prácticos deben quedar resumidos y derivar a Airbnb, Booking y Vrbo.
 
+La estructura actual sigue las macroareas pedidas por el cliente:
+
+- A. Storia
+- B. Villa
+- C. Camere
+- D. Esterni
+- E. Posizione
+- F. Prenota / Contattaci
+
+La referencia tipografica se acerco a Masseria Moroseta usando las familias web `Raleway`, `Fira Mono` y `Tinos`.
+
 ## Estructura
 
 ```text
@@ -23,8 +34,8 @@ Evita volver a poner como eje principal camas, baños, números, fichas técnica
 
 ## Editar contenido
 
-- Los textos principales en inglés están en `index.html`.
-- Los textos en español, italiano y las etiquetas multilingües están en `script.js`, dentro del objeto `translations`.
+- El sitio abre por defecto en italiano.
+- Los textos en italiano, español e ingles estan en `script.js`, dentro del objeto `translations`.
 - Para mantener el sitio simple, edita esos archivos directamente y vuelve a publicar.
 
 ## Reemplazar imágenes
@@ -34,22 +45,16 @@ El sitio ya usa fotos reales copiadas en `assets/images/`. Quedan algunos SVG co
 Imagenes activas en la landing:
 
 - `hero-terrace-sea-view.jpg`
-- `private-garden.jpg`
-- `lemon-tree.jpg`
-- `raito-history.jpg`
-- `villa-sign.jpg`
-- `terracotta-pot-garden.jpg`
-- `garden-gate.jpg`
-- `ivy-arrival-path.jpg`
-- `quiet-bedroom.jpg`
-- `arched-window-garden.jpg`
-- `white-facade-palms.jpg`
-- `fireworks-gulf-night.jpg`
-- `garden-passage-palms.jpg`
 - `terrace-gulf-chair.jpg`
-- `night-garden-sea.jpg`
+- `white-facade-palms.jpg`
+- `private-garden.jpg`
+- `villa-sign.jpg`
+- `raito-history.jpg`
+- `quiet-bedroom.jpg`
 
 El resto de imagenes en `assets/images/` queda disponible como archivo de respaldo, pero no forma parte de la landing actual.
+
+Cuando el cliente envie fotos nuevas, conviene reemplazar los archivos activos manteniendo el mismo nombre para no tocar HTML. Para una foto de propietarios/familia, puede agregarse una nueva imagen a la seccion `B. Villa`.
 
 Puedes hacerlo de dos formas:
 
