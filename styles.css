@@ -98,7 +98,8 @@ a {
 .main-nav a,
 .footer-links a,
 .platform-links a,
-.instagram-note a {
+.social-links a,
+.contact-mail a {
   text-decoration: none;
 }
 
@@ -108,7 +109,9 @@ a {
 
 .main-nav a:hover,
 .footer-links a:hover,
-.instagram-note a:hover {
+.social-links a:hover,
+.contact-mail a:hover,
+.site-footer p a:hover {
   text-decoration: underline;
   text-underline-offset: 0.34em;
 }
@@ -194,6 +197,17 @@ h2 {
   font-size: 3rem;
 }
 
+.opening-location {
+  max-width: 760px;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1.55;
+  text-transform: uppercase;
+}
+
 p {
   margin: 0;
 }
@@ -274,6 +288,14 @@ p {
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.82;
+}
+
+.location-place {
+  color: var(--ink) !important;
+  font-family: var(--mono);
+  font-size: 0.86rem !important;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .topic-media {
@@ -381,15 +403,58 @@ p {
   color: #fff;
 }
 
-.instagram-note {
-  margin-top: 1.3rem;
-  color: var(--muted);
-  font-size: 0.92rem;
+.contact-mail {
+  display: grid;
+  gap: 0.2rem;
+  justify-items: center;
 }
 
-.instagram-note a {
+.contact-mail span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.contact-mail a {
   color: var(--clay);
   font-weight: 700;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.85rem;
+  margin-top: 1.55rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.48rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 0.7rem 0.85rem;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.social-links svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.social-links a:hover {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: #fff;
+  text-decoration: none;
 }
 
 .site-footer {
@@ -411,6 +476,12 @@ p {
   margin: 0.3rem 0;
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+.site-footer p a {
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .footer-credit a {
@@ -501,6 +572,11 @@ p {
 
   .platform-links a {
     width: 100%;
+  }
+
+  .social-links a {
+    width: 100%;
+    justify-content: center;
   }
 }
 

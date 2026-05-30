@@ -81,6 +81,8 @@ Links actuales:
 - Booking: `https://www.booking.com/hotel/it/villa-san-vito-raito18.es.html?aid=318615&label=New_Italian_IT_IT_21439071025-UNZN0NGydu%2Ab2jBBcXOAlgSM640938613103%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg-IRmxiX5%401778943127&sid=8b3a113a5c9da800ff83762e83291d77&dest_id=-132243&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1779191673&srpvid=97bf53bc6be919a9&type=total&ucfs=1&`
 - Vrbo: `https://www.vrbo.com/11912594ha`
 - Instagram: `https://www.instagram.com/villasanvitomanagement/`
+- Facebook: `https://www.facebook.com/villasanvitomanagement`
+- Email de contacto: `info.villasanvito@libero.it`
 
 Todos los links externos deben conservar:
 
