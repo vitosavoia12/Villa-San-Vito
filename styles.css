@@ -261,30 +261,41 @@ p {
 }
 
 .about-hosts {
-  display: grid;
-  grid-template-columns: minmax(15rem, 0.78fr) minmax(0, 1fr);
-  gap: clamp(2rem, 5vw, 4.5rem);
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: clamp(3.8rem, 8vw, 6.2rem) 0 clamp(2rem, 5vw, 3.8rem);
+  gap: clamp(1.65rem, 4vw, 2.4rem);
+  max-width: 620px;
+  padding: clamp(4.3rem, 9vw, 7rem) 0 clamp(3rem, 7vw, 5.5rem);
+  text-align: center;
 }
 
 .about-photo-placeholder {
-  min-height: clamp(18rem, 36vw, 31rem);
+  width: min(100%, 25rem);
+  aspect-ratio: 4 / 5;
+  min-height: 0;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 2px;
   background:
     linear-gradient(135deg, rgba(154, 106, 76, 0.06), rgba(154, 106, 76, 0) 42%),
     var(--paper-warm);
 }
 
 .about-copy {
-  max-width: 640px;
+  max-width: 520px;
 }
 
-.about-copy p:not(.section-kicker) {
-  margin-top: 1.35rem;
+.about-copy h2 {
+  font-family: var(--mono);
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.about-copy p {
+  margin-top: 1.25rem;
   color: var(--muted);
-  font-size: 1.04rem;
+  font-size: 1rem;
   line-height: 1.82;
 }
 
@@ -293,12 +304,12 @@ p {
   align-items: center;
   justify-content: center;
   min-width: 9rem;
-  margin-top: 1.8rem;
+  margin-top: clamp(2.4rem, 6vw, 4.4rem);
   border: 1px solid var(--ink);
   border-radius: 2px;
-  padding: 0.9rem 1.25rem;
-  background: var(--ink);
-  color: #fff;
+  padding: 0.9rem 1.3rem;
+  background: transparent;
+  color: var(--ink);
   font-family: var(--mono);
   font-size: 0.74rem;
   font-weight: 700;
@@ -307,8 +318,8 @@ p {
 }
 
 .contact-button:hover {
-  background: transparent;
-  color: var(--ink);
+  background: var(--ink);
+  color: #fff;
 }
 
 .welcome {
