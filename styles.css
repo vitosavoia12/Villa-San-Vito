@@ -99,7 +99,8 @@ a {
 .footer-links a,
 .platform-links a,
 .social-links a,
-.contact-mail a {
+.contact-mail a,
+.contact-button {
   text-decoration: none;
 }
 
@@ -142,13 +143,15 @@ a {
 }
 
 .language-switcher button:focus-visible,
-.platform-links a:focus-visible {
+.platform-links a:focus-visible,
+.contact-button:focus-visible {
   outline: 3px solid rgba(154, 106, 76, 0.35);
   outline-offset: 3px;
 }
 
 .opening,
 .welcome,
+.about-hosts,
 .topic-section,
 .rooms-section,
 .booking-section {
@@ -198,14 +201,15 @@ h2 {
 }
 
 .opening-location {
-  max-width: 760px;
-  margin-top: 1rem;
+  max-width: 880px;
+  margin-top: 1.05rem;
   color: var(--muted);
-  font-family: var(--mono);
-  font-size: 0.82rem;
-  font-weight: 500;
-  line-height: 1.55;
-  text-transform: uppercase;
+  font-size: clamp(1rem, 1.35vw, 1.13rem);
+  line-height: 1.72;
+}
+
+.opening-location + .opening-location {
+  margin-top: 0.65rem;
 }
 
 p {
@@ -213,30 +217,98 @@ p {
 }
 
 .photo-series {
-  display: grid;
-  grid-template-columns: 1.2fr 0.82fr 0.82fr;
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-series-track {
+  display: flex;
+  width: max-content;
   gap: clamp(0.7rem, 1.8vw, 1.1rem);
-  align-items: stretch;
+  animation: photo-series-scroll 64s linear infinite;
 }
 
 .photo-series-item {
+  flex: 0 0 clamp(17rem, 31vw, 24rem);
+  aspect-ratio: 749 / 986;
   margin: 0;
-  min-height: 18rem;
   overflow: hidden;
   border-radius: 8px;
   background: var(--paper-warm);
 }
 
-.photo-series-large {
-  grid-row: span 2;
-  min-height: 37.2rem;
+.photo-series-item.is-landscape {
+  flex-basis: clamp(21rem, 42vw, 32rem);
+  aspect-ratio: 4 / 3;
 }
 
 .photo-series-item img {
+  display: block;
   width: 100%;
   height: 100%;
   filter: saturate(0.94) contrast(0.98);
   object-fit: cover;
+}
+
+@keyframes photo-series-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 0.55rem));
+  }
+}
+
+.about-hosts {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.78fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+  padding: clamp(3.8rem, 8vw, 6.2rem) 0 clamp(2rem, 5vw, 3.8rem);
+}
+
+.about-photo-placeholder {
+  min-height: clamp(18rem, 36vw, 31rem);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(154, 106, 76, 0.06), rgba(154, 106, 76, 0) 42%),
+    var(--paper-warm);
+}
+
+.about-copy {
+  max-width: 640px;
+}
+
+.about-copy p:not(.section-kicker) {
+  margin-top: 1.35rem;
+  color: var(--muted);
+  font-size: 1.04rem;
+  line-height: 1.82;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 9rem;
+  margin-top: 1.8rem;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  padding: 0.9rem 1.25rem;
+  background: var(--ink);
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.contact-button:hover {
+  background: transparent;
+  color: var(--ink);
 }
 
 .welcome {
@@ -518,17 +590,24 @@ p {
     font-size: 2.55rem;
   }
 
-  .photo-series,
   .topic-section,
   .topic-section-reverse,
+  .about-hosts,
   .room-list,
   .site-footer {
     grid-template-columns: 1fr;
   }
 
-  .photo-series-large,
   .photo-series-item {
-    min-height: 22rem;
+    flex-basis: clamp(17rem, 58vw, 24rem);
+  }
+
+  .photo-series-item.is-landscape {
+    flex-basis: clamp(21rem, 72vw, 32rem);
+  }
+
+  .about-copy {
+    max-width: none;
   }
 
   .topic-section-reverse .topic-copy,
@@ -564,9 +643,12 @@ p {
     font-size: 2.15rem;
   }
 
-  .photo-series-large,
   .photo-series-item {
-    min-height: 18rem;
+    flex-basis: 72vw;
+  }
+
+  .photo-series-item.is-landscape {
+    flex-basis: 82vw;
   }
 
   .platform-links a {
@@ -585,5 +667,9 @@ p {
   *::after {
     scroll-behavior: auto !important;
     transition: none !important;
+  }
+
+  .photo-series-track {
+    animation: none !important;
   }
 }
