@@ -12,6 +12,8 @@ const translations = {
     "opening.title": "Villa San Vito",
     "opening.location": "La villa si trova in una posizione privilegiata tra Vietri sul Mare e Cetara, in una zona tranquilla da cui la Costiera Amalfitana comincia ad aprirsi verso il Golfo di Salerno.",
     "opening.location2": "Da qui si raggiungono facilmente Vietri, Salerno, Amalfi, Ravello e Positano lungo la splendida strada costiera, oppure anche via mare grazie ai numerosi traghetti e aliscafi veloci, per poi rientrare comodamente, a fine pomeriggio, nella calma del borgo.",
+    "carousel.prev": "Foto precedente",
+    "carousel.next": "Foto successiva",
     "about.kicker": "Chi siamo",
     "about.title": "Chi siamo",
     "about.copy": "Siamo una famiglia profondamente legata alla Costiera Amalfitana e, spinti da questa grande passione per il nostro territorio, ci dedichiamo con gioia all'accoglienza. Il nostro desiderio più grande è aprire la porta di casa per condividere uno dei luoghi più belli del mondo, offrendo un'oasi di pace, calore e autentico relax.",
@@ -63,6 +65,8 @@ const translations = {
     "opening.title": "Villa San Vito",
     "opening.location": "La villa está situada en una posición destacada entre Vietri sul Mare y Cetara, en una zona tranquila desde donde la costa de Amalfi comienza a abrirse hacia el Golfo de Salerno.",
     "opening.location2": "Desde aquí se puede llegar fácilmente a Vietri, Salerno, Amalfi, Ravello y Positano a lo largo de la espléndida carretera costera, o incluso por mar utilizando numerosos ferries e hidroalas rápidos, y luego regresar cómodamente, al final de la tarde, a la calma del pueblo.",
+    "carousel.prev": "Foto anterior",
+    "carousel.next": "Foto siguiente",
     "about.kicker": "Quiénes somos",
     "about.title": "Quiénes somos",
     "about.copy": "Somos una familia profundamente ligada a la Costa Amalfitana y, impulsados por esta gran pasión por nuestro territorio, nos dedicamos con alegría a la actividad de acogida. Nuestro mayor deseo es abrir la puerta de la casa para compartir uno de los lugares más bellos del mundo, ofreciendo un oasis de paz, calidez y auténtico relax.",
@@ -114,6 +118,8 @@ const translations = {
     "opening.title": "Villa San Vito",
     "opening.location": "The villa is set in a privileged position between Vietri sul Mare and Cetara, in a quiet area where the Amalfi Coast begins to open toward the Gulf of Salerno.",
     "opening.location2": "From here you can easily reach Vietri, Salerno, Amalfi, Ravello and Positano along the beautiful coastal road, or even by sea using the many ferries and fast hydrofoils, before returning comfortably, at the end of the afternoon, to the calm of the village.",
+    "carousel.prev": "Previous photo",
+    "carousel.next": "Next photo",
     "about.kicker": "Who we are",
     "about.title": "Who we are",
     "about.copy": "We are a family deeply rooted in the Amalfi Coast and, driven by this great passion for our territory, we joyfully dedicate ourselves to hospitality. Our greatest wish is to open the door of the house and share one of the most beautiful places in the world, offering an oasis of peace, warmth and authentic relaxation.",
@@ -156,6 +162,10 @@ const translations = {
 
 const languageButtons = document.querySelectorAll("[data-lang]");
 const translatableNodes = document.querySelectorAll("[data-i18n]");
+const ariaTranslatableNodes = document.querySelectorAll("[data-i18n-aria]");
+const carouselTrack = document.querySelector("[data-carousel-track]");
+const carouselPrevious = document.querySelector("[data-carousel-prev]");
+const carouselNext = document.querySelector("[data-carousel-next]");
 
 function setLanguage(selectedLanguage) {
   const dictionary = translations[selectedLanguage] || translations.it;
@@ -168,6 +178,15 @@ function setLanguage(selectedLanguage) {
 
     if (value) {
       node.textContent = value;
+    }
+  });
+
+  ariaTranslatableNodes.forEach((node) => {
+    const key = node.dataset.i18nAria;
+    const value = dictionary[key];
+
+    if (value) {
+      node.setAttribute("aria-label", value);
     }
   });
 
@@ -185,3 +204,28 @@ languageButtons.forEach((button) => {
 });
 
 setLanguage(localStorage.getItem("villaSanVitoLanguage") || "it");
+
+function moveCarousel(direction) {
+  if (!carouselTrack) return;
+
+  const firstItem = carouselTrack.querySelector(".photo-series-item");
+  const gap = Number.parseFloat(getComputedStyle(carouselTrack).columnGap) || 0;
+  const distance = firstItem ? firstItem.getBoundingClientRect().width + gap : carouselTrack.clientWidth * 0.82;
+  const maxScroll = carouselTrack.scrollWidth - carouselTrack.clientWidth;
+  const nextLeft = carouselTrack.scrollLeft + direction * distance;
+
+  if (direction > 0 && nextLeft >= maxScroll - 4) {
+    carouselTrack.scrollTo({ left: 0, behavior: "smooth" });
+    return;
+  }
+
+  if (direction < 0 && nextLeft <= 4) {
+    carouselTrack.scrollTo({ left: maxScroll, behavior: "smooth" });
+    return;
+  }
+
+  carouselTrack.scrollBy({ left: direction * distance, behavior: "smooth" });
+}
+
+carouselPrevious?.addEventListener("click", () => moveCarousel(-1));
+carouselNext?.addEventListener("click", () => moveCarousel(1));
