@@ -68,6 +68,19 @@ a {
   backdrop-filter: blur(14px);
 }
 
+.pet-ribbon {
+  padding: 0.52rem 1rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-warm);
+  color: var(--olive);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .brand {
   font-family: var(--serif);
   font-size: 1.45rem;
@@ -154,6 +167,7 @@ a {
 .about-hosts,
 .topic-section,
 .rooms-section,
+.pets-section,
 .booking-section {
   width: min(1140px, calc(100% - 2rem));
   margin: 0 auto;
@@ -218,6 +232,8 @@ p {
 
 .photo-series {
   position: relative;
+  width: min(680px, 100%);
+  margin: 0 auto;
 }
 
 .photo-series-track {
@@ -235,8 +251,8 @@ p {
 }
 
 .photo-series-item {
-  flex: 0 0 clamp(17rem, 31vw, 24rem);
-  aspect-ratio: 749 / 986;
+  flex: 0 0 100%;
+  aspect-ratio: 4 / 5;
   margin: 0;
   overflow: hidden;
   border-radius: 8px;
@@ -245,8 +261,8 @@ p {
 }
 
 .photo-series-item.is-landscape {
-  flex-basis: clamp(21rem, 42vw, 32rem);
-  aspect-ratio: 4 / 3;
+  flex-basis: 100%;
+  aspect-ratio: 4 / 5;
 }
 
 .photo-series-item img {
@@ -382,6 +398,7 @@ p {
 
 .topic-section,
 .rooms-section,
+.pets-section,
 .booking-section {
   border-top: 1px solid var(--line);
 }
@@ -457,6 +474,36 @@ p {
 .rooms-photo {
   margin: 0 0 clamp(2rem, 5vw, 3.4rem);
   max-width: 760px;
+}
+
+.pets-section {
+  display: grid;
+  grid-template-columns: minmax(12rem, 0.42fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4.2rem);
+  align-items: center;
+  padding: clamp(4.5rem, 9vw, 7rem) 0;
+}
+
+.pets-media {
+  margin: 0;
+}
+
+.pets-media img {
+  width: min(100%, 18rem);
+  border-radius: 8px;
+  filter: saturate(0.96) contrast(0.98);
+  object-fit: cover;
+}
+
+.pets-copy {
+  max-width: 720px;
+}
+
+.pets-copy p:not(.section-kicker) {
+  margin-top: 1.05rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.82;
 }
 
 .room-list {
@@ -648,17 +695,18 @@ p {
   .topic-section,
   .topic-section-reverse,
   .about-hosts,
+  .pets-section,
   .room-list,
   .site-footer {
     grid-template-columns: 1fr;
   }
 
   .photo-series-item {
-    flex-basis: clamp(17rem, 58vw, 24rem);
+    flex-basis: 100%;
   }
 
   .photo-series-item.is-landscape {
-    flex-basis: clamp(21rem, 72vw, 32rem);
+    flex-basis: 100%;
   }
 
   .about-copy {
@@ -699,11 +747,11 @@ p {
   }
 
   .photo-series-item {
-    flex-basis: 72vw;
+    flex-basis: 100%;
   }
 
   .photo-series-item.is-landscape {
-    flex-basis: 82vw;
+    flex-basis: 100%;
   }
 
   .photo-series-arrow {

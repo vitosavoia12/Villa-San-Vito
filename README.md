@@ -71,6 +71,12 @@ Mantén siempre textos `alt` descriptivos en `index.html`.
 
 La landing actual usa pocas imagenes grandes: vista, historia de Raito, jardin y limonero. Si agregas nuevas fotos, intenta conservar ese criterio para que no parezca una ficha inmobiliaria ni una ficha tipo Booking.
 
+La foto del bloque "Se admiten mascotas" debe estar en:
+
+```text
+assets/images/pets-welcome.jpg
+```
+
 ## Cambiar links de reserva
 
 Los links de reserva están en `index.html`.
