@@ -157,6 +157,8 @@ const ariaTranslatableNodes = document.querySelectorAll("[data-i18n-aria]");
 const carouselTrack = document.querySelector("[data-carousel-track]");
 const carouselPrevious = document.querySelector("[data-carousel-prev]");
 const carouselNext = document.querySelector("[data-carousel-next]");
+const carouselAutoplayDelay = 5500;
+let carouselAutoplay;
 
 function setLanguage(selectedLanguage) {
   const dictionary = translations[selectedLanguage] || translations.it;
@@ -218,5 +220,43 @@ function moveCarousel(direction) {
   carouselTrack.scrollBy({ left: direction * distance, behavior: "smooth" });
 }
 
-carouselPrevious?.addEventListener("click", () => moveCarousel(-1));
-carouselNext?.addEventListener("click", () => moveCarousel(1));
+function startCarouselAutoplay() {
+  if (!carouselTrack || carouselAutoplay) return;
+
+  carouselAutoplay = window.setInterval(() => moveCarousel(1), carouselAutoplayDelay);
+}
+
+function stopCarouselAutoplay() {
+  window.clearInterval(carouselAutoplay);
+  carouselAutoplay = null;
+}
+
+function restartCarouselAutoplay() {
+  stopCarouselAutoplay();
+  startCarouselAutoplay();
+}
+
+carouselPrevious?.addEventListener("click", () => {
+  moveCarousel(-1);
+  restartCarouselAutoplay();
+});
+
+carouselNext?.addEventListener("click", () => {
+  moveCarousel(1);
+  restartCarouselAutoplay();
+});
+
+carouselTrack?.addEventListener("mouseenter", stopCarouselAutoplay);
+carouselTrack?.addEventListener("mouseleave", startCarouselAutoplay);
+carouselTrack?.addEventListener("focusin", stopCarouselAutoplay);
+carouselTrack?.addEventListener("focusout", startCarouselAutoplay);
+
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) {
+    stopCarouselAutoplay();
+  } else {
+    startCarouselAutoplay();
+  }
+});
+
+startCarouselAutoplay();
