@@ -8,10 +8,24 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#f7f4ef">
 
-    <link rel="icon" href="assets/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link id="site-favicon" rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico?v=20260605-3">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=20260605-2">
+    <script>
+      window.addEventListener("pageshow", function () {
+        var favicon = document.getElementById("site-favicon");
+        var href = favicon && favicon.href;
+        if (!href) return;
+        favicon.remove();
+        favicon = document.createElement("link");
+        favicon.id = "site-favicon";
+        favicon.rel = "icon";
+        favicon.type = "image/png";
+        favicon.sizes = "32x32";
+        favicon.href = href;
+        document.head.appendChild(favicon);
+      });
+    </script>
 
     <meta property="og:title" content="Villa San Vito">
     <meta property="og:description" content="Una casa mediterranea a Raito, piccolo borgo della Costiera Amalfitana, con giardino, terrazze e vista sul Golfo di Salerno.">
