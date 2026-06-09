@@ -13,8 +13,8 @@ Evita volver a poner como eje principal camas, baños, números, fichas técnica
 La estructura actual sigue las macroareas pedidas por el cliente:
 
 - A. Storia
-- B. Villa
-- C. Camere
+- B. Territorio
+- C. Villa
 - D. Esterni
 - E. Posizione
 - F. Prenota / Contattaci
@@ -28,6 +28,7 @@ La referencia tipografica se acerco a Masseria Moroseta usando las familias web 
 ├── index.html
 ├── styles.css
 ├── script.js
+├── map.html
 └── assets/
     └── images/
 ```
@@ -112,11 +113,11 @@ Ejemplo:
 Powered by <a href="mailto:hello@example.com">Nombre Apellido</a>
 ```
 
-## Cambiar Google Maps
+## Cambiar el mapa
 
-Busca el iframe dentro de la sección `Location` en `index.html`.
+La sección `Location` carga `map.html`, un mapa general sin marcadores ni puntos de interés comerciales.
 
-Reemplaza el valor de `src` por otra URL embed de Google Maps si quieres cambiar la zona mostrada. El sitio muestra el área general de Raito, Vietri sul Mare; no publica la dirección exacta.
+Para cambiar la zona, edita los límites de `map.fitBounds` dentro de `map.html`. El mapa usa una capa CARTO sin etiquetas sobre datos de OpenStreetMap y no publica la dirección exacta.
 
 ## SEO
 
@@ -151,6 +152,7 @@ Sube estos archivos al directorio público del hosting:
 - `index.html`
 - `styles.css`
 - `script.js`
+- `map.html`
 - `assets/images/`
 
 La página funciona sin backend.

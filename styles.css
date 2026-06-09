@@ -166,6 +166,7 @@ a {
 .welcome,
 .about-hosts,
 .topic-section,
+.territory-section,
 .rooms-section,
 .pets-section,
 .booking-section {
@@ -397,6 +398,7 @@ p {
 }
 
 .topic-section,
+.territory-section,
 .rooms-section,
 .pets-section,
 .booking-section {
@@ -409,6 +411,41 @@ p {
   gap: clamp(2rem, 5vw, 4.8rem);
   align-items: center;
   padding: clamp(4.5rem, 9vw, 7rem) 0;
+}
+
+.territory-section {
+  padding: clamp(4.8rem, 9vw, 7.5rem) 0;
+}
+
+.territory-intro {
+  max-width: 880px;
+}
+
+.territory-intro > p:not(.section-kicker),
+.territory-columns p {
+  margin-top: 1.05rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.82;
+}
+
+.territory-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+}
+
+.territory-columns article {
+  border-top: 1px solid var(--line);
+  padding-top: 1.5rem;
+}
+
+.territory-columns h3 {
+  max-width: 18ch;
+  font-family: var(--serif);
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  line-height: 1.08;
 }
 
 .topic-section-reverse {
@@ -694,6 +731,7 @@ p {
 
   .topic-section,
   .topic-section-reverse,
+  .territory-columns,
   .about-hosts,
   .pets-section,
   .room-list,
