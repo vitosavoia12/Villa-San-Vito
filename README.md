@@ -47,7 +47,7 @@ El sitio utiliza `Tinos` para titulares, `Raleway` para texto y `Fira Mono` para
 Las imágenes activas se encuentran en `assets/images/`. Entre los archivos incorporados recientemente:
 
 - `brand-mark.png`: ilustración de marca del encabezado.
-- `family-hosts.jpg`: fotografía del bloque “Chi siamo”.
+- `chi-siamo-famiglia.jpg`: fotografía del bloque “Chi siamo”.
 - `villa-facade.jpg`: primera imagen del carrusel.
 - `villa-interior-arch.jpg`
 - `lemon-books.jpg`
