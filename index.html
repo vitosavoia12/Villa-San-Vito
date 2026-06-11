@@ -76,18 +76,20 @@
 
   <body>
     <a class="skip-link" href="#main" data-i18n="skip">Vai al contenuto</a>
-    <div class="pet-ribbon" data-i18n="pets.short">Siamo amici degli animali</div>
 
     <header class="site-header" aria-label="Navigazione principale">
-      <a class="brand" href="#top" aria-label="Villa San Vito home">Villa San Vito</a>
+      <a class="brand" href="#top" aria-label="Villa San Vito home">
+        <img src="assets/images/brand-mark.png" width="829" height="1080" alt="" aria-hidden="true">
+        <span>Villa San Vito</span>
+      </a>
 
       <nav class="main-nav" aria-label="Menu principale">
         <a href="#storia" data-i18n="nav.history">Storia</a>
-        <a href="#villa" data-i18n="nav.villa">Villa</a>
         <a href="#territorio" data-i18n="nav.territory">Territorio</a>
+        <a href="#villa" data-i18n="nav.villa">Villa</a>
         <a href="#esterni" data-i18n="nav.outdoors">Esterni</a>
-        <a href="#posizione" data-i18n="nav.location">Posizione</a>
-        <a href="#prenota" data-i18n="nav.book">Prenota</a>
+        <a href="#servizi" data-i18n="nav.services">Servizi</a>
+        <a href="#prenota" data-i18n="nav.book">Prenotazioni</a>
       </nav>
 
       <div class="language-switcher" aria-label="Selettore lingua">
@@ -150,11 +152,12 @@
       </section>
 
       <section class="about-hosts" aria-labelledby="about-title">
-        <div class="about-photo-placeholder" aria-hidden="true"></div>
+        <figure class="about-photo">
+          <img src="assets/images/family-hosts.jpg" width="1200" height="896" alt="La famiglia di Villa San Vito riunita sulla terrazza affacciata sul Golfo" loading="lazy">
+        </figure>
         <div class="about-copy">
           <h2 id="about-title" data-i18n="about.title">Chi siamo</h2>
           <p data-i18n="about.copy">Siamo una famiglia profondamente legata alla Costiera Amalfitana. Spinti dall'amore viscerale per la nostra terra, dal 2023 ci dedichiamo con gioia all'arte dell'accoglienza. Il nostro desiderio più grande è aprirvi le porte di casa per condividere questa devozione e farvi scoprire uno dei luoghi più belli del mondo, offrendovi un'oasi di pace, fascino e autentico relax.</p>
-          <a class="contact-button" href="mailto:info.villasanvito@libero.it" data-i18n="about.cta">Contattaci</a>
         </div>
       </section>
 
@@ -219,25 +222,79 @@
         </figure>
       </section>
 
-      <section class="topic-section topic-section-reverse" id="posizione" aria-labelledby="location-title">
-        <div class="topic-copy">
-          <p class="section-kicker" data-i18n="location.kicker">E. Posizione</p>
-          <h2 id="location-title" data-i18n="location.title">Raito, Costiera Amalfitana</h2>
-          <p class="location-place" data-i18n="location.place">Raito, Vietri sul Mare, Campania, Italia</p>
+      <section class="services-section" id="servizi" aria-labelledby="services-title">
+        <div class="services-intro">
+          <p class="section-kicker" data-i18n="services.kicker">E. Servizi</p>
+          <h2 id="services-title" data-i18n="services.title">Le nostre attenzioni per voi</h2>
+          <p class="services-season" data-i18n="services.season">Villa San Vito vi accoglie dal 1 marzo al 1 novembre e dal 23 dicembre al 3 gennaio.</p>
         </div>
-        <div class="map-frame" data-i18n-aria="map.label" aria-label="Mappa generale della zona di Raito e della Costiera Amalfitana">
-          <iframe title="Mappa generale della zona di Raito e della Costiera Amalfitana" src="map.html" loading="lazy"></iframe>
-        </div>
-      </section>
 
-      <section class="pets-section" id="mascotas" aria-labelledby="pets-title">
-        <figure class="pets-media">
-          <img src="assets/images/pets-welcome.jpg" width="240" height="243" alt="Cane accolto a Villa San Vito" loading="lazy">
-        </figure>
-        <div class="pets-copy">
-          <p class="section-kicker" data-i18n="pets.kicker">Siamo inoltre amici degli animali</p>
-          <h2 id="pets-title" data-i18n="pets.title">Siamo inoltre amici degli animali</h2>
-          <p data-i18n="pets.copy">Siamo felici di accogliere i vostri animali domestici. Tuttavia, per garantire il comfort e la tranquillità di tutti i nostri ospiti, vi chiediamo di informarci della loro presenza al momento della prenotazione e di assicurarvi che siano abituati alla convivenza e rispettino la pace e la quiete della proprietà.</p>
+        <div class="services-grid">
+          <article class="service-item service-connections">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" focusable="false">
+                <path d="M5 28V14h25l8 9v12h-5"></path>
+                <path d="M14 35H9a4 4 0 0 1-4-4v-3h33"></path>
+                <path d="M30 14v9h8"></path>
+                <circle cx="14" cy="35" r="5"></circle>
+                <circle cx="31" cy="35" r="5"></circle>
+              </svg>
+            </div>
+            <div class="service-copy">
+              <h3 data-i18n="services.connections.title">Collegamenti</h3>
+              <p class="service-lead" data-i18n="services.connections.lead">Vivi la Costiera Amalfitana senza pensieri, via terra e via mare.</p>
+              <p data-i18n="services.connections.transfer">Il tuo viaggio comincia nel momento in cui arrivi. Dimentica lo stress del traffico e lasciati guidare: organizziamo per te transfer esclusivi con autista privato e comodi shuttle da e per gli aeroporti e le stazioni di Napoli e Salerno.</p>
+              <p data-i18n="services.connections.question">Vuoi scoprire la magia della Costiera da una prospettiva unica? Scegli come vivere la tua avventura:</p>
+              <div class="travel-modes">
+                <p><strong data-i18n="services.connections.land.label">Via terra</strong><span data-i18n="services.connections.land.copy">A bordo di auto di classe per ammirare i panorami mozzafiato.</span></p>
+                <p><strong data-i18n="services.connections.sea.label">Via mare</strong><span data-i18n="services.connections.sea.copy">Cullato dalle onde su imbarcazioni private, con la libertà di guidare o di affidarti a un marinaio esperto.</span></p>
+              </div>
+              <p class="service-note" data-i18n="services.connections.note">Tutti i servizi di trasporto ed escursione sono personalizzati e disponibili su prenotazione. Contattaci in anticipo per disegnare insieme la tua esperienza su misura. I servizi premium sono soggetti a supplemento.</p>
+            </div>
+          </article>
+
+          <article class="service-item">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" focusable="false">
+                <circle cx="24" cy="24" r="18"></circle>
+                <path d="M20 35V13h7a7 7 0 0 1 0 14h-7"></path>
+              </svg>
+            </div>
+            <div class="service-copy">
+              <h3 data-i18n="services.parking.title">Parcheggio</h3>
+              <p data-i18n="services.parking.copy">La villa è dotata di un parcheggio interno e gratuito per gli ospiti della struttura.</p>
+            </div>
+          </article>
+
+          <article class="service-item service-pets">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" focusable="false">
+                <ellipse cx="24" cy="31" rx="10" ry="8"></ellipse>
+                <circle cx="13" cy="20" r="4"></circle>
+                <circle cx="22" cy="14" r="4"></circle>
+                <circle cx="35" cy="20" r="4"></circle>
+                <circle cx="30" cy="14" r="4"></circle>
+              </svg>
+            </div>
+            <div class="service-copy">
+              <h3 data-i18n="services.pets.title">Siamo anche amici degli animali</h3>
+              <p data-i18n="services.pets.copy">Siamo felici di accogliere i vostri animali domestici. Tuttavia, per garantire il comfort e la tranquillità di tutti i nostri ospiti, vi chiediamo di informarci della loro presenza al momento della prenotazione e di assicurarvi che siano abituati alla convivenza e rispettino la pace e la quiete della proprietà.</p>
+            </div>
+          </article>
+
+          <article class="service-item service-contact">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" focusable="false">
+                <rect x="7" y="11" width="34" height="26" rx="2"></rect>
+                <path d="m8 14 16 13 16-13"></path>
+              </svg>
+            </div>
+            <div class="service-copy">
+              <h3 data-i18n="services.contact.title">Contattaci</h3>
+              <p data-i18n="services.contact.copy">Per informazioni, richieste particolari e prenotazione dei servizi, scriveteci: saremo felici di aiutarvi a organizzare il vostro soggiorno.</p>
+              <a class="service-email" href="mailto:info.villasanvito@libero.it">info.villasanvito@libero.it</a>
+            </div>
+          </article>
         </div>
       </section>
 
