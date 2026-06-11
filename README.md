@@ -47,7 +47,7 @@ El sitio utiliza `Tinos` para titulares, `Raleway` para texto y `Fira Mono` para
 Las imágenes activas se encuentran en `assets/images/`. Entre los archivos incorporados recientemente:
 
 - `brand-mark.png`: ilustración de marca del encabezado.
-- `chi-siamo-famiglia.jpg`: fotografía del bloque “Chi siamo”.
+- La fotografía del bloque “Chi siamo” está incrustada directamente en `index.html` para evitar pérdidas de archivos al publicar o descomprimir el sitio.
 - `villa-facade.jpg`: primera imagen del carrusel.
 - `villa-interior-arch.jpg`
 - `lemon-books.jpg`
@@ -119,3 +119,7 @@ El sitio funciona sin backend. Para publicarlo, subir a la raíz pública:
 - carpeta `assets/`
 
 Puede alojarse directamente en Netlify, Vercel o cualquier hosting de archivos estáticos.
+
+## Google Tag Manager
+
+El contenedor `GTM-KV229NML` está instalado en `index.html`, con el script dentro de `<head>` y el bloque `noscript` inmediatamente después de la apertura de `<body>`.
