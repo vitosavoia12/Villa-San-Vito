@@ -85,6 +85,7 @@ a {
 }
 
 .brand img {
+  display: none;
   width: 3.1rem;
   height: 3.1rem;
   flex: 0 0 auto;
@@ -181,9 +182,35 @@ a {
 
 .opening-heading {
   display: grid;
-  justify-items: center;
-  text-align: center;
+  grid-template-columns: clamp(7.5rem, 11vw, 10.5rem) minmax(0, auto);
+  grid-template-areas:
+    "mark kicker"
+    "mark title";
+  column-gap: clamp(1.25rem, 3vw, 2.5rem);
+  align-items: center;
+  justify-content: center;
+  justify-items: start;
+  text-align: left;
   margin-bottom: clamp(2rem, 5vw, 3.8rem);
+}
+
+.opening-brand-mark {
+  display: block;
+  grid-area: mark;
+  width: clamp(7.5rem, 11vw, 10.5rem);
+  height: auto;
+  align-self: end;
+  object-fit: contain;
+  transform: translateY(1rem);
+}
+
+.opening-heading .section-kicker {
+  grid-area: kicker;
+  align-self: end;
+}
+
+.opening-heading h1 {
+  grid-area: title;
 }
 
 .section-kicker {
@@ -265,6 +292,10 @@ p {
 .photo-series-item.is-landscape {
   flex-basis: 100%;
   aspect-ratio: 4 / 5;
+}
+
+.photo-series-item.is-landscape img {
+  object-fit: contain;
 }
 
 .photo-series-item img {
@@ -887,13 +918,19 @@ p {
     font-size: 1.28rem;
   }
 
-  .brand img {
-    width: 2.55rem;
-    height: 2.55rem;
+  .opening-heading {
+    grid-template-columns: 5.5rem minmax(0, 1fr);
+    column-gap: 0.85rem;
+    width: 100%;
+  }
+
+  .opening-brand-mark {
+    width: 5.5rem;
+    transform: translateY(0.75rem);
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   h2 {

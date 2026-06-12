@@ -46,11 +46,9 @@ El sitio utiliza `Tinos` para titulares, `Raleway` para texto y `Fira Mono` para
 
 Las imágenes activas se encuentran en `assets/images/`. Entre los archivos incorporados recientemente:
 
-- La ilustración de marca del encabezado también está incrustada en `index.html` para evitar iconos rotos al publicar.
+- La ilustración de marca está incrustada en `index.html` y se muestra ampliada a la izquierda del título principal.
 - La fotografía del bloque “Chi siamo” está incrustada directamente en `index.html` para evitar pérdidas de archivos al publicar o descomprimir el sitio.
 - El paisaje marino de la sección “Esterni” está incrustado directamente en `index.html` y se muestra completo, sin recorte.
-- `villa-facade.jpg`: primera imagen del carrusel.
-- `villa-interior-arch.jpg`
 - `lemon-books.jpg`
 - `fireplace-map.jpg`
 - `stair-detail.jpg`
@@ -60,6 +58,15 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 - `raito-history.jpg`
 - `white-facade-palms.jpg`
 - `terrace-gulf-chair.jpg`
+
+Las primeras seis imágenes del carrusel se encuentran en:
+
+- `gallery-villa-facade.jpg`
+- `gallery-garden-detail.jpg`
+- `gallery-garden-path.jpg`
+- `gallery-attic-bedroom.jpg`
+- `gallery-living-room.jpg`
+- `gallery-living-dining.jpg`
 
 Para reemplazar una foto sin modificar el HTML, exporta la nueva imagen en JPG o PNG y conserva exactamente el mismo nombre. Se recomienda:
 

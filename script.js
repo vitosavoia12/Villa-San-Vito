@@ -223,6 +223,16 @@ const carouselNext = document.querySelector("[data-carousel-next]");
 const carouselAutoplayDelay = 6500;
 let carouselAutoplay;
 
+const brandMark = document.querySelector(".brand img");
+const openingHeading = document.querySelector(".opening-heading");
+
+if (brandMark && openingHeading) {
+  brandMark.classList.add("opening-brand-mark");
+  brandMark.removeAttribute("width");
+  brandMark.removeAttribute("height");
+  openingHeading.prepend(brandMark);
+}
+
 function setLanguage(selectedLanguage) {
   const dictionary = translations[selectedLanguage] || translations.it;
 
