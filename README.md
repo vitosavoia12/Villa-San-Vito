@@ -126,3 +126,5 @@ Puede alojarse directamente en Netlify, Vercel o cualquier hosting de archivos e
 ## Google Tag Manager
 
 El contenedor `GTM-KV229NML` está instalado en `index.html`, con el script dentro de `<head>` y el bloque `noscript` inmediatamente después de la apertura de `<body>`.
+
+La etiqueta directa de Google Analytics `G-ZSSL3DCMM5` también está instalada en `<head>` mediante `gtag.js`.
