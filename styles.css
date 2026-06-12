@@ -333,18 +333,20 @@ p {
 }
 
 .about-photo {
-  width: min(100%, 40rem);
+  width: min(100%, 48rem);
   margin: 0;
-  overflow: hidden;
-  border-radius: 8px;
-  background: var(--paper-warm);
+  overflow: visible;
+  background: transparent;
 }
 
 .about-photo img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: auto;
+  aspect-ratio: auto;
+  border-radius: 8px;
   filter: saturate(0.94) contrast(0.98);
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
 
 .about-copy {
@@ -502,6 +504,20 @@ p {
   color: var(--muted);
   font-family: var(--mono);
   font-size: 0.68rem;
+}
+
+.outdoors-seascape {
+  width: min(100%, 33rem);
+  margin: 0 auto;
+}
+
+.topic-media.outdoors-seascape img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
 }
 
 .rooms-section {

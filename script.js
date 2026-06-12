@@ -220,7 +220,7 @@ const ariaTranslatableNodes = document.querySelectorAll("[data-i18n-aria]");
 const carouselTrack = document.querySelector("[data-carousel-track]");
 const carouselPrevious = document.querySelector("[data-carousel-prev]");
 const carouselNext = document.querySelector("[data-carousel-next]");
-const carouselAutoplayDelay = 5500;
+const carouselAutoplayDelay = 6500;
 let carouselAutoplay;
 
 function setLanguage(selectedLanguage) {

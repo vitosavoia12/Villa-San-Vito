@@ -46,8 +46,9 @@ El sitio utiliza `Tinos` para titulares, `Raleway` para texto y `Fira Mono` para
 
 Las imágenes activas se encuentran en `assets/images/`. Entre los archivos incorporados recientemente:
 
-- `brand-mark.png`: ilustración de marca del encabezado.
+- La ilustración de marca del encabezado también está incrustada en `index.html` para evitar iconos rotos al publicar.
 - La fotografía del bloque “Chi siamo” está incrustada directamente en `index.html` para evitar pérdidas de archivos al publicar o descomprimir el sitio.
+- El paisaje marino de la sección “Esterni” está incrustado directamente en `index.html` y se muestra completo, sin recorte.
 - `villa-facade.jpg`: primera imagen del carrusel.
 - `villa-interior-arch.jpg`
 - `lemon-books.jpg`
@@ -67,6 +68,8 @@ Para reemplazar una foto sin modificar el HTML, exporta la nueva imagen en JPG o
 - Fotografías optimizadas para web, idealmente por debajo de 500 KB cuando sea posible.
 
 Mantén siempre textos `alt` descriptivos en `index.html`.
+
+El carrusel inicial avanza automáticamente una fotografía cada 6,5 segundos y también permite navegación manual mediante las flechas.
 
 ## Servicios
 
