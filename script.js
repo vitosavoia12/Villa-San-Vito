@@ -12,6 +12,41 @@ const translations = {
     "opening.title": "Villa San Vito",
     "carousel.prev": "Foto precedente",
     "carousel.next": "Foto successiva",
+    "aria.primaryNavigation": "Navigazione principale",
+    "aria.brandHome": "Home di Villa San Vito",
+    "aria.mainMenu": "Menu principale",
+    "aria.languageSwitcher": "Selettore lingua",
+    "aria.territoryGallery": "Selezione fotografica del territorio e della villa",
+    "aria.villaGallery": "Galleria fotografica della villa",
+    "aria.outdoorsGallery": "Galleria degli spazi esterni",
+    "aria.bookingPlatforms": "Piattaforme di prenotazione",
+    "aria.socialMedia": "Canali social",
+    "alt.hero": "Facciata storica di Villa San Vito tra le palme",
+    "alt.about": "La famiglia di Villa San Vito riunita sulla terrazza affacciata sul Golfo",
+    "alt.history": "Raito e Vietri in un dipinto di Josef Rabel del 1819",
+    "alt.gardenDetail": "Dettaglio del giardino con vaso in terracotta e gerani",
+    "alt.gardenPath": "Passaggio esterno tra la villa, le palme e il giardino",
+    "alt.atticBedroom": "Camera mansardata con letto e dettagli nei toni del mare",
+    "alt.livingRoom": "Soggiorno luminoso con arredi mediterranei e finestra ad arco",
+    "alt.livingDining": "Soggiorno e zona pranzo con arco azzurro e camino",
+    "alt.lemonBooks": "Limoni e libri su un mobile in legno",
+    "alt.fireplaceMap": "Camino bianco con mappa antica e dettagli mediterranei",
+    "alt.stairDetail": "Dettaglio della scala interna in ferro e legno",
+    "alt.villaSign": "Targa in ceramica Villa San Vito",
+    "alt.lantern": "Lanterna decorativa su pavimento in cotto",
+    "alt.lemonView": "Limoni con vista sul mare della Costiera Amalfitana",
+    "alt.coastSeascape": "Paesaggio marino della Costiera Amalfitana visto dalla costa",
+    "alt.villaFacade": "Facciata bianca e palme a Villa San Vito",
+    "alt.villaBedroomTowels": "Asciugamani preparati sul letto con cuscini nei toni del mare",
+    "alt.villaBedroomBlue": "Camera da letto con biancheria e asciugamani per gli ospiti",
+    "alt.outdoorsEntry": "Ingresso della villa affacciato sul giardino",
+    "alt.outdoorsGarden": "Prato ombreggiato e alberi nel giardino",
+    "alt.outdoorsTerrace": "Terrazza panoramica aperta sul Golfo di Salerno",
+    "alt.outdoorsGulfView": "Vista sul Golfo dalla terrazza della villa",
+    "alt.outdoorsTable": "Tavolo sulla terrazza sotto il pergolato",
+    "alt.servicesMap": "Mappa illustrata della Costiera Amalfitana",
+    "alt.garage": "Cancello di accesso al parcheggio privato della villa",
+    "alt.pets": "Cane accolto a Villa San Vito",
     "pets.short": "Siamo inoltre amici degli animali",
     "about.kicker": "Chi siamo",
     "about.title": "Chi siamo",
@@ -68,7 +103,10 @@ const translations = {
     "booking.copy": "Villa San Vito non gestisce prenotazioni dirette dal sito. Disponibilità, condizioni e pagamenti sono gestiti sulle piattaforme esterne.",
     "contact.email.label": "Contattaci via email",
     "instagram.copy": "Momenti recenti e viste della casa sono anche su",
-    "footer.reservations": "Prenotazioni gestite esclusivamente tramite Airbnb, Booking e Vrbo."
+    "footer.location": "Raito, Vietri sul Mare, Campania, Italia",
+    "footer.reservations": "Prenotazioni gestite esclusivamente tramite Airbnb, Booking e Vrbo.",
+    "footer.registration": "Codice di registrazione",
+    "footer.powered": "Realizzato da"
   },
 
   es: {
@@ -83,6 +121,41 @@ const translations = {
     "opening.title": "Villa San Vito",
     "carousel.prev": "Foto anterior",
     "carousel.next": "Foto siguiente",
+    "aria.primaryNavigation": "Navegación principal",
+    "aria.brandHome": "Inicio de Villa San Vito",
+    "aria.mainMenu": "Menú principal",
+    "aria.languageSwitcher": "Selector de idioma",
+    "aria.territoryGallery": "Selección fotográfica del territorio y la villa",
+    "aria.villaGallery": "Galería fotográfica de la villa",
+    "aria.outdoorsGallery": "Galería de los espacios exteriores",
+    "aria.bookingPlatforms": "Plataformas de reserva",
+    "aria.socialMedia": "Redes sociales",
+    "alt.hero": "Fachada histórica de Villa San Vito entre palmeras",
+    "alt.about": "La familia de Villa San Vito reunida en la terraza con vistas al Golfo",
+    "alt.history": "Raito y Vietri en una pintura de Josef Rabel de 1819",
+    "alt.gardenDetail": "Detalle del jardín con maceta de terracota y geranios",
+    "alt.gardenPath": "Pasaje exterior entre la villa, las palmeras y el jardín",
+    "alt.atticBedroom": "Dormitorio abuhardillado con cama y detalles en tonos marinos",
+    "alt.livingRoom": "Salón luminoso con decoración mediterránea y ventana arqueada",
+    "alt.livingDining": "Salón y comedor con arco azul y chimenea",
+    "alt.lemonBooks": "Limones y libros sobre un mueble de madera",
+    "alt.fireplaceMap": "Chimenea blanca con mapa antiguo y detalles mediterráneos",
+    "alt.stairDetail": "Detalle de la escalera interior de hierro y madera",
+    "alt.villaSign": "Placa de cerámica de Villa San Vito",
+    "alt.lantern": "Farol decorativo sobre suelo de terracota",
+    "alt.lemonView": "Limones con vistas al mar de la Costa Amalfitana",
+    "alt.coastSeascape": "Paisaje marino de la Costa Amalfitana visto desde la costa",
+    "alt.villaFacade": "Fachada blanca y palmeras en Villa San Vito",
+    "alt.villaBedroomTowels": "Toallas preparadas sobre la cama con cojines en tonos marinos",
+    "alt.villaBedroomBlue": "Dormitorio con ropa de cama y toallas para los huéspedes",
+    "alt.outdoorsEntry": "Entrada de la villa con vistas al jardín",
+    "alt.outdoorsGarden": "Césped sombreado y árboles en el jardín",
+    "alt.outdoorsTerrace": "Terraza panorámica abierta al Golfo de Salerno",
+    "alt.outdoorsGulfView": "Vista del Golfo desde la terraza de la villa",
+    "alt.outdoorsTable": "Mesa en la terraza bajo la pérgola",
+    "alt.servicesMap": "Mapa ilustrado de la Costa Amalfitana",
+    "alt.garage": "Puerta de acceso al estacionamiento privado de la villa",
+    "alt.pets": "Perro recibido en Villa San Vito",
     "pets.short": "También somos amigos de los animales",
     "about.kicker": "Quiénes somos",
     "about.title": "Quiénes somos",
@@ -139,7 +212,10 @@ const translations = {
     "booking.copy": "Villa San Vito no gestiona reservas directas desde el sitio. La disponibilidad, las condiciones y los pagos se manejan en las plataformas externas.",
     "contact.email.label": "Contáctenos por correo electrónico",
     "instagram.copy": "También hay momentos recientes y vistas de la casa en",
-    "footer.reservations": "Reservas gestionadas exclusivamente a través de Airbnb, Booking y Vrbo."
+    "footer.location": "Raito, Vietri sul Mare, Campania, Italia",
+    "footer.reservations": "Reservas gestionadas exclusivamente a través de Airbnb, Booking y Vrbo.",
+    "footer.registration": "Código de registro",
+    "footer.powered": "Creado por"
   },
 
   en: {
@@ -154,6 +230,41 @@ const translations = {
     "opening.title": "Villa San Vito",
     "carousel.prev": "Previous photo",
     "carousel.next": "Next photo",
+    "aria.primaryNavigation": "Main navigation",
+    "aria.brandHome": "Villa San Vito home",
+    "aria.mainMenu": "Main menu",
+    "aria.languageSwitcher": "Language selector",
+    "aria.territoryGallery": "Photo selection of the area and the villa",
+    "aria.villaGallery": "Villa photo gallery",
+    "aria.outdoorsGallery": "Outdoor spaces gallery",
+    "aria.bookingPlatforms": "Booking platforms",
+    "aria.socialMedia": "Social media",
+    "alt.hero": "Historic facade of Villa San Vito among palm trees",
+    "alt.about": "The Villa San Vito family gathered on the terrace overlooking the Gulf",
+    "alt.history": "Raito and Vietri in an 1819 painting by Josef Rabel",
+    "alt.gardenDetail": "Garden detail with a terracotta pot and geraniums",
+    "alt.gardenPath": "Outdoor passage between the villa, palm trees and garden",
+    "alt.atticBedroom": "Attic bedroom with a bed and sea-toned details",
+    "alt.livingRoom": "Bright living room with Mediterranean furnishings and an arched window",
+    "alt.livingDining": "Living and dining area with a blue arch and fireplace",
+    "alt.lemonBooks": "Lemons and books on a wooden cabinet",
+    "alt.fireplaceMap": "White fireplace with an antique map and Mediterranean details",
+    "alt.stairDetail": "Detail of the iron and wood interior staircase",
+    "alt.villaSign": "Villa San Vito ceramic sign",
+    "alt.lantern": "Decorative lantern on a terracotta floor",
+    "alt.lemonView": "Lemons overlooking the sea of the Amalfi Coast",
+    "alt.coastSeascape": "Amalfi Coast seascape viewed from the shore",
+    "alt.villaFacade": "White facade and palm trees at Villa San Vito",
+    "alt.villaBedroomTowels": "Towels prepared on the bed with cushions in sea-inspired tones",
+    "alt.villaBedroomBlue": "Bedroom with guest linens and towels",
+    "alt.outdoorsEntry": "Villa entrance overlooking the garden",
+    "alt.outdoorsGarden": "Shaded lawn and trees in the garden",
+    "alt.outdoorsTerrace": "Panoramic terrace overlooking the Gulf of Salerno",
+    "alt.outdoorsGulfView": "View of the Gulf from the villa terrace",
+    "alt.outdoorsTable": "Table on the terrace beneath the pergola",
+    "alt.servicesMap": "Illustrated map of the Amalfi Coast",
+    "alt.garage": "Entrance gate to the villa's private parking area",
+    "alt.pets": "Dog welcomed at Villa San Vito",
     "pets.short": "Pet Friendly",
     "about.kicker": "Who we are",
     "about.title": "Who we are",
@@ -210,18 +321,25 @@ const translations = {
     "booking.copy": "Villa San Vito does not manage direct reservations through this site. Availability, conditions and payments are handled by the external platforms.",
     "contact.email.label": "Contact us by email",
     "instagram.copy": "Recent moments and views of the house are also on",
-    "footer.reservations": "Reservations are managed exclusively through Airbnb, Booking and Vrbo."
+    "footer.location": "Raito, Vietri sul Mare, Campania, Italy",
+    "footer.reservations": "Reservations are managed exclusively through Airbnb, Booking and Vrbo.",
+    "footer.registration": "Registration code",
+    "footer.powered": "Powered by"
   }
 };
 
 const languageButtons = document.querySelectorAll("[data-lang]");
 const translatableNodes = document.querySelectorAll("[data-i18n]");
 const ariaTranslatableNodes = document.querySelectorAll("[data-i18n-aria]");
-const carouselTrack = document.querySelector("[data-carousel-track]");
-const carouselPrevious = document.querySelector("[data-carousel-prev]");
-const carouselNext = document.querySelector("[data-carousel-next]");
+const aboutImage = document.querySelector(".about-photo img");
+
+if (aboutImage) {
+  aboutImage.dataset.i18nAlt = "alt.about";
+}
+
+const altTranslatableNodes = document.querySelectorAll("[data-i18n-alt]");
+const carouselRoots = document.querySelectorAll("[data-carousel]");
 const carouselAutoplayDelay = 6500;
-let carouselAutoplay;
 
 const brandMark = document.querySelector(".brand img");
 const openingHeading = document.querySelector(".opening-heading");
@@ -256,6 +374,15 @@ function setLanguage(selectedLanguage) {
     }
   });
 
+  altTranslatableNodes.forEach((node) => {
+    const key = node.dataset.i18nAlt;
+    const value = dictionary[key];
+
+    if (value) {
+      node.setAttribute("alt", value);
+    }
+  });
+
   languageButtons.forEach((button) => {
     const isActive = button.dataset.lang === selectedLanguage;
     button.classList.toggle("is-active", isActive);
@@ -271,65 +398,78 @@ languageButtons.forEach((button) => {
 
 setLanguage(localStorage.getItem("villaSanVitoLanguage") || "it");
 
-function moveCarousel(direction) {
-  if (!carouselTrack) return;
+function createCarousel(root) {
+  const track = root.querySelector("[data-carousel-track]");
+  const previous = root.querySelector("[data-carousel-prev]");
+  const next = root.querySelector("[data-carousel-next]");
+  const items = track?.querySelectorAll(".photo-series-item") || [];
+  let autoplay;
 
-  const firstItem = carouselTrack.querySelector(".photo-series-item");
-  const gap = Number.parseFloat(getComputedStyle(carouselTrack).columnGap) || 0;
-  const distance = firstItem ? firstItem.getBoundingClientRect().width + gap : carouselTrack.clientWidth * 0.82;
-  const maxScroll = carouselTrack.scrollWidth - carouselTrack.clientWidth;
-  const nextLeft = carouselTrack.scrollLeft + direction * distance;
+  function move(direction) {
+    if (!track || items.length < 2) return;
 
-  if (direction > 0 && nextLeft >= maxScroll - 4) {
-    carouselTrack.scrollTo({ left: 0, behavior: "smooth" });
-    return;
+    const firstItem = items[0];
+    const gap = Number.parseFloat(getComputedStyle(track).columnGap) || 0;
+    const distance = firstItem.getBoundingClientRect().width + gap;
+    const maxScroll = track.scrollWidth - track.clientWidth;
+    const nextLeft = track.scrollLeft + direction * distance;
+
+    if (direction > 0 && nextLeft >= maxScroll - 4) {
+      track.scrollTo({ left: 0, behavior: "smooth" });
+      return;
+    }
+
+    if (direction < 0 && nextLeft <= 4) {
+      track.scrollTo({ left: maxScroll, behavior: "smooth" });
+      return;
+    }
+
+    track.scrollBy({ left: direction * distance, behavior: "smooth" });
   }
 
-  if (direction < 0 && nextLeft <= 4) {
-    carouselTrack.scrollTo({ left: maxScroll, behavior: "smooth" });
-    return;
+  function stop() {
+    window.clearInterval(autoplay);
+    autoplay = null;
   }
 
-  carouselTrack.scrollBy({ left: direction * distance, behavior: "smooth" });
+  function start() {
+    if (!track || items.length < 2 || autoplay || document.hidden) return;
+    autoplay = window.setInterval(() => move(1), carouselAutoplayDelay);
+  }
+
+  function restart() {
+    stop();
+    start();
+  }
+
+  previous?.addEventListener("click", () => {
+    move(-1);
+    restart();
+  });
+
+  next?.addEventListener("click", () => {
+    move(1);
+    restart();
+  });
+
+  track?.addEventListener("mouseenter", stop);
+  track?.addEventListener("mouseleave", start);
+  track?.addEventListener("focusin", stop);
+  track?.addEventListener("focusout", start);
+
+  return { start, stop };
 }
 
-function startCarouselAutoplay() {
-  if (!carouselTrack || carouselAutoplay) return;
-
-  carouselAutoplay = window.setInterval(() => moveCarousel(1), carouselAutoplayDelay);
-}
-
-function stopCarouselAutoplay() {
-  window.clearInterval(carouselAutoplay);
-  carouselAutoplay = null;
-}
-
-function restartCarouselAutoplay() {
-  stopCarouselAutoplay();
-  startCarouselAutoplay();
-}
-
-carouselPrevious?.addEventListener("click", () => {
-  moveCarousel(-1);
-  restartCarouselAutoplay();
-});
-
-carouselNext?.addEventListener("click", () => {
-  moveCarousel(1);
-  restartCarouselAutoplay();
-});
-
-carouselTrack?.addEventListener("mouseenter", stopCarouselAutoplay);
-carouselTrack?.addEventListener("mouseleave", startCarouselAutoplay);
-carouselTrack?.addEventListener("focusin", stopCarouselAutoplay);
-carouselTrack?.addEventListener("focusout", startCarouselAutoplay);
+const carouselControllers = Array.from(carouselRoots, createCarousel);
 
 document.addEventListener("visibilitychange", () => {
-  if (document.hidden) {
-    stopCarouselAutoplay();
-  } else {
-    startCarouselAutoplay();
-  }
+  carouselControllers.forEach((carousel) => {
+    if (document.hidden) {
+      carousel.stop();
+    } else {
+      carousel.start();
+    }
+  });
 });
 
-startCarouselAutoplay();
+carouselControllers.forEach((carousel) => carousel.start());

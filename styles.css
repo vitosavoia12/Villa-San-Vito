@@ -259,6 +259,11 @@ p {
   margin: 0;
 }
 
+.opening-feature {
+  width: min(680px, 100%);
+  margin: 0 auto;
+}
+
 .photo-series {
   position: relative;
   width: min(680px, 100%);
@@ -298,12 +303,24 @@ p {
   object-fit: contain;
 }
 
+.photo-series-item.is-contained img {
+  object-fit: contain;
+}
+
 .photo-series-item img {
   display: block;
   width: 100%;
   height: 100%;
   filter: saturate(0.94) contrast(0.98);
   object-fit: cover;
+}
+
+.photo-series--landscape {
+  width: min(860px, 100%);
+}
+
+.photo-series--landscape .photo-series-item {
+  aspect-ratio: 4 / 3;
 }
 
 .photo-series-arrow {
@@ -486,6 +503,10 @@ p {
   line-height: 1.08;
 }
 
+.territory-gallery {
+  margin-top: clamp(3rem, 7vw, 5.5rem);
+}
+
 .topic-section-reverse {
   grid-template-columns: minmax(300px, 0.72fr) minmax(0, 0.78fr);
 }
@@ -537,18 +558,20 @@ p {
   font-size: 0.68rem;
 }
 
-.outdoors-seascape {
-  width: min(100%, 33rem);
-  margin: 0 auto;
+.outdoors-section {
+  display: block;
 }
 
-.topic-media.outdoors-seascape img {
+.outdoors-section .topic-copy {
+  max-width: 800px;
+}
+
+.outdoors-gallery {
+  margin-top: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.villa-gallery {
   width: 100%;
-  height: auto;
-  max-height: none;
-  aspect-ratio: auto;
-  object-fit: contain;
-  object-position: center;
 }
 
 .rooms-section {
@@ -668,6 +691,33 @@ p {
 .service-copy .service-lead {
   color: var(--ink);
   font-size: 1.08rem;
+}
+
+.service-feature-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 1.25rem;
+  border-radius: 8px;
+  background: var(--paper-warm);
+  filter: saturate(0.94) contrast(0.98);
+}
+
+.service-map-image {
+  max-width: 760px;
+  aspect-ratio: 1263 / 848;
+  object-fit: contain;
+}
+
+.service-garage-image {
+  aspect-ratio: 1136 / 858;
+  object-fit: cover;
+}
+
+.service-pet-image {
+  width: min(100%, 18rem);
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 .travel-modes {
@@ -851,9 +901,21 @@ p {
     grid-template-columns: 1fr auto;
   }
 
+  .brand {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
   .main-nav {
     grid-column: 1 / -1;
+    grid-row: 2;
     justify-content: flex-start;
+  }
+
+  .language-switcher {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
   }
 
   h1 {

@@ -1,0 +1,77 @@
+# Villa San Vito - contexto para continuar
+
+## Proyecto activo
+
+Ruta:
+
+`C:\Users\vitos\Documents\Codex\2026-05-19\quiero-que-construyas-un-sitio-web`
+
+Es un sitio estático formado principalmente por:
+
+- `index.html`
+- `styles.css`
+- `script.js`
+- `assets/images/`
+
+## Estado actual
+
+- Landing editorial, mediterránea y responsive.
+- Idiomas: italiano, inglés y español.
+- Toda modificación visible debe aplicarse en los tres idiomas.
+- Reservas derivadas a plataformas externas.
+- Google Tag Manager y Google Analytics instalados.
+- Favicon personalizado instalado.
+- Carruseles con flechas y avance automático cada 6,5 segundos.
+- Tipografía, espaciado, colores y fotografías adaptados a la estética premium solicitada.
+
+## Estructura principal
+
+1. Storia
+2. Territorio
+3. Villa
+4. Esterni
+5. Servizi
+6. Prenotazioni
+7. Chi siamo
+
+## Últimas modificaciones terminadas
+
+- La portada conserva una sola fotografía principal.
+- Debajo de `Territorio` hay un carrusel con las fotografías editoriales restantes y el paisaje marino.
+- `Esterni` tiene un carrusel independiente con cinco nuevas fotografías horizontales.
+- La sección `Collegamenti` incluye `assets/images/services-amalfi-map.jpg`.
+- La sección de mascotas incluye `assets/images/pets-welcome.jpg` antes del texto.
+- La sección `Villa` incluye un carrusel propio con la fachada y las nuevas fotografías `villa-bedroom-towels.jpeg` y `villa-bedroom-blue.jpeg`.
+- El bloque de estacionamiento incluye `assets/images/garage-gate.jpeg` debajo del encabezado.
+- Los carruseles funcionan de forma independiente.
+- Los textos alternativos, las etiquetas de navegación y los grupos interactivos cambian correctamente entre italiano, inglés y español.
+- Se corrigieron las dimensiones intrínsecas declaradas de tres imágenes para evitar saltos de maquetación.
+- La cabecera responsive mantiene la marca y el selector de idiomas en la primera fila, con el menú en la segunda.
+- `styles.css` y `script.js` llevan versión de caché `20260613-2`.
+- No hay imágenes rotas ni errores de JavaScript.
+- Se verificó el diseño en escritorio y móvil.
+
+## Archivos recientes importantes
+
+- `assets/images/outdoors-entry-garden.jpg`
+- `assets/images/outdoors-garden-lawn.jpg`
+- `assets/images/outdoors-terrace-gulf.jpg`
+- `assets/images/outdoors-gulf-view.jpg`
+- `assets/images/outdoors-terrace-table.jpg`
+- `assets/images/territory-coast-seascape.jpg`
+- `assets/images/services-amalfi-map.jpg`
+- `assets/images/pets-welcome.jpg`
+
+## Entrega actual
+
+ZIP:
+
+`C:\Users\vitos\Documents\Codex\2026-05-19\quiero-que-construyas-un-sitio-web\Villa-San-Vito-site.zip`
+
+Después de nuevas modificaciones, volver a:
+
+1. Comprobar sintaxis de `script.js`.
+2. Revisar imágenes rotas y referencias locales.
+3. Verificar escritorio y móvil en el navegador local.
+4. Probar los tres idiomas.
+5. Regenerar `Villa-San-Vito-site.zip`.

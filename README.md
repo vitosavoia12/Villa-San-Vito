@@ -39,6 +39,7 @@ El sitio utiliza `Tinos` para titulares, `Raleway` para texto y `Fira Mono` para
 - El sitio abre por defecto en italiano.
 - Los textos en italiano, español e inglés están en `script.js`, dentro de `translations`.
 - Cada nuevo texto visible debe tener su versión en los tres idiomas.
+- Los textos alternativos de las imágenes y las etiquetas `aria-label` localizadas también se gestionan desde `translations`.
 - Las secciones y el contenido base están en `index.html`.
 - La presentación visual y las adaptaciones móviles están en `styles.css`.
 
@@ -48,7 +49,11 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 
 - La ilustración de marca está incrustada en `index.html` y se muestra ampliada a la izquierda del título principal.
 - La fotografía del bloque “Chi siamo” está incrustada directamente en `index.html` para evitar pérdidas de archivos al publicar o descomprimir el sitio.
-- El paisaje marino de la sección “Esterni” está incrustado directamente en `index.html` y se muestra completo, sin recorte.
+- La portada utiliza `gallery-villa-facade.jpg` como imagen principal.
+- El carrusel de `Territorio` reúne las fotografías editoriales de la casa y `territory-coast-seascape.jpg`.
+- El carrusel de `Villa` combina `white-facade-palms.jpg`, `villa-bedroom-towels.jpeg` y `villa-bedroom-blue.jpeg`.
+- El carrusel de `Esterni` utiliza los cinco archivos que comienzan con `outdoors-`.
+- El mapa de `Collegamenti` está en `services-amalfi-map.jpg`, la foto de estacionamiento en `garage-gate.jpeg` y la foto de mascotas en `pets-welcome.jpg`.
 - `lemon-books.jpg`
 - `fireplace-map.jpg`
 - `stair-detail.jpg`
@@ -59,7 +64,7 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 - `white-facade-palms.jpg`
 - `terrace-gulf-chair.jpg`
 
-Las primeras seis imágenes del carrusel se encuentran en:
+Las primeras imágenes de la selección editorial se encuentran en:
 
 - `gallery-villa-facade.jpg`
 - `gallery-garden-detail.jpg`
@@ -76,7 +81,11 @@ Para reemplazar una foto sin modificar el HTML, exporta la nueva imagen en JPG o
 
 Mantén siempre textos `alt` descriptivos en `index.html`.
 
-El carrusel inicial avanza automáticamente una fotografía cada 6,5 segundos y también permite navegación manual mediante las flechas.
+Los carruseles de `Territorio`, `Villa` y `Esterni` avanzan automáticamente una fotografía cada 6,5 segundos y también permiten navegación manual mediante sus propias flechas.
+
+## Caché de recursos
+
+`index.html` incluye una versión en las referencias a `styles.css` y `script.js`. Al publicar cambios en esos archivos, conviene actualizar el valor de `?v=` para evitar que los navegadores reutilicen una versión anterior.
 
 ## Servicios
 
