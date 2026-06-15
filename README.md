@@ -50,7 +50,7 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 - La ilustración de marca está incrustada en `index.html` y se muestra ampliada a la izquierda del título principal.
 - La fotografía del bloque “Chi siamo” está incrustada directamente en `index.html` para evitar pérdidas de archivos al publicar o descomprimir el sitio.
 - La portada utiliza `gallery-villa-facade.jpg` como imagen principal.
-- `Territorio` presenta dos bloques editoriales alternados con `territory-exploring-coast.jpeg` y `territory-archaeology.jpeg`.
+- `Territorio` presenta dos bloques editoriales alternados con `territory-exploring-coast.jpg` y `territory-archaeology.jpg`.
 - El carrusel de `Villa` combina `white-facade-palms.jpg`, `villa-bedroom-towels.jpeg` y `villa-bedroom-blue.jpeg`.
 - El carrusel de `Esterni` utiliza los cinco archivos que comienzan con `outdoors-`.
 - El mapa de `Collegamenti` está en `services-amalfi-map.jpg`, el bloque de estacionamiento muestra `villa-sign.jpg` y la foto de mascotas está en `pets-welcome.jpg`.
@@ -61,7 +61,7 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 - `lantern.jpg`
 - `lemon-view.jpg`
 - `raito-history.jpg`
-- `history-raito-village.jpeg`
+- `history-raito-village.jpg`
 - `white-facade-palms.jpg`
 - `terrace-gulf-chair.jpg`
 
