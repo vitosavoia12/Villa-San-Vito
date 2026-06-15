@@ -54,7 +54,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Raleway:wght@300;400;500;600;700&family=Tinos:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260613-2">
+    <link rel="stylesheet" href="styles.css?v=20260615-4">
     <style>
       .about-photo {
         width: min(100%, 48rem) !important;
@@ -165,16 +165,19 @@
         </div>
       </section>
 
-      <section class="topic-section" id="storia" aria-labelledby="history-title">
-        <div class="topic-copy">
+      <section class="topic-section history-section" id="storia" aria-labelledby="history-title">
+        <div class="topic-copy history-copy">
           <p class="section-kicker" data-i18n="history.kicker">A. Storia</p>
           <h2 id="history-title" data-i18n="history.title">Un borgo sospeso tra cielo e mare</h2>
           <p data-i18n="history.copy">Raito conserva una memoria antica, fatta di luce, ceramica e silenzio. Arroccato sulla roccia e affacciato sul Golfo, questo lembo di terra dona alla villa il suo carattere più intimo: pietra viva, terrazze panoramiche, brezza marina e un tempo che scorre lento, senza fretta.</p>
+          <figure class="history-print">
+            <img src="assets/images/raito-history.jpg" width="3072" height="2304" data-i18n-alt="alt.history" alt="Raito e Vietri in un dipinto di Josef Rabel del 1819" loading="lazy">
+            <figcaption data-i18n="history.caption">Raito e Vietri in un dipinto di Josef Rabel, 1819</figcaption>
+          </figure>
           <p data-i18n="history.copy2">Villa San Vito custodisce e racconta questa storia. La sua anima ottocentesca dialoga armoniosamente con l'architettura locale: gli ambienti interni sono freschi, protetti da ampie mura antiche, mentre i sentieri esterni si snodano tra gli alberi di limoni, svelando scorci unici e panorami mozzafiato che abbracciano, dall'alto, la vicina Vietri sul Mare.</p>
         </div>
-        <figure class="topic-media">
-          <img src="assets/images/raito-history.jpg" width="3072" height="2304" data-i18n-alt="alt.history" alt="Raito e Vietri in un dipinto di Josef Rabel del 1819" loading="lazy">
-          <figcaption data-i18n="history.caption">Raito e Vietri in un dipinto di Josef Rabel, 1819</figcaption>
+        <figure class="topic-media history-village">
+          <img src="assets/images/history-raito-village.jpeg" width="1320" height="813" data-i18n-alt="alt.historyVillage" alt="Veduta panoramica del borgo di Raito tra il mare e la montagna" loading="lazy">
         </figure>
       </section>
 
@@ -184,69 +187,29 @@
           <h2 id="territory-title" data-i18n="territory.title">Una Posizione Strategica tra Mare, Arte e Cultura</h2>
           <p data-i18n="territory.copy">Villa San Vito si trova in una posizione privilegiata tra Vietri sul Mare e Cetara, immersa in una zona tranquilla e panoramica dove la Costiera Amalfitana comincia ad aprirsi verso il Golfo di Salerno. Questo angolo di paradiso unisce la massima riservatezza alla comodità di avere a portata di mano le mete più affascinanti della Campania.</p>
         </div>
-        <div class="territory-columns">
-          <article>
-            <h3 data-i18n="territory.coast.title">Esplorare la Costiera e i suoi Borghi</h3>
-            <p data-i18n="territory.coast.intro">Dalla villa è possibile muoversi agevolmente alla scoperta dei borghi più celebri della costa, scegliendo tra diverse modalità di viaggio.</p>
-            <p data-i18n="territory.coast.road">In auto, in scooter o con i bus locali lungo la Statale Amalfitana: una delle strade più panoramiche del mondo vi collegherà direttamente a Salerno, ideale anche per l'alta velocità ferroviaria, a Vietri che vi accoglierà con le sue storiche ceramiche colorate, mentre Cetara vi delizierà con la sua autentica tradizione marinara e la famosa colatura di alici. Proseguendo, troverete il piccolo borgo di Minori, la romantica Ravello sospesa tra cielo e mare, Amalfi con il suo duomo maestoso, Praiano e il fiordo di Furore, fino all'iconica Positano.</p>
-            <p data-i18n="territory.coast.sea">Via mare con traghetti, aliscafi e taxi boat: per un'esperienza senza stress, i moli di Salerno, Vietri e Cetara offrono collegamenti marittimi veloci. Potrete navigare ammirando e raggiungendo tutti i piccoli borghi oltre all'isola di Capri, per poi rientrare comodamente, a fine pomeriggio, nella calma e nel silenzio del borgo.</p>
+        <div class="territory-features">
+          <article class="territory-feature territory-feature--coast">
+            <figure class="territory-feature-media">
+              <img src="assets/images/territory-exploring-coast.jpeg" width="1200" height="1600" data-i18n-alt="alt.territoryCoast" alt="Veduta della costa con torre sul mare e scogli" loading="lazy">
+            </figure>
+            <div class="territory-feature-copy">
+              <h3 data-i18n="territory.coast.title">Esplorare la Costiera e i suoi Borghi</h3>
+              <p data-i18n="territory.coast.intro">Dalla villa è possibile muoversi agevolmente alla scoperta dei borghi più celebri della costa, scegliendo tra diverse modalità di viaggio.</p>
+              <p data-i18n="territory.coast.road">In auto, in scooter o con i bus locali lungo la Statale Amalfitana: una delle strade più panoramiche del mondo vi collegherà direttamente a Salerno, ideale anche per l'alta velocità ferroviaria, a Vietri che vi accoglierà con le sue storiche ceramiche colorate, mentre Cetara vi delizierà con la sua autentica tradizione marinara e la famosa colatura di alici. Proseguendo, troverete il piccolo borgo di Minori, la romantica Ravello sospesa tra cielo e mare, Amalfi con il suo duomo maestoso, Praiano e il fiordo di Furore, fino all'iconica Positano.</p>
+              <p data-i18n="territory.coast.sea">Via mare con traghetti, aliscafi e taxi boat: per un'esperienza senza stress, i moli di Salerno, Vietri e Cetara offrono collegamenti marittimi veloci. Potrete navigare ammirando e raggiungendo tutti i piccoli borghi oltre all'isola di Capri, per poi rientrare comodamente, a fine pomeriggio, nella calma e nel silenzio del borgo.</p>
+            </div>
           </article>
-          <article>
-            <h3 data-i18n="territory.history.title">Archeologia e Storia a Breve Distanza</h3>
-            <p data-i18n="territory.history.copy">La villa è anche la base perfetta per escursioni giornaliere dedicate alla storia antica.</p>
-            <p data-i18n="territory.history.places">Pompei ed Ercolano, per un tuffo indimenticabile nella storia romana, camminando tra le rovine perfettamente conservate all'ombra del Vesuvio, e Paestum, dove potrete ammirare i maestosi templi greci magnificamente conservati e concedervi una sosta nei rinomati caseifici della Piana del Sele.</p>
-          </article>
-        </div>
 
-        <div class="photo-series territory-gallery" data-carousel data-i18n-aria="aria.territoryGallery" aria-label="Selezione fotografica del territorio e della villa">
-          <button class="photo-series-arrow photo-series-arrow-prev" type="button" data-carousel-prev data-i18n-aria="carousel.prev" aria-label="Foto precedente">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M15 5 8 12l7 7"></path>
-            </svg>
-          </button>
-          <div class="photo-series-track" data-carousel-track>
-            <figure class="photo-series-item is-landscape">
-              <img src="assets/images/gallery-garden-detail.jpg" width="1800" height="1350" data-i18n-alt="alt.gardenDetail" alt="Dettaglio del giardino con vaso in terracotta e gerani" loading="lazy">
+          <article class="territory-feature territory-feature--reverse">
+            <figure class="territory-feature-media">
+              <img src="assets/images/territory-archaeology.jpeg" width="939" height="707" data-i18n-alt="alt.territoryArchaeology" alt="Cupole decorate e campanile di un borgo della Costiera Amalfitana" loading="lazy">
             </figure>
-            <figure class="photo-series-item">
-              <img src="assets/images/gallery-garden-path.jpg" width="768" height="1024" data-i18n-alt="alt.gardenPath" alt="Passaggio esterno tra la villa, le palme e il giardino" loading="lazy">
-            </figure>
-            <figure class="photo-series-item is-landscape">
-              <img src="assets/images/gallery-attic-bedroom.jpg" width="1800" height="1350" data-i18n-alt="alt.atticBedroom" alt="Camera mansardata con letto e dettagli nei toni del mare" loading="lazy">
-            </figure>
-            <figure class="photo-series-item is-landscape">
-              <img src="assets/images/gallery-living-room.jpg" width="1800" height="1350" data-i18n-alt="alt.livingRoom" alt="Soggiorno luminoso con arredi mediterranei e finestra ad arco" loading="lazy">
-            </figure>
-            <figure class="photo-series-item is-landscape">
-              <img src="assets/images/gallery-living-dining.jpg" width="1800" height="1350" data-i18n-alt="alt.livingDining" alt="Soggiorno e zona pranzo con arco azzurro e camino" loading="lazy">
-            </figure>
-            <figure class="photo-series-item is-landscape">
-              <img src="assets/images/lemon-books.jpg" width="1440" height="1080" data-i18n-alt="alt.lemonBooks" alt="Limoni e libri su un mobile in legno" loading="lazy">
-            </figure>
-            <figure class="photo-series-item">
-              <img src="assets/images/fireplace-map.jpg" width="1440" height="1920" data-i18n-alt="alt.fireplaceMap" alt="Camino bianco con mappa antica e dettagli mediterranei" loading="lazy">
-            </figure>
-            <figure class="photo-series-item">
-              <img src="assets/images/stair-detail.jpg" width="720" height="960" data-i18n-alt="alt.stairDetail" alt="Dettaglio della scala interna in ferro e legno" loading="lazy">
-            </figure>
-            <figure class="photo-series-item is-landscape">
-              <img src="assets/images/villa-sign-detail.jpg" width="1440" height="1080" data-i18n-alt="alt.villaSign" alt="Targa in ceramica Villa San Vito" loading="lazy">
-            </figure>
-            <figure class="photo-series-item">
-              <img src="assets/images/lantern.jpg" width="723" height="986" data-i18n-alt="alt.lantern" alt="Lanterna decorativa su pavimento in cotto" loading="lazy">
-            </figure>
-            <figure class="photo-series-item is-landscape">
-              <img src="assets/images/lemon-view.jpg" width="1024" height="768" data-i18n-alt="alt.lemonView" alt="Limoni con vista sul mare della Costiera Amalfitana" loading="lazy">
-            </figure>
-            <figure class="photo-series-item is-contained">
-              <img src="assets/images/territory-coast-seascape.jpg" width="1200" height="1600" data-i18n-alt="alt.coastSeascape" alt="Paesaggio marino della Costiera Amalfitana visto dalla costa" loading="lazy">
-            </figure>
-          </div>
-          <button class="photo-series-arrow photo-series-arrow-next" type="button" data-carousel-next data-i18n-aria="carousel.next" aria-label="Foto successiva">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="m9 5 7 7-7 7"></path>
-            </svg>
-          </button>
+            <div class="territory-feature-copy">
+              <h3 data-i18n="territory.history.title">Archeologia e Storia a Breve Distanza</h3>
+              <p data-i18n="territory.history.copy">La villa è anche la base perfetta per escursioni giornaliere dedicate alla storia antica.</p>
+              <p data-i18n="territory.history.places">Pompei ed Ercolano, per un tuffo indimenticabile nella storia romana, camminando tra le rovine perfettamente conservate all'ombra del Vesuvio, e Paestum, dove potrete ammirare i maestosi templi greci magnificamente conservati e concedervi una sosta nei rinomati caseifici della Piana del Sele.</p>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -364,7 +327,7 @@
             </div>
             <div class="service-copy">
               <h3 data-i18n="services.parking.title">Parcheggio</h3>
-              <img class="service-feature-image service-garage-image" src="assets/images/garage-gate.jpeg" width="1136" height="858" data-i18n-alt="alt.garage" alt="Cancello di accesso al parcheggio privato della villa" loading="lazy">
+              <img class="service-feature-image service-sign-image" src="assets/images/villa-sign.jpg" width="960" height="720" data-i18n-alt="alt.villaSign" alt="Targa in ceramica Villa San Vito" loading="lazy">
               <p data-i18n="services.parking.copy">La villa è dotata di un parcheggio interno e gratuito per gli ospiti della struttura.</p>
             </div>
           </article>
@@ -447,6 +410,6 @@
       </div>
     </footer>
 
-    <script src="script.js?v=20260613-2" defer></script>
+    <script src="script.js?v=20260615-4" defer></script>
   </body>
 </html>

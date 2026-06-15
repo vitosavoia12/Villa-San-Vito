@@ -37,17 +37,18 @@ Es un sitio estático formado principalmente por:
 ## Últimas modificaciones terminadas
 
 - La portada conserva una sola fotografía principal.
-- Debajo de `Territorio` hay un carrusel con las fotografías editoriales restantes y el paisaje marino.
+- `Territorio` presenta dos bloques editoriales alternados: `territory-exploring-coast.jpeg` junto a “Explorando la costa” y `territory-archaeology.jpeg` junto a “Arqueología e Historia”.
 - `Esterni` tiene un carrusel independiente con cinco nuevas fotografías horizontales.
 - La sección `Collegamenti` incluye `assets/images/services-amalfi-map.jpg`.
 - La sección de mascotas incluye `assets/images/pets-welcome.jpg` antes del texto.
 - La sección `Villa` incluye un carrusel propio con la fachada y las nuevas fotografías `villa-bedroom-towels.jpeg` y `villa-bedroom-blue.jpeg`.
-- El bloque de estacionamiento incluye `assets/images/garage-gate.jpeg` debajo del encabezado.
-- Los carruseles funcionan de forma independiente.
+- `Storia` muestra `history-raito-village.jpeg` como panorámica lateral y la impresión antigua `raito-history.jpg` después del primer párrafo.
+- El bloque de estacionamiento incluye `assets/images/villa-sign.jpg` debajo del encabezado.
+- Los carruseles de `Villa` y `Esterni` funcionan de forma independiente.
 - Los textos alternativos, las etiquetas de navegación y los grupos interactivos cambian correctamente entre italiano, inglés y español.
 - Se corrigieron las dimensiones intrínsecas declaradas de tres imágenes para evitar saltos de maquetación.
 - La cabecera responsive mantiene la marca y el selector de idiomas en la primera fila, con el menú en la segunda.
-- `styles.css` y `script.js` llevan versión de caché `20260613-2`.
+- `styles.css` y `script.js` llevan versión de caché `20260615-4`.
 - No hay imágenes rotas ni errores de JavaScript.
 - Se verificó el diseño en escritorio y móvil.
 
@@ -59,7 +60,11 @@ Es un sitio estático formado principalmente por:
 - `assets/images/outdoors-gulf-view.jpg`
 - `assets/images/outdoors-terrace-table.jpg`
 - `assets/images/territory-coast-seascape.jpg`
+- `assets/images/territory-exploring-coast.jpeg`
+- `assets/images/territory-archaeology.jpeg`
+- `assets/images/history-raito-village.jpeg`
 - `assets/images/services-amalfi-map.jpg`
+- `assets/images/villa-sign.jpg`
 - `assets/images/pets-welcome.jpg`
 
 ## Entrega actual

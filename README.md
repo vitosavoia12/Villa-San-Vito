@@ -50,10 +50,10 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 - La ilustración de marca está incrustada en `index.html` y se muestra ampliada a la izquierda del título principal.
 - La fotografía del bloque “Chi siamo” está incrustada directamente en `index.html` para evitar pérdidas de archivos al publicar o descomprimir el sitio.
 - La portada utiliza `gallery-villa-facade.jpg` como imagen principal.
-- El carrusel de `Territorio` reúne las fotografías editoriales de la casa y `territory-coast-seascape.jpg`.
+- `Territorio` presenta dos bloques editoriales alternados con `territory-exploring-coast.jpeg` y `territory-archaeology.jpeg`.
 - El carrusel de `Villa` combina `white-facade-palms.jpg`, `villa-bedroom-towels.jpeg` y `villa-bedroom-blue.jpeg`.
 - El carrusel de `Esterni` utiliza los cinco archivos que comienzan con `outdoors-`.
-- El mapa de `Collegamenti` está en `services-amalfi-map.jpg`, la foto de estacionamiento en `garage-gate.jpeg` y la foto de mascotas en `pets-welcome.jpg`.
+- El mapa de `Collegamenti` está en `services-amalfi-map.jpg`, el bloque de estacionamiento muestra `villa-sign.jpg` y la foto de mascotas está en `pets-welcome.jpg`.
 - `lemon-books.jpg`
 - `fireplace-map.jpg`
 - `stair-detail.jpg`
@@ -61,6 +61,7 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 - `lantern.jpg`
 - `lemon-view.jpg`
 - `raito-history.jpg`
+- `history-raito-village.jpeg`
 - `white-facade-palms.jpg`
 - `terrace-gulf-chair.jpg`
 
@@ -81,7 +82,7 @@ Para reemplazar una foto sin modificar el HTML, exporta la nueva imagen en JPG o
 
 Mantén siempre textos `alt` descriptivos en `index.html`.
 
-Los carruseles de `Territorio`, `Villa` y `Esterni` avanzan automáticamente una fotografía cada 6,5 segundos y también permiten navegación manual mediante sus propias flechas.
+Los carruseles de `Villa` y `Esterni` avanzan automáticamente una fotografía cada 6,5 segundos y también permiten navegación manual mediante sus propias flechas.
 
 ## Caché de recursos
 
