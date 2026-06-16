@@ -41,14 +41,14 @@ Es un sitio estático formado principalmente por:
 - `Esterni` usa el título “Oltre le mura, l'esperienza continua”, muestra tres nuevas fotografías editoriales y conserva su carrusel independiente.
 - La sección `Collegamenti` incluye `assets/images/services-amalfi-map.jpg`.
 - La sección de mascotas incluye `assets/images/pets-welcome.jpg` antes del texto.
-- La sección `Villa` intercala fotografías interiores entre sus párrafos y mantiene un carrusel propio con la fachada, `villa-bedroom-towels.jpg` y `villa-bedroom-blue.jpg`.
+- La sección `Villa` intercala fotografías interiores entre sus párrafos y mantiene un carrusel propio con la fachada, `villa-towels.jpg` y `villa-bedroom-blue.jpg`.
 - `Storia` muestra `history-raito-village.jpg` como panorámica lateral y la impresión antigua `raito-history.jpg` después del primer párrafo.
 - El bloque de estacionamiento incluye `assets/images/villa-sign.jpg` debajo del encabezado.
 - Los carruseles de `Villa` y `Esterni` funcionan de forma independiente.
 - Los textos alternativos, las etiquetas de navegación y los grupos interactivos cambian correctamente entre italiano, inglés y español.
 - Se corrigieron las dimensiones intrínsecas declaradas de tres imágenes para evitar saltos de maquetación.
 - La cabecera responsive mantiene la marca y el selector de idiomas en la primera fila, con el menú en la segunda.
-- `styles.css` y `script.js` llevan versión de caché `20260616-2`.
+- `styles.css` y `script.js` llevan versión de caché `20260616-4`.
 - Las tres imágenes nuevas de `Storia` y `Territorio` fueron normalizadas a JPEG estándar con extensión `.jpg` y carga inmediata.
 - No hay imágenes rotas ni errores de JavaScript.
 - Se verificó el diseño en escritorio y móvil.
@@ -69,7 +69,7 @@ Es un sitio estático formado principalmente por:
 - `assets/images/history-raito-village.jpg`
 - `assets/images/villa-dining-arch.jpg`
 - `assets/images/villa-living-staircase.jpg`
-- `assets/images/villa-bedroom-towels.jpg`
+- `assets/images/villa-towels.jpg`
 - `assets/images/villa-study-fireplace.jpg`
 - `assets/images/villa-bedroom-blue.jpg`
 - `assets/images/services-amalfi-map.jpg`
