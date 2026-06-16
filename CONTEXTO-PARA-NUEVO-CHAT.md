@@ -48,7 +48,8 @@ Es un sitio estático formado principalmente por:
 - Los textos alternativos, las etiquetas de navegación y los grupos interactivos cambian correctamente entre italiano, inglés y español.
 - Se corrigieron las dimensiones intrínsecas declaradas de tres imágenes para evitar saltos de maquetación.
 - La cabecera responsive mantiene la marca y el selector de idiomas en la primera fila, con el menú en la segunda.
-- `styles.css` y `script.js` llevan versión de caché `20260616-9`.
+- `styles.css` y `script.js` llevan versión de caché `20260616-10`.
+- Se retiró `loading="lazy"` de las fotos para evitar placeholders visibles en móvil o al desplazarse.
 - Las tres imágenes nuevas de `Storia` y `Territorio` fueron normalizadas a JPEG estándar con extensión `.jpg` y carga inmediata.
 - No hay imágenes rotas ni errores de JavaScript.
 - Se verificó el diseño en escritorio y móvil.

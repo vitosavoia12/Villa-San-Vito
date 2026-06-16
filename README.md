@@ -49,7 +49,8 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 
 - La ilustración de marca está incrustada en `index.html` y se muestra ampliada a la izquierda del título principal.
 - La fotografía del bloque “Chi siamo” está incrustada directamente en `index.html` para evitar pérdidas de archivos al publicar o descomprimir el sitio.
-- La portada utiliza `hero-villa-facade.jpg` como imagen principal.
+- La portada utiliza `hero-villa-facade-main.jpg` como imagen principal.
+- Se retiró `loading="lazy"` de las fotos para evitar placeholders o textos alternativos visibles durante la carga.
 - `Territorio` presenta dos bloques editoriales alternados con `territory-exploring-coast.jpg` y `territory-archaeology.jpg`.
 - La sección `Villa` muestra el texto en un bloque compacto y una grilla fija de detalles interiores, sin carrusel.
 - `Esterni` usa el título “Oltre le mura, l'esperienza continua” y muestra cinco fotografías intercaladas una por párrafo, sin carrusel.
@@ -72,7 +73,7 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 
 Las primeras imágenes de la selección editorial se encuentran en:
 
-- `hero-villa-facade.jpg`
+- `hero-villa-facade-main.jpg`
 - `villa-dining-arch.jpg`
 - `villa-living-staircase.jpg`
 - `villa-towels.jpg`
