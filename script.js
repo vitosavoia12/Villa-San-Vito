@@ -10,16 +10,12 @@ const translations = {
     "nav.book": "Prenotazioni",
     "opening.kicker": "Costiera Amalfitana",
     "opening.title": "Villa San Vito",
-    "carousel.prev": "Foto precedente",
-    "carousel.next": "Foto successiva",
     "aria.primaryNavigation": "Navigazione principale",
     "aria.brandHome": "Home di Villa San Vito",
     "aria.mainMenu": "Menu principale",
     "aria.languageSwitcher": "Selettore lingua",
     "aria.territoryGallery": "Selezione fotografica del territorio e della villa",
     "aria.villaInlinePhotos": "Dettagli interni della villa",
-    "aria.villaGallery": "Galleria fotografica della villa",
-    "aria.outdoorsGallery": "Galleria degli spazi esterni",
     "aria.outdoorsInlinePhotos": "Sequenza fotografica degli esterni",
     "aria.bookingPlatforms": "Piattaforme di prenotazione",
     "aria.socialMedia": "Canali social",
@@ -41,17 +37,11 @@ const translations = {
     "alt.coastSeascape": "Paesaggio marino della Costiera Amalfitana visto dalla costa",
     "alt.territoryCoast": "Veduta della costa con torre sul mare e scogli",
     "alt.territoryArchaeology": "Cupole decorate e campanile di un borgo della Costiera Amalfitana",
-    "alt.villaFacade": "Facciata bianca e palme a Villa San Vito",
     "alt.villaDiningArch": "Zona pranzo con arco azzurro e vista sul soggiorno",
     "alt.villaLivingStaircase": "Soggiorno con scala interna, lampadario e pavimento in cotto",
     "alt.villaStudyFireplace": "Camino dello studio con mappa antica e dettagli mediterranei",
     "alt.villaBedroomTowels": "Asciugamani preparati sul letto con cuscini nei toni del mare",
     "alt.villaBedroomBlue": "Camera da letto con biancheria e asciugamani per gli ospiti",
-    "alt.outdoorsEntry": "Ingresso della villa affacciato sul giardino",
-    "alt.outdoorsGarden": "Prato ombreggiato e alberi nel giardino",
-    "alt.outdoorsTerrace": "Terrazza panoramica aperta sul Golfo di Salerno",
-    "alt.outdoorsGulfView": "Vista sul Golfo dalla terrazza della villa",
-    "alt.outdoorsTable": "Tavolo sulla terrazza sotto il pergolato",
     "alt.outdoorsSeaTerrace": "Terrazza panoramica con sdraio e vista sul mare",
     "alt.outdoorsMagnoliaGarden": "Giardino ombreggiato con magnolia e prato verde",
     "alt.outdoorsTerraceDiningSea": "Tavolo esterno all'ombra con vista sul mare",
@@ -135,16 +125,12 @@ const translations = {
     "nav.book": "Reservas",
     "opening.kicker": "Costa Amalfitana",
     "opening.title": "Villa San Vito",
-    "carousel.prev": "Foto anterior",
-    "carousel.next": "Foto siguiente",
     "aria.primaryNavigation": "Navegación principal",
     "aria.brandHome": "Inicio de Villa San Vito",
     "aria.mainMenu": "Menú principal",
     "aria.languageSwitcher": "Selector de idioma",
     "aria.territoryGallery": "Selección fotográfica del territorio y la villa",
     "aria.villaInlinePhotos": "Detalles interiores de la villa",
-    "aria.villaGallery": "Galería fotográfica de la villa",
-    "aria.outdoorsGallery": "Galería de los espacios exteriores",
     "aria.outdoorsInlinePhotos": "Secuencia fotográfica de los exteriores",
     "aria.bookingPlatforms": "Plataformas de reserva",
     "aria.socialMedia": "Redes sociales",
@@ -166,17 +152,11 @@ const translations = {
     "alt.coastSeascape": "Paisaje marino de la Costa Amalfitana visto desde la costa",
     "alt.territoryCoast": "Vista de la costa con una torre junto al mar y formaciones rocosas",
     "alt.territoryArchaeology": "Cúpulas decoradas y campanario de un pueblo de la Costa Amalfitana",
-    "alt.villaFacade": "Fachada blanca y palmeras en Villa San Vito",
     "alt.villaDiningArch": "Comedor con arco azul y vista al salón",
     "alt.villaLivingStaircase": "Salón con escalera interior, lámpara y suelo de terracota",
     "alt.villaStudyFireplace": "Chimenea del estudio con mapa antiguo y detalles mediterráneos",
     "alt.villaBedroomTowels": "Toallas preparadas sobre la cama con cojines en tonos marinos",
     "alt.villaBedroomBlue": "Dormitorio con ropa de cama y toallas para los huéspedes",
-    "alt.outdoorsEntry": "Entrada de la villa con vistas al jardín",
-    "alt.outdoorsGarden": "Césped sombreado y árboles en el jardín",
-    "alt.outdoorsTerrace": "Terraza panorámica abierta al Golfo de Salerno",
-    "alt.outdoorsGulfView": "Vista del Golfo desde la terraza de la villa",
-    "alt.outdoorsTable": "Mesa en la terraza bajo la pérgola",
     "alt.outdoorsSeaTerrace": "Terraza panorámica con tumbona y vista al mar",
     "alt.outdoorsMagnoliaGarden": "Jardín sombreado con magnolio y césped verde",
     "alt.outdoorsTerraceDiningSea": "Mesa exterior a la sombra con vista al mar",
@@ -260,16 +240,12 @@ const translations = {
     "nav.book": "Reservations",
     "opening.kicker": "Amalfi Coast",
     "opening.title": "Villa San Vito",
-    "carousel.prev": "Previous photo",
-    "carousel.next": "Next photo",
     "aria.primaryNavigation": "Main navigation",
     "aria.brandHome": "Villa San Vito home",
     "aria.mainMenu": "Main menu",
     "aria.languageSwitcher": "Language selector",
     "aria.territoryGallery": "Photo selection of the area and the villa",
     "aria.villaInlinePhotos": "Interior details of the villa",
-    "aria.villaGallery": "Villa photo gallery",
-    "aria.outdoorsGallery": "Outdoor spaces gallery",
     "aria.outdoorsInlinePhotos": "Outdoor photographic sequence",
     "aria.bookingPlatforms": "Booking platforms",
     "aria.socialMedia": "Social media",
@@ -291,17 +267,11 @@ const translations = {
     "alt.coastSeascape": "Amalfi Coast seascape viewed from the shore",
     "alt.territoryCoast": "Coastal view with a seaside tower and rock formations",
     "alt.territoryArchaeology": "Decorated domes and bell tower in an Amalfi Coast village",
-    "alt.villaFacade": "White facade and palm trees at Villa San Vito",
     "alt.villaDiningArch": "Dining area with a blue arch and view toward the living room",
     "alt.villaLivingStaircase": "Living room with an interior staircase, chandelier and terracotta floor",
     "alt.villaStudyFireplace": "Study fireplace with an antique map and Mediterranean details",
     "alt.villaBedroomTowels": "Towels prepared on the bed with cushions in sea-inspired tones",
     "alt.villaBedroomBlue": "Bedroom with guest linens and towels",
-    "alt.outdoorsEntry": "Villa entrance overlooking the garden",
-    "alt.outdoorsGarden": "Shaded lawn and trees in the garden",
-    "alt.outdoorsTerrace": "Panoramic terrace overlooking the Gulf of Salerno",
-    "alt.outdoorsGulfView": "View of the Gulf from the villa terrace",
-    "alt.outdoorsTable": "Table on the terrace beneath the pergola",
     "alt.outdoorsSeaTerrace": "Panoramic terrace with a deck chair and sea view",
     "alt.outdoorsMagnoliaGarden": "Shaded garden with a magnolia tree and green lawn",
     "alt.outdoorsTerraceDiningSea": "Outdoor table in the shade with a sea view",
@@ -386,8 +356,6 @@ if (aboutImage) {
 }
 
 const altTranslatableNodes = document.querySelectorAll("[data-i18n-alt]");
-const carouselRoots = document.querySelectorAll("[data-carousel]");
-const carouselAutoplayDelay = 6500;
 
 const brandMark = document.querySelector(".brand img");
 const openingHeading = document.querySelector(".opening-heading");
@@ -445,79 +413,3 @@ languageButtons.forEach((button) => {
 });
 
 setLanguage(localStorage.getItem("villaSanVitoLanguage") || "it");
-
-function createCarousel(root) {
-  const track = root.querySelector("[data-carousel-track]");
-  const previous = root.querySelector("[data-carousel-prev]");
-  const next = root.querySelector("[data-carousel-next]");
-  const items = track?.querySelectorAll(".photo-series-item") || [];
-  let autoplay;
-
-  function move(direction) {
-    if (!track || items.length < 2) return;
-
-    const firstItem = items[0];
-    const gap = Number.parseFloat(getComputedStyle(track).columnGap) || 0;
-    const distance = firstItem.getBoundingClientRect().width + gap;
-    const maxScroll = track.scrollWidth - track.clientWidth;
-    const nextLeft = track.scrollLeft + direction * distance;
-
-    if (direction > 0 && nextLeft >= maxScroll - 4) {
-      track.scrollTo({ left: 0, behavior: "smooth" });
-      return;
-    }
-
-    if (direction < 0 && nextLeft <= 4) {
-      track.scrollTo({ left: maxScroll, behavior: "smooth" });
-      return;
-    }
-
-    track.scrollBy({ left: direction * distance, behavior: "smooth" });
-  }
-
-  function stop() {
-    window.clearInterval(autoplay);
-    autoplay = null;
-  }
-
-  function start() {
-    if (!track || items.length < 2 || autoplay || document.hidden) return;
-    autoplay = window.setInterval(() => move(1), carouselAutoplayDelay);
-  }
-
-  function restart() {
-    stop();
-    start();
-  }
-
-  previous?.addEventListener("click", () => {
-    move(-1);
-    restart();
-  });
-
-  next?.addEventListener("click", () => {
-    move(1);
-    restart();
-  });
-
-  track?.addEventListener("mouseenter", stop);
-  track?.addEventListener("mouseleave", start);
-  track?.addEventListener("focusin", stop);
-  track?.addEventListener("focusout", start);
-
-  return { start, stop };
-}
-
-const carouselControllers = Array.from(carouselRoots, createCarousel);
-
-document.addEventListener("visibilitychange", () => {
-  carouselControllers.forEach((carousel) => {
-    if (document.hidden) {
-      carousel.stop();
-    } else {
-      carousel.start();
-    }
-  });
-});
-
-carouselControllers.forEach((carousel) => carousel.start());

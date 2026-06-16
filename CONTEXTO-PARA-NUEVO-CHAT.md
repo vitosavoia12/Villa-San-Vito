@@ -38,17 +38,17 @@ Es un sitio estático formado principalmente por:
 
 - La portada conserva una sola fotografía principal.
 - `Territorio` presenta dos bloques editoriales alternados: `territory-exploring-coast.jpg` junto a “Explorando la costa” y `territory-archaeology.jpg` junto a “Arqueología e Historia”.
-- `Esterni` usa el título “Oltre le mura, l'esperienza continua”, muestra cinco fotografías intercaladas una por párrafo y conserva un carrusel independiente depurado con tres vistas exteriores.
+- `Esterni` usa el título “Oltre le mura, l'esperienza continua” y muestra cinco fotografías intercaladas una por párrafo, sin carrusel.
 - La sección `Collegamenti` incluye `assets/images/services-amalfi-map.jpg`.
 - La sección de mascotas incluye `assets/images/pets-welcome.jpg` antes del texto.
-- La sección `Villa` muestra el texto en un bloque compacto, una grilla de detalles interiores y un carrusel propio con la fachada, `villa-towels.jpg` y `villa-bedroom-blue.jpg`.
+- La sección `Villa` muestra el texto en un bloque compacto y una grilla fija de detalles interiores, sin carrusel.
 - `Storia` muestra `history-raito-village.jpg` como panorámica lateral y la impresión antigua `raito-history.jpg` después del primer párrafo.
 - El bloque de estacionamiento incluye `assets/images/villa-sign.jpg` debajo del encabezado.
-- Los carruseles de `Villa` y `Esterni` funcionan de forma independiente.
+- No quedan carruseles ni galerías desplazables en el sitio.
 - Los textos alternativos, las etiquetas de navegación y los grupos interactivos cambian correctamente entre italiano, inglés y español.
 - Se corrigieron las dimensiones intrínsecas declaradas de tres imágenes para evitar saltos de maquetación.
 - La cabecera responsive mantiene la marca y el selector de idiomas en la primera fila, con el menú en la segunda.
-- `styles.css` y `script.js` llevan versión de caché `20260616-8`.
+- `styles.css` y `script.js` llevan versión de caché `20260616-9`.
 - Las tres imágenes nuevas de `Storia` y `Territorio` fueron normalizadas a JPEG estándar con extensión `.jpg` y carga inmediata.
 - No hay imágenes rotas ni errores de JavaScript.
 - Se verificó el diseño en escritorio y móvil.
@@ -58,8 +58,8 @@ Es un sitio estático formado principalmente por:
 - `assets/images/outdoors-garden-lawn.jpg`
 - `assets/images/outdoors-gulf-view.jpg`
 - `assets/images/outdoors-terrace-table.jpg`
-- `assets/images/outdoors-villa-garden-corner.jpg`
-- `assets/images/outdoors-facade-blue-bench.jpg`
+- `assets/images/outdoors-garden-corner-photo.jpg`
+- `assets/images/outdoors-blue-bench-photo.jpg`
 - `assets/images/outdoors-sea-terrace.jpg`
 - `assets/images/outdoors-magnolia-garden.jpg`
 - `assets/images/outdoors-terrace-dining-sea.jpg`

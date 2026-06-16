@@ -49,10 +49,10 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 
 - La ilustración de marca está incrustada en `index.html` y se muestra ampliada a la izquierda del título principal.
 - La fotografía del bloque “Chi siamo” está incrustada directamente en `index.html` para evitar pérdidas de archivos al publicar o descomprimir el sitio.
-- La portada utiliza `gallery-villa-facade.jpg` como imagen principal.
+- La portada utiliza `hero-villa-facade.jpg` como imagen principal.
 - `Territorio` presenta dos bloques editoriales alternados con `territory-exploring-coast.jpg` y `territory-archaeology.jpg`.
-- La sección `Villa` muestra el texto en un bloque compacto, una grilla de detalles interiores y un carrusel con `white-facade-palms.jpg`, `villa-towels.jpg` y `villa-bedroom-blue.jpg`.
-- `Esterni` usa el título “Oltre le mura, l'esperienza continua”, muestra cinco fotografías intercaladas una por párrafo y conserva un carrusel depurado con tres vistas exteriores.
+- La sección `Villa` muestra el texto en un bloque compacto y una grilla fija de detalles interiores, sin carrusel.
+- `Esterni` usa el título “Oltre le mura, l'esperienza continua” y muestra cinco fotografías intercaladas una por párrafo, sin carrusel.
 - El mapa de `Collegamenti` está en `services-amalfi-map.jpg`, el bloque de estacionamiento muestra `villa-sign.jpg` y la foto de mascotas está en `pets-welcome.jpg`.
 - `lemon-books.jpg`
 - `fireplace-map.jpg`
@@ -72,22 +72,22 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 
 Las primeras imágenes de la selección editorial se encuentran en:
 
-- `gallery-villa-facade.jpg`
-- `gallery-garden-detail.jpg`
-- `gallery-garden-path.jpg`
-- `gallery-attic-bedroom.jpg`
-- `gallery-living-room.jpg`
-- `gallery-living-dining.jpg`
+- `hero-villa-facade.jpg`
+- `villa-dining-arch.jpg`
+- `villa-living-staircase.jpg`
+- `villa-towels.jpg`
+- `villa-study-fireplace.jpg`
+- `outdoors-garden-corner-photo.jpg`
+- `outdoors-blue-bench-photo.jpg`
 
 Para reemplazar una foto sin modificar el HTML, exporta la nueva imagen en JPG o PNG y conserva exactamente el mismo nombre. Se recomienda:
 
-- Carrusel: mínimo 1200 px en el lado largo.
 - Secciones editoriales: entre 1200 y 1800 px de ancho.
 - Fotografías optimizadas para web, idealmente por debajo de 500 KB cuando sea posible.
 
 Mantén siempre textos `alt` descriptivos en `index.html`.
 
-Los carruseles de `Villa` y `Esterni` avanzan automáticamente una fotografía cada 6,5 segundos y también permiten navegación manual mediante sus propias flechas.
+No quedan carruseles ni galerías desplazables: las fotografías visibles son bloques fijos dentro de cada sección.
 
 ## Caché de recursos
 
