@@ -51,7 +51,7 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 - La fotografía del bloque “Chi siamo” está incrustada directamente en `index.html` para evitar pérdidas de archivos al publicar o descomprimir el sitio.
 - La portada utiliza `gallery-villa-facade.jpg` como imagen principal.
 - `Territorio` presenta dos bloques editoriales alternados con `territory-exploring-coast.jpg` y `territory-archaeology.jpg`.
-- La sección `Villa` intercala nuevas fotografías interiores entre sus párrafos y su carrusel combina `white-facade-palms.jpg`, `villa-towels.jpg` y `villa-bedroom-blue.jpg`.
+- La sección `Villa` muestra el texto en un bloque compacto, una grilla de detalles interiores y un carrusel con `white-facade-palms.jpg`, `villa-towels.jpg` y `villa-bedroom-blue.jpg`.
 - `Esterni` usa el título “Oltre le mura, l'esperienza continua”, muestra tres nuevas fotografías editoriales y conserva su carrusel.
 - El mapa de `Collegamenti` está en `services-amalfi-map.jpg`, el bloque de estacionamiento muestra `villa-sign.jpg` y la foto de mascotas está en `pets-welcome.jpg`.
 - `lemon-books.jpg`

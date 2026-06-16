@@ -588,8 +588,19 @@ p {
   line-height: 1.82;
 }
 
+.villa-visuals {
+  display: grid;
+  gap: clamp(1.2rem, 2.5vw, 1.8rem);
+}
+
+.villa-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
 .villa-inline-photo {
-  margin: clamp(1.6rem, 3vw, 2.2rem) 0;
+  margin: 0;
   overflow: hidden;
   border-radius: 8px;
   background: var(--paper-warm);
@@ -597,9 +608,15 @@ p {
 
 .villa-inline-photo img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  aspect-ratio: 1;
   border-radius: 8px;
   filter: saturate(0.94) contrast(0.98);
+  object-fit: cover;
+}
+
+.villa-inline-photo--portrait img {
+  aspect-ratio: 1;
 }
 
 .location-place {
