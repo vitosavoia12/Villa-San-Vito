@@ -54,7 +54,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Raleway:wght@300;400;500;600;700&family=Tinos:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260616-6">
+    <link rel="stylesheet" href="styles.css?v=20260616-8">
     <style>
       .about-photo {
         width: min(100%, 48rem) !important;
@@ -268,19 +268,38 @@
         <div class="topic-copy">
           <p class="section-kicker" data-i18n="outdoors.kicker">D. Esterni</p>
           <h2 id="outdoors-title" data-i18n="outdoors.title">Oltre le mura, l'esperienza continua</h2>
-          <p data-i18n="outdoors.copy">Il vero fiore all'occhiello della villa è senza dubbio il suo grande giardino. Più che un semplice spazio esterno, è un prolungamento della casa stessa, pensato per essere vissuto in ogni momento della giornata. Qui il tempo sembra quasi rallentare: ci si può svegliare con una colazione al sole, rifugiarsi all'ombra degli alberi nel pomeriggio o godersi la sera mentre in lontananza si accendono le luci del Golfo.</p>
-          <p data-i18n="outdoors.copy2">Tra terrazze arredate, angoli d'ombra e piante rigogliose, c'è anche un grande tavolo che sembra fatto apposta per dimenticarsi dell'orologio e prolungare il piacere di stare insieme. Il panorama che si gode da quassù è semplicemente mozzafiato, un'esperienza unica e suggestiva che vi accompagnerà per tutto il vostro soggiorno.</p>
         </div>
-        <div class="outdoors-inline-photos" data-i18n-aria="aria.outdoorsInlinePhotos" aria-label="Nuove fotografie degli esterni">
-          <figure class="outdoors-inline-photo outdoors-inline-photo--portrait">
-            <img src="assets/images/outdoors-sea-terrace.jpg" width="1123" height="1571" data-i18n-alt="alt.outdoorsSeaTerrace" alt="Terrazza panoramica con sdraio e vista sul mare">
-          </figure>
-          <figure class="outdoors-inline-photo">
-            <img src="assets/images/outdoors-magnolia-garden.jpg" width="1600" height="1200" data-i18n-alt="alt.outdoorsMagnoliaGarden" alt="Giardino ombreggiato con magnolia e prato verde">
-          </figure>
-          <figure class="outdoors-inline-photo">
-            <img src="assets/images/outdoors-terrace-dining-sea.jpg" width="1146" height="875" data-i18n-alt="alt.outdoorsTerraceDiningSea" alt="Tavolo esterno all'ombra con vista sul mare">
-          </figure>
+        <div class="outdoors-story" data-i18n-aria="aria.outdoorsInlinePhotos" aria-label="Sequenza fotografica degli esterni">
+          <article class="outdoors-story-item">
+            <p data-i18n="outdoors.copyGarden">Il vero fiore all'occhiello della villa è senza dubbio il suo grande giardino.</p>
+            <figure class="outdoors-story-photo outdoors-story-photo--compact">
+              <img src="assets/images/outdoors-villa-garden-corner.jpg" width="545" height="640" data-i18n-alt="alt.outdoorsGardenCorner" alt="Facciata della villa con tavolino bianco, palme e giardino">
+            </figure>
+          </article>
+          <article class="outdoors-story-item">
+            <p data-i18n="outdoors.copyExtension">Più che un semplice spazio esterno, è un prolungamento della casa stessa, pensato per essere vissuto in ogni momento della giornata.</p>
+            <figure class="outdoors-story-photo outdoors-story-photo--portrait">
+              <img src="assets/images/outdoors-facade-blue-bench.jpg" width="1320" height="1426" data-i18n-alt="alt.outdoorsFacadeBench" alt="Panca con cuscini azzurri sulla facciata della villa" loading="lazy">
+            </figure>
+          </article>
+          <article class="outdoors-story-item">
+            <p data-i18n="outdoors.copyTime">Qui il tempo sembra quasi rallentare: ci si può svegliare con una colazione al sole, rifugiarsi all'ombra degli alberi nel pomeriggio o godersi la sera mentre in lontananza si accendono le luci del Golfo.</p>
+            <figure class="outdoors-story-photo outdoors-story-photo--landscape">
+              <img src="assets/images/outdoors-magnolia-garden.jpg" width="1600" height="1200" data-i18n-alt="alt.outdoorsMagnoliaGarden" alt="Giardino ombreggiato con magnolia e prato verde" loading="lazy">
+            </figure>
+          </article>
+          <article class="outdoors-story-item">
+            <p data-i18n="outdoors.copyTable">Tra terrazza arredata, angoli d'ombra e piante rigogliose, c'è anche un grande tavolo che sembra fatto apposta per dimenticarsi dell'orologio e prolungare il piacere di stare insieme.</p>
+            <figure class="outdoors-story-photo outdoors-story-photo--landscape">
+              <img src="assets/images/outdoors-terrace-dining-sea.jpg" width="1146" height="875" data-i18n-alt="alt.outdoorsTerraceDiningSea" alt="Tavolo esterno all'ombra con vista sul mare" loading="lazy">
+            </figure>
+          </article>
+          <article class="outdoors-story-item">
+            <p data-i18n="outdoors.copyPanorama">Il panorama che si gode da quassù è semplicemente mozzafiato, un'esperienza unica e suggestiva che vi accompagnerà per tutto il vostro soggiorno.</p>
+            <figure class="outdoors-story-photo outdoors-story-photo--portrait">
+              <img src="assets/images/outdoors-sea-terrace.jpg" width="1123" height="1571" data-i18n-alt="alt.outdoorsSeaTerrace" alt="Terrazza panoramica con sdraio e vista sul mare" loading="lazy">
+            </figure>
+          </article>
         </div>
         <div class="photo-series photo-series--landscape outdoors-gallery" data-carousel data-i18n-aria="aria.outdoorsGallery" aria-label="Galleria degli spazi esterni">
           <button class="photo-series-arrow photo-series-arrow-prev" type="button" data-carousel-prev data-i18n-aria="carousel.prev" aria-label="Foto precedente">
@@ -290,13 +309,7 @@
           </button>
           <div class="photo-series-track" data-carousel-track>
             <figure class="photo-series-item">
-              <img src="assets/images/outdoors-entry-garden.jpg" width="1024" height="768" data-i18n-alt="alt.outdoorsEntry" alt="Ingresso della villa affacciato sul giardino" loading="lazy">
-            </figure>
-            <figure class="photo-series-item">
               <img src="assets/images/outdoors-garden-lawn.jpg" width="1024" height="768" data-i18n-alt="alt.outdoorsGarden" alt="Prato ombreggiato e alberi nel giardino" loading="lazy">
-            </figure>
-            <figure class="photo-series-item">
-              <img src="assets/images/outdoors-terrace-gulf.jpg" width="1024" height="768" data-i18n-alt="alt.outdoorsTerrace" alt="Terrazza panoramica aperta sul Golfo di Salerno" loading="lazy">
             </figure>
             <figure class="photo-series-item">
               <img src="assets/images/outdoors-gulf-view.jpg" width="1024" height="768" data-i18n-alt="alt.outdoorsGulfView" alt="Vista sul Golfo dalla terrazza della villa" loading="lazy">
@@ -437,6 +450,6 @@
       </div>
     </footer>
 
-    <script src="script.js?v=20260616-6" defer></script>
+    <script src="script.js?v=20260616-8" defer></script>
   </body>
 </html>

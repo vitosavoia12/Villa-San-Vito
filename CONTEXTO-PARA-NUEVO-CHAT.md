@@ -38,7 +38,7 @@ Es un sitio estático formado principalmente por:
 
 - La portada conserva una sola fotografía principal.
 - `Territorio` presenta dos bloques editoriales alternados: `territory-exploring-coast.jpg` junto a “Explorando la costa” y `territory-archaeology.jpg` junto a “Arqueología e Historia”.
-- `Esterni` usa el título “Oltre le mura, l'esperienza continua”, muestra tres nuevas fotografías editoriales y conserva su carrusel independiente.
+- `Esterni` usa el título “Oltre le mura, l'esperienza continua”, muestra cinco fotografías intercaladas una por párrafo y conserva un carrusel independiente depurado con tres vistas exteriores.
 - La sección `Collegamenti` incluye `assets/images/services-amalfi-map.jpg`.
 - La sección de mascotas incluye `assets/images/pets-welcome.jpg` antes del texto.
 - La sección `Villa` muestra el texto en un bloque compacto, una grilla de detalles interiores y un carrusel propio con la fachada, `villa-towels.jpg` y `villa-bedroom-blue.jpg`.
@@ -48,18 +48,18 @@ Es un sitio estático formado principalmente por:
 - Los textos alternativos, las etiquetas de navegación y los grupos interactivos cambian correctamente entre italiano, inglés y español.
 - Se corrigieron las dimensiones intrínsecas declaradas de tres imágenes para evitar saltos de maquetación.
 - La cabecera responsive mantiene la marca y el selector de idiomas en la primera fila, con el menú en la segunda.
-- `styles.css` y `script.js` llevan versión de caché `20260616-6`.
+- `styles.css` y `script.js` llevan versión de caché `20260616-8`.
 - Las tres imágenes nuevas de `Storia` y `Territorio` fueron normalizadas a JPEG estándar con extensión `.jpg` y carga inmediata.
 - No hay imágenes rotas ni errores de JavaScript.
 - Se verificó el diseño en escritorio y móvil.
 
 ## Archivos recientes importantes
 
-- `assets/images/outdoors-entry-garden.jpg`
 - `assets/images/outdoors-garden-lawn.jpg`
-- `assets/images/outdoors-terrace-gulf.jpg`
 - `assets/images/outdoors-gulf-view.jpg`
 - `assets/images/outdoors-terrace-table.jpg`
+- `assets/images/outdoors-villa-garden-corner.jpg`
+- `assets/images/outdoors-facade-blue-bench.jpg`
 - `assets/images/outdoors-sea-terrace.jpg`
 - `assets/images/outdoors-magnolia-garden.jpg`
 - `assets/images/outdoors-terrace-dining-sea.jpg`
