@@ -37,8 +37,8 @@ Es un sitio estático formado principalmente por:
 ## Últimas modificaciones terminadas
 
 - La portada conserva una sola fotografía principal.
-- `Territorio` presenta dos bloques editoriales alternados: `territory-exploring-coast.jpg` junto a “Explorando la costa” y `territory-archaeology.jpg` junto a “Arqueología e Historia”.
-- `Esterni` usa el título “Oltre le mura, l'esperienza continua” y muestra cinco fotografías intercaladas una por párrafo, sin carrusel.
+- `Territorio` presenta bloques editoriales sin carrusel: `territory-exploring-coast.jpg` junto a “Explorando la costa” y, en “Arqueología e Historia”, `territory-ravello-terrace.jpg` después del texto sobre la historia antigua y `territory-paestum-temples.jpg` al final del capítulo.
+- `Esterni` usa el título “Oltre le mura, l'esperienza continua” y muestra cinco fotografías intercaladas una por párrafo, sin carrusel. `outdoors-blue-bench-photo.jpg` es la banca con menos cojines y `outdoors-magnolia-garden.jpg` es el jardín nuevo.
 - La sección `Collegamenti` incluye `assets/images/services-amalfi-map.jpg`.
 - La sección de mascotas incluye `assets/images/pets-welcome.jpg` antes del texto.
 - La sección `Villa` muestra el texto en un bloque compacto y una grilla fija de detalles interiores, sin carrusel.
@@ -48,7 +48,7 @@ Es un sitio estático formado principalmente por:
 - Los textos alternativos, las etiquetas de navegación y los grupos interactivos cambian correctamente entre italiano, inglés y español.
 - Se corrigieron las dimensiones intrínsecas declaradas de tres imágenes para evitar saltos de maquetación.
 - La cabecera responsive mantiene la marca y el selector de idiomas en la primera fila, con el menú en la segunda.
-- `styles.css` y `script.js` llevan versión de caché `20260616-10`.
+- `styles.css` y `script.js` llevan versión de caché `20260617-1`.
 - Se retiró `loading="lazy"` de las fotos para evitar placeholders visibles en móvil o al desplazarse.
 - Las tres imágenes nuevas de `Storia` y `Territorio` fueron normalizadas a JPEG estándar con extensión `.jpg` y carga inmediata.
 - No hay imágenes rotas ni errores de JavaScript.
@@ -66,7 +66,8 @@ Es un sitio estático formado principalmente por:
 - `assets/images/outdoors-terrace-dining-sea.jpg`
 - `assets/images/territory-coast-seascape.jpg`
 - `assets/images/territory-exploring-coast.jpg`
-- `assets/images/territory-archaeology.jpg`
+- `assets/images/territory-ravello-terrace.jpg`
+- `assets/images/territory-paestum-temples.jpg`
 - `assets/images/history-raito-village.jpg`
 - `assets/images/villa-dining-arch.jpg`
 - `assets/images/villa-living-staircase.jpg`

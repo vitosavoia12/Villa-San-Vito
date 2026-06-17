@@ -450,6 +450,14 @@ p {
   order: 1;
 }
 
+.territory-feature--text {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.territory-feature--text .territory-feature-copy {
+  max-width: 960px;
+}
+
 .territory-feature h3 {
   max-width: 18ch;
   font-family: var(--serif);
@@ -474,6 +482,22 @@ p {
 
 .territory-feature--coast .territory-feature-media img {
   aspect-ratio: 3 / 4;
+}
+
+.territory-inline-media {
+  margin: clamp(1.25rem, 3vw, 1.8rem) 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--paper-warm);
+}
+
+.territory-inline-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 11;
+  filter: saturate(0.94) contrast(0.98);
+  object-fit: cover;
 }
 
 .topic-section-reverse {
