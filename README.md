@@ -51,9 +51,9 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 - La fotografía del bloque “Chi siamo” está incrustada directamente en `index.html` para evitar pérdidas de archivos al publicar o descomprimir el sitio.
 - La portada utiliza `hero-villa-facade-main.jpg` como imagen principal.
 - Se retiró `loading="lazy"` de las fotos para evitar placeholders o textos alternativos visibles durante la carga.
-- `Territorio` presenta bloques editoriales sin carrusel: `territory-exploring-coast.jpg` junto a “Esplorare la Costiera...” y, en “Archeologia e Storia...”, `territory-ravello-terrace.jpg` después del texto sobre la historia antigua y `territory-paestum-temples.jpg` al final del capítulo.
-- La sección `Villa` muestra el texto en un bloque compacto y una grilla fija de detalles interiores, sin carrusel.
-- `Esterni` usa el título “Oltre le mura, l'esperienza continua” y muestra cinco fotografías intercaladas una por párrafo, sin carrusel. La banca activa es `outdoors-blue-bench-photo.jpg` con menos cojines y el jardín activo es `outdoors-magnolia-garden.jpg`.
+- `Territorio` presenta bloques editoriales sin carrusel: `territory-exploring-coast.jpg` y `territory-ravello-village.png` junto a “Esplorare la Costiera...”, y `territory-paestum-temples.jpg` al final de “Archeologia e storia...”. Falta recibir la foto de Pompei para insertarla después del texto sobre la historia antigua.
+- La sección `Villa` muestra el texto en un bloque compacto y una grilla fija de detalles interiores, sin carrusel, con `villa-dining-table.png`, `villa-bedroom-green.png` y `villa-bedroom-turquoise.png` añadidas al riquadro.
+- `Esterni` usa el título “Oltre le mura, l'esperienza continua” y muestra cinco fotografías intercaladas una por párrafo, sin carrusel. La banca activa es `outdoors-blue-bench-photo.jpg`; las fotos marcadas para borrar fueron reemplazadas por `outdoors-night-gulf-view.png` y `outdoors-coast-village-view.png`.
 - El mapa de `Collegamenti` está en `services-amalfi-map.jpg`, el bloque de estacionamiento muestra `villa-sign.jpg` y la foto de mascotas está en `pets-welcome.jpg`.
 - `lemon-books.jpg`
 - `fireplace-map.jpg`
@@ -66,7 +66,9 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 - `white-facade-palms.jpg`
 - `villa-dining-arch.jpg`
 - `villa-living-staircase.jpg`
-- `villa-towels.jpg`
+- `villa-dining-table.png`
+- `villa-bedroom-green.png`
+- `villa-bedroom-turquoise.png`
 - `villa-study-fireplace.jpg`
 - `villa-bedroom-blue.jpg`
 - `terrace-gulf-chair.jpg`
@@ -76,7 +78,6 @@ Las primeras imágenes de la selección editorial se encuentran en:
 - `hero-villa-facade-main.jpg`
 - `villa-dining-arch.jpg`
 - `villa-living-staircase.jpg`
-- `villa-towels.jpg`
 - `villa-study-fireplace.jpg`
 - `outdoors-garden-corner-photo.jpg`
 - `outdoors-blue-bench-photo.jpg`

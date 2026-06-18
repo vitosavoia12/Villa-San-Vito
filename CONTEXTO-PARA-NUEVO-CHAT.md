@@ -37,20 +37,20 @@ Es un sitio estático formado principalmente por:
 ## Últimas modificaciones terminadas
 
 - La portada conserva una sola fotografía principal.
-- `Territorio` presenta bloques editoriales sin carrusel: `territory-exploring-coast.jpg` junto a “Explorando la costa” y, en “Arqueología e Historia”, `territory-ravello-terrace.jpg` después del texto sobre la historia antigua y `territory-paestum-temples.jpg` al final del capítulo.
-- `Esterni` usa el título “Oltre le mura, l'esperienza continua” y muestra cinco fotografías intercaladas una por párrafo, sin carrusel. `outdoors-blue-bench-photo.jpg` es la banca con menos cojines y `outdoors-magnolia-garden.jpg` es el jardín nuevo.
+- `Territorio` presenta bloques editoriales sin carrusel: `territory-exploring-coast.jpg` y `territory-ravello-village.png` junto a “Explorando la costa” y `territory-paestum-temples.jpg` al final de “Arqueología e historia”. Falta recibir la foto de Pompei para insertarla después del texto sobre la historia antigua.
+- `Esterni` usa el título “Oltre le mura, l'esperienza continua” y muestra cinco fotografías intercaladas una por párrafo, sin carrusel. `outdoors-blue-bench-photo.jpg` es la banca con menos cojines; `outdoors-night-gulf-view.png` y `outdoors-coast-village-view.png` reemplazan a las fotos marcadas para borrar.
 - La sección `Collegamenti` incluye `assets/images/services-amalfi-map.jpg`.
 - La sección de mascotas incluye `assets/images/pets-welcome.jpg` antes del texto.
-- La sección `Villa` muestra el texto en un bloque compacto y una grilla fija de detalles interiores, sin carrusel.
+- La sección `Villa` muestra el texto en un bloque compacto y una grilla fija de detalles interiores, sin carrusel, con `villa-dining-table.png`, `villa-bedroom-green.png` y `villa-bedroom-turquoise.png` añadidas al riquadro.
 - `Storia` muestra `history-raito-village.jpg` como panorámica lateral y la impresión antigua `raito-history.jpg` después del primer párrafo.
 - El bloque de estacionamiento incluye `assets/images/villa-sign.jpg` debajo del encabezado.
 - No quedan carruseles ni galerías desplazables en el sitio.
 - Los textos alternativos, las etiquetas de navegación y los grupos interactivos cambian correctamente entre italiano, inglés y español.
 - Se corrigieron las dimensiones intrínsecas declaradas de tres imágenes para evitar saltos de maquetación.
 - La cabecera responsive mantiene la marca y el selector de idiomas en la primera fila, con el menú en la segunda.
-- `styles.css` y `script.js` llevan versión de caché `20260617-1`.
+- `styles.css` y `script.js` llevan versión de caché `20260618-6`.
 - Se retiró `loading="lazy"` de las fotos para evitar placeholders visibles en móvil o al desplazarse.
-- Las tres imágenes nuevas de `Storia` y `Territorio` fueron normalizadas a JPEG estándar con extensión `.jpg` y carga inmediata.
+- Las imágenes nuevas de `Storia` y `Territorio` cargan de inmediato; `territory-ravello-village.png` conserva formato PNG.
 - No hay imágenes rotas ni errores de JavaScript.
 - Se verificó el diseño en escritorio y móvil.
 
@@ -61,17 +61,20 @@ Es un sitio estático formado principalmente por:
 - `assets/images/outdoors-terrace-table.jpg`
 - `assets/images/outdoors-garden-corner-photo.jpg`
 - `assets/images/outdoors-blue-bench-photo.jpg`
-- `assets/images/outdoors-sea-terrace.jpg`
-- `assets/images/outdoors-magnolia-garden.jpg`
+- `assets/images/outdoors-night-gulf-view.png`
+- `assets/images/outdoors-coast-village-view.png`
 - `assets/images/outdoors-terrace-dining-sea.jpg`
 - `assets/images/territory-coast-seascape.jpg`
 - `assets/images/territory-exploring-coast.jpg`
 - `assets/images/territory-ravello-terrace.jpg`
+- `assets/images/territory-ravello-village.png`
 - `assets/images/territory-paestum-temples.jpg`
 - `assets/images/history-raito-village.jpg`
 - `assets/images/villa-dining-arch.jpg`
 - `assets/images/villa-living-staircase.jpg`
-- `assets/images/villa-towels.jpg`
+- `assets/images/villa-dining-table.png`
+- `assets/images/villa-bedroom-green.png`
+- `assets/images/villa-bedroom-turquoise.png`
 - `assets/images/villa-study-fireplace.jpg`
 - `assets/images/villa-bedroom-blue.jpg`
 - `assets/images/services-amalfi-map.jpg`
