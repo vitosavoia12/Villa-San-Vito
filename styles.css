@@ -381,14 +381,18 @@ p {
 
 .history-section {
   align-items: start;
+  display: block;
+}
+
+.history-copy {
+  width: min(760px, 100%);
 }
 
 .history-print {
   margin: clamp(1.5rem, 3vw, 2rem) 0;
 }
 
-.history-print img,
-.history-village img {
+.history-print img {
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -400,11 +404,6 @@ p {
   color: var(--muted);
   font-family: var(--mono);
   font-size: 0.68rem;
-}
-
-.history-village {
-  position: sticky;
-  top: 7rem;
 }
 
 .territory-section {
@@ -1014,10 +1013,6 @@ p {
   .topic-section-reverse .topic-media,
   .topic-section-reverse .map-frame {
     order: initial;
-  }
-
-  .history-village {
-    position: static;
   }
 
   .footer-links {

@@ -62,7 +62,6 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 - `lantern.jpg`
 - `lemon-view.jpg`
 - `raito-history.jpg`
-- `history-raito-village.jpg`
 - `white-facade-palms.jpg`
 - `villa-dining-arch.jpg`
 - `villa-living-staircase.jpg`

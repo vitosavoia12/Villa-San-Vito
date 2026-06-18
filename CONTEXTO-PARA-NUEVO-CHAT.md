@@ -42,15 +42,15 @@ Es un sitio estático formado principalmente por:
 - La sección `Collegamenti` incluye `assets/images/services-amalfi-map.jpg`.
 - La sección de mascotas incluye `assets/images/pets-welcome.jpg` antes del texto.
 - La sección `Villa` muestra el texto en un bloque compacto y una grilla fija de detalles interiores, sin carrusel, con `villa-dining-table.png`, `villa-bedroom-green.png` y `villa-bedroom-turquoise.png` añadidas al riquadro.
-- `Storia` muestra `history-raito-village.jpg` como panorámica lateral y la impresión antigua `raito-history.jpg` después del primer párrafo.
+- `Storia` muestra solo la impresión antigua `raito-history.jpg` después del primer párrafo; la panorámica de Ravello queda en `Territorio`.
 - El bloque de estacionamiento incluye `assets/images/villa-sign.jpg` debajo del encabezado.
 - No quedan carruseles ni galerías desplazables en el sitio.
 - Los textos alternativos, las etiquetas de navegación y los grupos interactivos cambian correctamente entre italiano, inglés y español.
 - Se corrigieron las dimensiones intrínsecas declaradas de tres imágenes para evitar saltos de maquetación.
 - La cabecera responsive mantiene la marca y el selector de idiomas en la primera fila, con el menú en la segunda.
-- `styles.css` y `script.js` llevan versión de caché `20260618-6`.
+- `styles.css` y `script.js` llevan versión de caché `20260618-7`.
 - Se retiró `loading="lazy"` de las fotos para evitar placeholders visibles en móvil o al desplazarse.
-- Las imágenes nuevas de `Storia` y `Territorio` cargan de inmediato; `territory-ravello-village.png` conserva formato PNG.
+- Las imágenes nuevas de `Territorio` cargan de inmediato; `territory-ravello-village.png` conserva formato PNG.
 - No hay imágenes rotas ni errores de JavaScript.
 - Se verificó el diseño en escritorio y móvil.
 
@@ -69,7 +69,6 @@ Es un sitio estático formado principalmente por:
 - `assets/images/territory-ravello-terrace.jpg`
 - `assets/images/territory-ravello-village.png`
 - `assets/images/territory-paestum-temples.jpg`
-- `assets/images/history-raito-village.jpg`
 - `assets/images/villa-dining-arch.jpg`
 - `assets/images/villa-living-staircase.jpg`
 - `assets/images/villa-dining-table.png`
