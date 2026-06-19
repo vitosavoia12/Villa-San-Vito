@@ -53,7 +53,7 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 - Se retiró `loading="lazy"` de las fotos para evitar placeholders o textos alternativos visibles durante la carga.
 - `Territorio` presenta bloques editoriales sin carrusel: `territory-exploring-coast.jpg` y `territory-ravello-village.png` junto a “Esplorare la Costiera...”, y `territory-paestum-temples.jpg` al final de “Archeologia e storia...”. Falta recibir la foto de Pompei para insertarla después del texto sobre la historia antigua.
 - La sección `Villa` muestra el texto en un bloque compacto y una grilla fija de detalles interiores, sin carrusel, con `villa-dining-table.png`, `villa-bedroom-green.png` y `villa-bedroom-turquoise.png` añadidas al riquadro.
-- `Esterni` usa el título “Oltre le mura, l'esperienza continua” y muestra cinco fotografías intercaladas una por párrafo, sin carrusel. La banca activa es `outdoors-blue-bench-photo.jpg`; las fotos marcadas para borrar fueron reemplazadas por `outdoors-night-gulf-view.png` y `outdoors-coast-village-view.png`.
+- `Esterni` usa el título “Oltre le mura, l'esperienza continua” y muestra cinco fotografías intercaladas una por párrafo, sin carrusel. La banca activa es `outdoors-blue-bench-photo.jpg`; la última foto de vista costera fue reemplazada por `outdoors-palm-garden-sea.png`.
 - El mapa de `Collegamenti` está en `services-amalfi-map.jpg`, el bloque de estacionamiento muestra `villa-sign.jpg` y la foto de mascotas está en `pets-welcome.jpg`.
 - `lemon-books.jpg`
 - `fireplace-map.jpg`

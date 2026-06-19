@@ -38,7 +38,7 @@ Es un sitio estático formado principalmente por:
 
 - La portada conserva una sola fotografía principal.
 - `Territorio` presenta bloques editoriales sin carrusel: `territory-exploring-coast.jpg` y `territory-ravello-village.png` junto a “Explorando la costa” y `territory-paestum-temples.jpg` al final de “Arqueología e historia”. Falta recibir la foto de Pompei para insertarla después del texto sobre la historia antigua.
-- `Esterni` usa el título “Oltre le mura, l'esperienza continua” y muestra cinco fotografías intercaladas una por párrafo, sin carrusel. `outdoors-blue-bench-photo.jpg` es la banca con menos cojines; `outdoors-night-gulf-view.png` y `outdoors-coast-village-view.png` reemplazan a las fotos marcadas para borrar.
+- `Esterni` usa el título “Oltre le mura, l'esperienza continua” y muestra cinco fotografías intercaladas una por párrafo, sin carrusel. `outdoors-blue-bench-photo.jpg` es la banca con menos cojines; la última foto de vista costera fue reemplazada por `outdoors-palm-garden-sea.png`.
 - La sección `Collegamenti` incluye `assets/images/services-amalfi-map.jpg`.
 - La sección de mascotas incluye `assets/images/pets-welcome.jpg` antes del texto.
 - La sección `Villa` muestra el texto en un bloque compacto y una grilla fija de detalles interiores, sin carrusel, con `villa-dining-table.png`, `villa-bedroom-green.png` y `villa-bedroom-turquoise.png` añadidas al riquadro.
@@ -48,7 +48,7 @@ Es un sitio estático formado principalmente por:
 - Los textos alternativos, las etiquetas de navegación y los grupos interactivos cambian correctamente entre italiano, inglés y español.
 - Se corrigieron las dimensiones intrínsecas declaradas de tres imágenes para evitar saltos de maquetación.
 - La cabecera responsive mantiene la marca y el selector de idiomas en la primera fila, con el menú en la segunda.
-- `styles.css` y `script.js` llevan versión de caché `20260618-7`.
+- `styles.css` y `script.js` llevan versión de caché `20260619-1`.
 - Se retiró `loading="lazy"` de las fotos para evitar placeholders visibles en móvil o al desplazarse.
 - Las imágenes nuevas de `Territorio` cargan de inmediato; `territory-ravello-village.png` conserva formato PNG.
 - No hay imágenes rotas ni errores de JavaScript.
@@ -62,7 +62,7 @@ Es un sitio estático formado principalmente por:
 - `assets/images/outdoors-garden-corner-photo.jpg`
 - `assets/images/outdoors-blue-bench-photo.jpg`
 - `assets/images/outdoors-night-gulf-view.png`
-- `assets/images/outdoors-coast-village-view.png`
+- `assets/images/outdoors-palm-garden-sea.png`
 - `assets/images/outdoors-terrace-dining-sea.jpg`
 - `assets/images/territory-coast-seascape.jpg`
 - `assets/images/territory-exploring-coast.jpg`
