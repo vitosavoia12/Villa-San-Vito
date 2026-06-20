@@ -37,7 +37,7 @@ Es un sitio estático formado principalmente por:
 ## Últimas modificaciones terminadas
 
 - La portada conserva una sola fotografía principal.
-- `Territorio` presenta bloques editoriales sin carrusel: `territory-exploring-coast.jpg` y `territory-ravello-village.png` junto a “Explorando la costa” y `territory-paestum-temples.jpg` al final de “Arqueología e historia”. Falta recibir la foto de Pompei para insertarla después del texto sobre la historia antigua.
+- `Territorio` presenta bloques editoriales sin carrusel: `territory-exploring-coast.jpg`, `territory-ravello-village.png` al final del bloque “Esplorare la Costiera...”, `territory-ravello-terrace-busts.png` después del texto sobre historia antigua y el par `territory-pompeii-amphitheatre.png` + `territory-paestum-temples.jpg` al final de “Arqueología e historia”.
 - `Esterni` usa el título “Oltre le mura, l'esperienza continua” y muestra cinco fotografías intercaladas una por párrafo, sin carrusel. `outdoors-blue-bench-photo.jpg` es la banca con menos cojines; la última foto de vista costera fue reemplazada por `outdoors-palm-garden-sea.png`.
 - La sección `Collegamenti` incluye `assets/images/services-amalfi-map.jpg`.
 - La sección de mascotas incluye `assets/images/pets-welcome.jpg` antes del texto.
@@ -48,7 +48,7 @@ Es un sitio estático formado principalmente por:
 - Los textos alternativos, las etiquetas de navegación y los grupos interactivos cambian correctamente entre italiano, inglés y español.
 - Se corrigieron las dimensiones intrínsecas declaradas de tres imágenes para evitar saltos de maquetación.
 - La cabecera responsive mantiene la marca y el selector de idiomas en la primera fila, con el menú en la segunda.
-- `styles.css` y `script.js` llevan versión de caché `20260619-1`.
+- `styles.css` y `script.js` llevan versión de caché `20260620-3`.
 - Se retiró `loading="lazy"` de las fotos para evitar placeholders visibles en móvil o al desplazarse.
 - Las imágenes nuevas de `Territorio` cargan de inmediato; `territory-ravello-village.png` conserva formato PNG.
 - No hay imágenes rotas ni errores de JavaScript.
@@ -68,6 +68,8 @@ Es un sitio estático formado principalmente por:
 - `assets/images/territory-exploring-coast.jpg`
 - `assets/images/territory-ravello-terrace.jpg`
 - `assets/images/territory-ravello-village.png`
+- `assets/images/territory-ravello-terrace-busts.png`
+- `assets/images/territory-pompeii-amphitheatre.png`
 - `assets/images/territory-paestum-temples.jpg`
 - `assets/images/villa-dining-arch.jpg`
 - `assets/images/villa-living-staircase.jpg`

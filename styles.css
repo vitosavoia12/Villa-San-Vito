@@ -499,6 +499,12 @@ p {
   object-fit: cover;
 }
 
+.territory-media-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.4rem);
+}
+
 .topic-section-reverse {
   grid-template-columns: minmax(300px, 0.72fr) minmax(0, 0.78fr);
 }
@@ -995,6 +1001,10 @@ p {
   .territory-feature--reverse .territory-feature-media,
   .territory-feature--reverse .territory-feature-copy {
     order: initial;
+  }
+
+  .territory-media-pair {
+    grid-template-columns: 1fr;
   }
 
   .services-grid {
