@@ -52,7 +52,7 @@ Las imágenes activas se encuentran en `assets/images/`. Entre los archivos inco
 - La portada utiliza `hero-villa-facade-main.jpg` como imagen principal.
 - Se retiró `loading="lazy"` de las fotos para evitar placeholders o textos alternativos visibles durante la carga.
 - `Storia` muestra la impresión antigua `raito-history.jpg` después del primer párrafo y `territory-ravello-village.png` después del texto “Villa San Vito custodisce...”.
-- `Territorio` presenta bloques editoriales sin carrusel: `territory-exploring-coast.jpg`, `territory-ravello-terrace-busts.png` después del texto sobre historia antigua y el par `territory-pompeii-amphitheatre.png` + `territory-paestum-temples.jpg` al final de “Archeologia e storia...”.
+- `Territorio` presenta bloques editoriales sin carrusel: `territory-exploring-coast.jpg`, `territory-ravello-terrace-busts.png` al final de “Esplorare la Costiera...” y el par `territory-pompeii-amphitheatre.png` + `territory-paestum-temples.jpg` al final de “Archeologia e storia...”.
 - La sección `Villa` muestra el texto en un bloque compacto y una grilla fija de detalles interiores, sin carrusel, con `villa-dining-table.png`, `villa-bedroom-green.png` y `villa-bedroom-turquoise.png` añadidas al riquadro.
 - `Esterni` usa el título “Oltre le mura, l'esperienza continua” y muestra cinco fotografías intercaladas una por párrafo, sin carrusel. La banca activa es `outdoors-blue-bench-photo.jpg`; la última foto de vista costera fue reemplazada por `outdoors-palm-garden-sea.png`.
 - El mapa de `Collegamenti` está en `services-amalfi-map.jpg`, el bloque de estacionamiento muestra `villa-sign.jpg` y la foto de mascotas está en `pets-welcome.jpg`.
