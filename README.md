@@ -15,6 +15,7 @@ La estructura actual sigue estas macroáreas:
 - C. Villa
 - D. Esterni
 - E. Servizi
+- Approfondimenti SEO
 - Bloque de apoyo comercial: Perché Villa San Vito
 - F. Prenotazioni
 
@@ -25,8 +26,13 @@ El sitio utiliza `Tinos` para titulares, `Raleway` para texto y `Fira Mono` para
 ```text
 /
 ├── index.html
+├── villa-a-raito.html
+├── villa-vietri-sul-mare.html
+├── esplorare-costiera-amalfitana.html
 ├── styles.css
 ├── script.js
+├── robots.txt
+├── sitemap.xml
 ├── favicon.ico
 ├── favicon-16x16.png
 ├── favicon-32x32.png
@@ -42,6 +48,7 @@ El sitio utiliza `Tinos` para titulares, `Raleway` para texto y `Fira Mono` para
 - Cada nuevo texto visible debe tener su versión en los tres idiomas.
 - Los textos alternativos de las imágenes y las etiquetas `aria-label` localizadas también se gestionan desde `translations`.
 - Las secciones y el contenido base están en `index.html`.
+- Las landings internas livianas son archivos HTML separados y reutilizan `styles.css` y `script.js`.
 - La presentación visual y las adaptaciones móviles están en `styles.css`.
 
 ## Imágenes
@@ -96,7 +103,7 @@ No quedan carruseles ni galerías desplazables: las fotografías visibles son bl
 
 `index.html` incluye una versión en las referencias a `styles.css` y `script.js`. Al publicar cambios en esos archivos, conviene actualizar el valor de `?v=` para evitar que los navegadores reutilicen una versión anterior.
 
-Versión actual de `styles.css` y `script.js`: `20260929-2`.
+Versión actual de `styles.css` y `script.js`: `20260929-3`.
 
 ## Servicios
 
@@ -136,6 +143,7 @@ Antes de publicar, revisar en `index.html`:
 - Datos estructurados JSON-LD.
 - URLs públicas del dominio.
 - `robots.txt` y `sitemap.xml` apuntando a `https://villasanvito.com/`.
+- Enlaces internos hacia `villa-a-raito.html`, `villa-vietri-sul-mare.html` y `esplorare-costiera-amalfitana.html`.
 
 No agregar precios, teléfonos ni dirección exacta salvo confirmación expresa del cliente.
 
@@ -144,6 +152,9 @@ No agregar precios, teléfonos ni dirección exacta salvo confirmación expresa 
 El sitio funciona sin backend. Para publicarlo, subir a la raíz pública:
 
 - `index.html`
+- `villa-a-raito.html`
+- `villa-vietri-sul-mare.html`
+- `esplorare-costiera-amalfitana.html`
 - `styles.css`
 - `script.js`
 - `robots.txt`

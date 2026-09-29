@@ -2,99 +2,89 @@
 
 ## Proyecto activo
 
-Ruta:
+Ruta actual:
 
-`C:\Users\vitos\Documents\Codex\2026-05-19\quiero-que-construyas-un-sitio-web`
+`C:\Users\vitos\OneDrive\Escritorio\Villa San Vito`
 
-Es un sitio estático formado principalmente por:
+Es un sitio estático sin backend. Archivos principales:
 
 - `index.html`
+- `villa-a-raito.html`
+- `villa-vietri-sul-mare.html`
+- `esplorare-costiera-amalfitana.html`
 - `styles.css`
 - `script.js`
+- `robots.txt`
+- `sitemap.xml`
 - `assets/images/`
 
 ## Estado actual
 
-- Landing editorial, mediterránea y responsive.
+- Landing principal editorial, mediterránea y responsive.
+- Tres landings internas livianas en HTML separado para SEO y navegación interna:
+  - `villa-a-raito.html`
+  - `villa-vietri-sul-mare.html`
+  - `esplorare-costiera-amalfitana.html`
 - Idiomas: italiano, inglés y español.
-- Toda modificación visible debe aplicarse en los tres idiomas.
-- Reservas derivadas a plataformas externas.
-- Google Tag Manager y Google Analytics instalados.
-- Eventos comerciales GA4/GTM añadidos en `script.js`: `booking_platform_click`, `contact_click`, `social_click` y `language_change`.
+- Toda modificación visible debe aplicarse en los tres idiomas dentro de `script.js`.
+- Reservas derivadas a Airbnb, Booking y Vrbo. El sitio no gestiona pagos ni reservas directas.
+- Google Tag Manager `GTM-KV229NML` y Google Analytics `G-ZSSL3DCMM5` instalados.
+- Eventos comerciales GA4/GTM en `script.js`: `booking_platform_click`, `contact_click`, `social_click` y `language_change`.
 - Bloque comercial “Perché Villa San Vito” añadido antes de `Prenotazioni`.
-- `robots.txt` y `sitemap.xml` añadidos para indexación.
-- Favicon personalizado instalado.
-- Carruseles con flechas y avance automático cada 6,5 segundos.
-- Tipografía, espaciado, colores y fotografías adaptados a la estética premium solicitada.
+- Bloque `Approfondimenti` añadido en la home para enlazar las landings internas.
+- `robots.txt` y `sitemap.xml` añadidos y actualizados con las páginas internas.
+- No quedan carruseles ni galerías desplazables: las fotos visibles son bloques fijos.
+- `styles.css` y `script.js` llevan versión de caché `20260929-3`.
 
-## Estructura principal
+## Estructura principal de la home
 
 1. Storia
 2. Territorio
-3. Villa
-4. Esterni
-5. Servizi
-6. Prenotazioni
-7. Chi siamo
+3. Approfondimenti
+4. Villa
+5. Esterni
+6. Servizi
+7. Perché scegliere Villa San Vito
+8. Prenotazioni
 
-## Últimas modificaciones terminadas
+## Imágenes importantes
 
-- La portada conserva una sola fotografía principal.
-- `Territorio` presenta bloques editoriales sin carrusel: `territory-exploring-coast.jpg`, `territory-ravello-terrace-busts.png` al final de “Esplorare la Costiera...” y el par `territory-pompeii-amphitheatre.png` + `territory-paestum-temples.jpg` al final de “Arqueología e historia”.
-- `Esterni` usa el título “Oltre le mura, l'esperienza continua” y muestra cinco fotografías intercaladas una por párrafo, sin carrusel. `outdoors-blue-bench-photo.jpg` es la banca con menos cojines; la última foto de vista costera fue reemplazada por `outdoors-palm-garden-sea.png`.
-- La sección `Collegamenti` incluye `assets/images/services-amalfi-map.jpg`.
-- La sección de mascotas incluye `assets/images/pets-welcome.jpg` antes del texto.
-- La sección `Villa` muestra el texto en un bloque compacto y una grilla fija de detalles interiores, sin carrusel, con `villa-dining-table.png`, `villa-bedroom-green.png` y `villa-bedroom-turquoise.png` añadidas al riquadro.
-- `Storia` muestra la impresión antigua `raito-history.jpg` después del primer párrafo y `territory-ravello-village.png` después del texto “Villa San Vito custodisce...”.
-- El bloque de estacionamiento incluye `assets/images/villa-sign.jpg` debajo del encabezado.
-- No quedan carruseles ni galerías desplazables en el sitio.
-- Los textos alternativos, las etiquetas de navegación y los grupos interactivos cambian correctamente entre italiano, inglés y español.
-- Se corrigieron las dimensiones intrínsecas declaradas de tres imágenes para evitar saltos de maquetación.
-- La cabecera responsive mantiene la marca y el selector de idiomas en la primera fila, con el menú en la segunda.
-- `styles.css` y `script.js` llevan versión de caché `20260929-2`.
-- Se retiró `loading="lazy"` de las fotos para evitar placeholders visibles en móvil o al desplazarse.
-- Las imágenes nuevas de `Storia` y `Territorio` cargan de inmediato; `territory-ravello-village.png` conserva formato PNG.
-- No hay imágenes rotas ni errores de JavaScript.
-- Se verificó el diseño en escritorio y móvil.
-
-## Archivos recientes importantes
-
-- `assets/images/outdoors-garden-lawn.jpg`
-- `assets/images/outdoors-gulf-view.jpg`
-- `assets/images/outdoors-terrace-table.jpg`
-- `assets/images/outdoors-garden-corner-photo.jpg`
-- `assets/images/outdoors-blue-bench-photo.jpg`
-- `assets/images/outdoors-night-gulf-view.png`
-- `assets/images/outdoors-palm-garden-sea.png`
-- `assets/images/outdoors-terrace-dining-sea.jpg`
-- `assets/images/territory-coast-seascape.jpg`
-- `assets/images/territory-exploring-coast.jpg`
-- `assets/images/territory-ravello-terrace.jpg`
-- `assets/images/territory-ravello-village.png`
-- `assets/images/territory-ravello-terrace-busts.png`
-- `assets/images/territory-pompeii-amphitheatre.png`
-- `assets/images/territory-paestum-temples.jpg`
-- `assets/images/villa-dining-arch.jpg`
-- `assets/images/villa-living-staircase.jpg`
-- `assets/images/villa-dining-table.png`
-- `assets/images/villa-bedroom-green.png`
-- `assets/images/villa-bedroom-turquoise.png`
-- `assets/images/villa-study-fireplace.jpg`
-- `assets/images/villa-bedroom-blue.jpg`
-- `assets/images/services-amalfi-map.jpg`
-- `assets/images/villa-sign.jpg`
-- `assets/images/pets-welcome.jpg`
+- Portada: `assets/images/hero-villa-facade-main.jpg`
+- Storia: `raito-history.jpg` y `territory-ravello-village.png`
+- Territorio:
+  - `territory-exploring-coast.jpg`
+  - `territory-ravello-terrace-busts.png`
+  - `territory-pompeii-amphitheatre.png`
+  - `territory-paestum-temples.jpg`
+- Villa:
+  - `villa-dining-arch.jpg`
+  - `villa-living-staircase.jpg`
+  - `villa-dining-table.png`
+  - `villa-bedroom-green.png`
+  - `villa-bedroom-turquoise.png`
+  - `villa-study-fireplace.jpg`
+- Esterni:
+  - `outdoors-garden-corner-photo.jpg`
+  - `outdoors-blue-bench-photo.jpg`
+  - `outdoors-night-gulf-view.png`
+  - `outdoors-palm-garden-sea.png`
+  - `outdoors-terrace-dining-sea.jpg`
+- Servizi:
+  - `services-amalfi-map.jpg`
+  - `villa-sign.jpg`
+  - `pets-welcome.jpg`
+- Marca para páginas internas: `brand-mark.png`
 
 ## Entrega actual
 
 ZIP:
 
-`C:\Users\vitos\Documents\Codex\2026-05-19\quiero-que-construyas-un-sitio-web\Villa-San-Vito-site.zip`
+`C:\Users\vitos\OneDrive\Escritorio\Villa San Vito\Villa-San-Vito-site.zip`
 
-Después de nuevas modificaciones, volver a:
+Después de nuevas modificaciones:
 
 1. Comprobar sintaxis de `script.js`.
 2. Revisar imágenes rotas y referencias locales.
-3. Verificar escritorio y móvil en el navegador local.
-4. Probar los tres idiomas.
+3. Probar claves `data-i18n` en los tres idiomas.
+4. Verificar `sitemap.xml`.
 5. Regenerar `Villa-San-Vito-site.zip`.

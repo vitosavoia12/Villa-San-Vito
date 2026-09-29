@@ -92,6 +92,10 @@ a {
   object-fit: contain;
 }
 
+.content-page .brand img {
+  display: block;
+}
+
 .main-nav {
   display: flex;
   justify-content: center;
@@ -115,7 +119,10 @@ a {
 .platform-links a,
 .social-links a,
 .contact-mail a,
-.contact-button {
+.contact-button,
+.insight-card,
+.landing-cta,
+.landing-related a {
   text-decoration: none;
 }
 
@@ -159,7 +166,10 @@ a {
 
 .language-switcher button:focus-visible,
 .platform-links a:focus-visible,
-.contact-button:focus-visible {
+.contact-button:focus-visible,
+.insight-card:focus-visible,
+.landing-cta:focus-visible,
+.landing-related a:focus-visible {
   outline: 3px solid rgba(154, 106, 76, 0.35);
   outline-offset: 3px;
 }
@@ -171,6 +181,7 @@ a {
 .territory-section,
 .rooms-section,
 .services-section,
+.insights-section,
 .why-section,
 .booking-section {
   width: min(1140px, calc(100% - 2rem));
@@ -368,6 +379,7 @@ p {
 .territory-section,
 .rooms-section,
 .services-section,
+.insights-section,
 .why-section,
 .booking-section {
   border-top: 1px solid var(--line);
@@ -830,6 +842,62 @@ p {
   text-underline-offset: 0.28em;
 }
 
+.insights-section {
+  max-width: 1040px;
+  padding: clamp(4.8rem, 9vw, 7.5rem) 0;
+  text-align: center;
+}
+
+.insights-copy {
+  max-width: 720px;
+  margin: 1.05rem auto 0;
+  color: var(--muted);
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: clamp(2rem, 4vw, 3rem);
+  text-align: left;
+}
+
+.insight-card {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.5);
+  color: inherit;
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.insight-card:hover {
+  border-color: rgba(154, 106, 76, 0.45);
+  background: rgba(255, 255, 255, 0.82);
+  transform: translateY(-2px);
+}
+
+.insight-card strong,
+.landing-card-grid strong {
+  display: block;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.insight-card span,
+.landing-card-grid span {
+  display: block;
+  margin-top: 0.7rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
 .why-section {
   max-width: 1040px;
   padding: clamp(4.8rem, 9vw, 7.5rem) 0;
@@ -992,6 +1060,125 @@ p {
   text-decoration: none;
 }
 
+.landing-page {
+  width: min(1080px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: clamp(3.5rem, 8vw, 6rem) 0 clamp(4.8rem, 9vw, 7.5rem);
+}
+
+.landing-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.78fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.landing-hero-copy p:not(.section-kicker),
+.landing-section p {
+  color: var(--muted);
+  font-size: 1.03rem;
+  line-height: 1.82;
+}
+
+.landing-hero-copy p:not(.section-kicker) {
+  margin: 1.35rem 0 0;
+}
+
+.landing-hero-media {
+  margin: 0;
+}
+
+.landing-hero-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.landing-hero-media--portrait img {
+  aspect-ratio: 4 / 5;
+}
+
+.landing-section {
+  margin-top: clamp(3.2rem, 7vw, 5.2rem);
+  border-top: 1px solid var(--line);
+  padding-top: clamp(2.2rem, 5vw, 3.4rem);
+}
+
+.landing-section p {
+  max-width: 760px;
+}
+
+.landing-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: clamp(2.6rem, 6vw, 4rem);
+}
+
+.landing-card-grid article {
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.landing-cta {
+  display: inline-block;
+  margin-top: 1.1rem;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  padding: 0.9rem 1.2rem;
+  background: var(--ink);
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.landing-cta:hover {
+  border-color: var(--clay);
+  background: var(--clay);
+  color: #fff;
+}
+
+.landing-related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: clamp(3.2rem, 7vw, 5.2rem);
+  border-top: 1px solid var(--line);
+  padding-top: 1.5rem;
+}
+
+.landing-related .section-kicker {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.landing-related a {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.65rem 0.95rem;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease;
+}
+
+.landing-related a:hover {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: #fff;
+}
+
 .site-footer {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -1072,8 +1259,11 @@ p {
   .about-hosts,
   .outdoors-inline-photos,
   .room-list,
+  .insights-grid,
   .why-grid,
   .booking-assurance-grid,
+  .landing-hero,
+  .landing-card-grid,
   .site-footer {
     grid-template-columns: 1fr;
   }
@@ -1107,6 +1297,10 @@ p {
 
   .footer-links {
     justify-content: flex-start;
+  }
+
+  .landing-hero-media--portrait img {
+    aspect-ratio: 16 / 10;
   }
 }
 
@@ -1145,6 +1339,20 @@ p {
 
   .platform-links a {
     width: 100%;
+  }
+
+  .landing-cta {
+    width: 100%;
+    text-align: center;
+  }
+
+  .landing-related {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .landing-related a {
+    text-align: center;
   }
 
   .social-links a {
