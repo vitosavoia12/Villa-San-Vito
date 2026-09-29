@@ -95,6 +95,8 @@ No quedan carruseles ni galerías desplazables: las fotografías visibles son bl
 
 `index.html` incluye una versión en las referencias a `styles.css` y `script.js`. Al publicar cambios en esos archivos, conviene actualizar el valor de `?v=` para evitar que los navegadores reutilicen una versión anterior.
 
+Versión actual de `script.js`: `20260929-1`.
+
 ## Servicios
 
 La sección `Servizi` reúne:
@@ -152,3 +154,12 @@ Puede alojarse directamente en Netlify, Vercel o cualquier hosting de archivos e
 El contenedor `GTM-KV229NML` está instalado en `index.html`, con el script dentro de `<head>` y el bloque `noscript` inmediatamente después de la apertura de `<body>`.
 
 La etiqueta directa de Google Analytics `G-ZSSL3DCMM5` también está instalada en `<head>` mediante `gtag.js`.
+
+Eventos comerciales enviados desde `script.js`:
+
+- `booking_platform_click`: clics hacia Airbnb, Booking y Vrbo. Parámetro principal: `booking_platform`.
+- `contact_click`: clics hacia `info.villasanvito@libero.it`. Parámetro principal: `contact_method`.
+- `social_click`: clics hacia Instagram y Facebook. Parámetro principal: `social_platform`.
+- `language_change`: cambios de idioma. Parámetro principal: `selected_language`.
+
+Estos eventos permiten evaluar intención comercial sin gestionar reservas directas desde el sitio.

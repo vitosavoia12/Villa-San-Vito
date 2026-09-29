@@ -382,6 +382,77 @@ if (brandMark && openingHeading) {
   openingHeading.prepend(brandMark);
 }
 
+function sendAnalyticsEvent(eventName, parameters = {}) {
+  const payload = {
+    page_language: document.documentElement.lang || "it",
+    ...parameters
+  };
+
+  if (typeof window.gtag === "function") {
+    window.gtag("event", eventName, payload);
+  }
+
+  if (Array.isArray(window.dataLayer)) {
+    window.dataLayer.push({
+      event: eventName,
+      ...payload
+    });
+  }
+}
+
+function getBookingPlatform(hostname) {
+  if (hostname.includes("airbnb.")) return "Airbnb";
+  if (hostname.includes("booking.")) return "Booking";
+  if (hostname.includes("vrbo.")) return "Vrbo";
+  return "";
+}
+
+function getSocialPlatform(hostname) {
+  if (hostname.includes("instagram.")) return "Instagram";
+  if (hostname.includes("facebook.")) return "Facebook";
+  return "";
+}
+
+function trackCommercialLink(link) {
+  const rawHref = link.getAttribute("href") || "";
+  const normalizedHref = rawHref.toLowerCase();
+
+  if (normalizedHref.startsWith("mailto:info.villasanvito@libero.it")) {
+    sendAnalyticsEvent("contact_click", {
+      contact_method: "email",
+      link_url: rawHref
+    });
+    return;
+  }
+
+  let url;
+  try {
+    url = new URL(rawHref, window.location.href);
+  } catch {
+    return;
+  }
+
+  const hostname = url.hostname.toLowerCase();
+  const bookingPlatform = getBookingPlatform(hostname);
+
+  if (bookingPlatform) {
+    sendAnalyticsEvent("booking_platform_click", {
+      booking_platform: bookingPlatform,
+      link_url: url.href
+    });
+    return;
+  }
+
+  const socialPlatform = getSocialPlatform(hostname);
+
+  if (socialPlatform) {
+    sendAnalyticsEvent("social_click", {
+      social_platform: socialPlatform,
+      link_url: url.href
+    });
+  }
+}
+
 function setLanguage(selectedLanguage) {
   const dictionary = translations[selectedLanguage] || translations.it;
 
@@ -424,7 +495,17 @@ function setLanguage(selectedLanguage) {
 }
 
 languageButtons.forEach((button) => {
-  button.addEventListener("click", () => setLanguage(button.dataset.lang));
+  button.addEventListener("click", () => {
+    const selectedLanguage = button.dataset.lang;
+    setLanguage(selectedLanguage);
+    sendAnalyticsEvent("language_change", {
+      selected_language: selectedLanguage
+    });
+  });
+});
+
+document.querySelectorAll("a[href]").forEach((link) => {
+  link.addEventListener("click", () => trackCommercialLink(link));
 });
 
 setLanguage(localStorage.getItem("villaSanVitoLanguage") || "it");
