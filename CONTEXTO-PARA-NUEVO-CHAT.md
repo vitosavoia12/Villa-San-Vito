@@ -21,6 +21,8 @@ Es un sitio estático formado principalmente por:
 - Reservas derivadas a plataformas externas.
 - Google Tag Manager y Google Analytics instalados.
 - Eventos comerciales GA4/GTM añadidos en `script.js`: `booking_platform_click`, `contact_click`, `social_click` y `language_change`.
+- Bloque comercial “Perché Villa San Vito” añadido antes de `Prenotazioni`.
+- `robots.txt` y `sitemap.xml` añadidos para indexación.
 - Favicon personalizado instalado.
 - Carruseles con flechas y avance automático cada 6,5 segundos.
 - Tipografía, espaciado, colores y fotografías adaptados a la estética premium solicitada.
@@ -49,7 +51,7 @@ Es un sitio estático formado principalmente por:
 - Los textos alternativos, las etiquetas de navegación y los grupos interactivos cambian correctamente entre italiano, inglés y español.
 - Se corrigieron las dimensiones intrínsecas declaradas de tres imágenes para evitar saltos de maquetación.
 - La cabecera responsive mantiene la marca y el selector de idiomas en la primera fila, con el menú en la segunda.
-- `styles.css` mantiene versión de caché `20260620-5`; `script.js` lleva versión de caché `20260929-1`.
+- `styles.css` y `script.js` llevan versión de caché `20260929-2`.
 - Se retiró `loading="lazy"` de las fotos para evitar placeholders visibles en móvil o al desplazarse.
 - Las imágenes nuevas de `Storia` y `Territorio` cargan de inmediato; `territory-ravello-village.png` conserva formato PNG.
 - No hay imágenes rotas ni errores de JavaScript.

@@ -15,6 +15,7 @@ La estructura actual sigue estas macroáreas:
 - C. Villa
 - D. Esterni
 - E. Servizi
+- Bloque de apoyo comercial: Perché Villa San Vito
 - F. Prenotazioni
 
 El sitio utiliza `Tinos` para titulares, `Raleway` para texto y `Fira Mono` para etiquetas y navegación.
@@ -95,7 +96,7 @@ No quedan carruseles ni galerías desplazables: las fotografías visibles son bl
 
 `index.html` incluye una versión en las referencias a `styles.css` y `script.js`. Al publicar cambios en esos archivos, conviene actualizar el valor de `?v=` para evitar que los navegadores reutilicen una versión anterior.
 
-Versión actual de `script.js`: `20260929-1`.
+Versión actual de `styles.css` y `script.js`: `20260929-2`.
 
 ## Servicios
 
@@ -134,6 +135,7 @@ Antes de publicar, revisar en `index.html`:
 - Imagen Open Graph.
 - Datos estructurados JSON-LD.
 - URLs públicas del dominio.
+- `robots.txt` y `sitemap.xml` apuntando a `https://villasanvito.com/`.
 
 No agregar precios, teléfonos ni dirección exacta salvo confirmación expresa del cliente.
 
@@ -144,6 +146,8 @@ El sitio funciona sin backend. Para publicarlo, subir a la raíz pública:
 - `index.html`
 - `styles.css`
 - `script.js`
+- `robots.txt`
+- `sitemap.xml`
 - favicons
 - carpeta `assets/`
 
