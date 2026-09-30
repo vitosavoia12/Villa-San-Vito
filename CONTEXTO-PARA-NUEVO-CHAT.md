@@ -12,6 +12,10 @@ Es un sitio estático sin backend. Archivos principales:
 - `villa-a-raito.html`
 - `villa-vietri-sul-mare.html`
 - `esplorare-costiera-amalfitana.html`
+- `villa-con-parcheggio-costiera-amalfitana.html`
+- `villa-pet-friendly-costiera-amalfitana.html`
+- `villa-per-famiglie-vietri-sul-mare.html`
+- `visitare-pompei-paestum-da-raito.html`
 - `styles.css`
 - `script.js`
 - `robots.txt`
@@ -21,20 +25,25 @@ Es un sitio estático sin backend. Archivos principales:
 ## Estado actual
 
 - Landing principal editorial, mediterránea y responsive.
-- Tres landings internas livianas en HTML separado para SEO y navegación interna:
+- Siete landings internas livianas en HTML separado para SEO y navegación interna:
   - `villa-a-raito.html`
   - `villa-vietri-sul-mare.html`
   - `esplorare-costiera-amalfitana.html`
+  - `villa-con-parcheggio-costiera-amalfitana.html`
+  - `villa-pet-friendly-costiera-amalfitana.html`
+  - `villa-per-famiglie-vietri-sul-mare.html`
+  - `visitare-pompei-paestum-da-raito.html`
 - Idiomas: italiano, inglés y español.
 - Toda modificación visible debe aplicarse en los tres idiomas dentro de `script.js`.
 - Reservas derivadas a Airbnb, Booking y Vrbo. El sitio no gestiona pagos ni reservas directas.
 - Google Tag Manager `GTM-KV229NML` y Google Analytics `G-ZSSL3DCMM5` instalados.
 - Eventos comerciales GA4/GTM en `script.js`: `booking_platform_click`, `contact_click`, `social_click` y `language_change`.
 - Bloque comercial “Perché Villa San Vito” añadido antes de `Prenotazioni`.
-- Bloque `Approfondimenti` añadido en la home para enlazar las landings internas.
+- Bloque `Approfondimenti` añadido en la home para enlazar las siete landings internas.
 - `robots.txt` y `sitemap.xml` añadidos y actualizados con las páginas internas.
 - No quedan carruseles ni galerías desplazables: las fotos visibles son bloques fijos.
-- `styles.css` y `script.js` llevan versión de caché `20260929-3`.
+- `styles.css` y `script.js` llevan versión de caché `20260929-4`.
+- Material B2B interno, CRM, plantillas comerciales y outreach no deben publicarse dentro del sitio de Villa San Vito.
 
 ## Estructura principal de la home
 

@@ -29,6 +29,10 @@ El sitio utiliza `Tinos` para titulares, `Raleway` para texto y `Fira Mono` para
 ├── villa-a-raito.html
 ├── villa-vietri-sul-mare.html
 ├── esplorare-costiera-amalfitana.html
+├── villa-con-parcheggio-costiera-amalfitana.html
+├── villa-pet-friendly-costiera-amalfitana.html
+├── villa-per-famiglie-vietri-sul-mare.html
+├── visitare-pompei-paestum-da-raito.html
 ├── styles.css
 ├── script.js
 ├── robots.txt
@@ -103,7 +107,7 @@ No quedan carruseles ni galerías desplazables: las fotografías visibles son bl
 
 `index.html` incluye una versión en las referencias a `styles.css` y `script.js`. Al publicar cambios en esos archivos, conviene actualizar el valor de `?v=` para evitar que los navegadores reutilicen una versión anterior.
 
-Versión actual de `styles.css` y `script.js`: `20260929-3`.
+Versión actual de `styles.css` y `script.js`: `20260929-4`.
 
 ## Servicios
 
@@ -143,7 +147,16 @@ Antes de publicar, revisar en `index.html`:
 - Datos estructurados JSON-LD.
 - URLs públicas del dominio.
 - `robots.txt` y `sitemap.xml` apuntando a `https://villasanvito.com/`.
-- Enlaces internos hacia `villa-a-raito.html`, `villa-vietri-sul-mare.html` y `esplorare-costiera-amalfitana.html`.
+- Enlaces internos hacia las siete guías públicas:
+  - `villa-a-raito.html`
+  - `villa-vietri-sul-mare.html`
+  - `esplorare-costiera-amalfitana.html`
+  - `villa-con-parcheggio-costiera-amalfitana.html`
+  - `villa-pet-friendly-costiera-amalfitana.html`
+  - `villa-per-famiglie-vietri-sul-mare.html`
+  - `visitare-pompei-paestum-da-raito.html`
+
+Los documentos B2B internos, CRM, plantillas comerciales y outreach no deben subirse al sitio público de Villa San Vito.
 
 No agregar precios, teléfonos ni dirección exacta salvo confirmación expresa del cliente.
 
@@ -155,6 +168,10 @@ El sitio funciona sin backend. Para publicarlo, subir a la raíz pública:
 - `villa-a-raito.html`
 - `villa-vietri-sul-mare.html`
 - `esplorare-costiera-amalfitana.html`
+- `villa-con-parcheggio-costiera-amalfitana.html`
+- `villa-pet-friendly-costiera-amalfitana.html`
+- `villa-per-famiglie-vietri-sul-mare.html`
+- `visitare-pompei-paestum-da-raito.html`
 - `styles.css`
 - `script.js`
 - `robots.txt`
